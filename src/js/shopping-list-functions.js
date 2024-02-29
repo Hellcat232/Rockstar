@@ -20,9 +20,9 @@ export function removeFromShoppingList(id) {
     localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
 }
 
-console.log(shoppingList);
-let book = {_id: '1', book_image: 'blue', title: 'Racoons', list_name: 'Non-fiction', description: 'Book for kids', author: 'BBC', buy_links: 'Amazon',};
-addToShoppingList(book);
-console.log(shoppingList);
-removeFromShoppingList('1');
-console.log(shoppingList);
+// console.log(shoppingList);
+// let book = {_id: '1', book_image: 'blue', title: 'Racoons', list_name: 'Non-fiction', description: 'Book for kids', author: 'BBC', buy_links: 'Amazon',};
+// addToShoppingList(book);
+// console.log(shoppingList);
+// removeFromShoppingList('1');
+// console.log(shoppingList);
