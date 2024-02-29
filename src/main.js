@@ -1,11 +1,12 @@
-import { booksCategory } from './js/books-api';
+import { booksCategory, topBooks, booksByCategory } from './js/books-api';
 import {
   categoriesRender,
   topBooksTemplate,
   topBooksCategoriesRender,
   clickAddClass,
+  catLink,
+  booksByCatRender,
 } from './js/render-functions';
-import { topBooks } from './js/books-api';
 
 export const refs = {
   bestBooks: document.querySelector('.best-books-category'),
@@ -19,6 +20,7 @@ async function onPageLoad() {
   categoriesRender(data);
   topBooksCategoriesRender(topBooksResponse);
 
+  refs.oneCategory = document.querySelector('.sidebar-category-link');
   refs.categoriesItems = document.querySelectorAll('.sidebar-categories-item');
   refs.allCategories.classList.add('sidebar-active');
   refs.categories.addEventListener('click', onCategoriesClick);
@@ -26,6 +28,11 @@ async function onPageLoad() {
 
 onPageLoad();
 
-function onCategoriesClick(e) {
+async function onCategoriesClick(e) {
+  const categoryLink = catLink(e);
+  console.log(categoryLink);
+  const booksByCat = await booksByCategory(categoryLink.trim());
+  console.log(booksByCat);
+  booksByCatRender(booksByCat);
   clickAddClass(e);
 }
