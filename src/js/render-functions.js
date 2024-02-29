@@ -70,3 +70,29 @@ export function clickAddClass(e) {
   refs.categoriesItems.forEach(elem => elem.classList.remove('sidebar-active'));
   target.classList.add('sidebar-active');
 }
+
+export function catLink(e) {
+  const categoryLink = e.target.closest('a').textContent;
+  return `${categoryLink}`;
+}
+
+export function booksByCatTemplate(data) {
+  return data
+    .map(
+      ({ author, list_name, book_image, title, _id }) => `
+
+  <div class="hardcover-wrap">
+            <ul class="hardcover-list">
+                <li class="hardcover-item" id="${_id}">
+                    <img class="hardcover-img" src="${book_image}" alt="card">
+                    <h3 class="hardcover-subtitle">${title}</h3>
+                       <p class="hardcover-descr">${author}</p>
+                </li>`
+    )
+    .join('\n');
+}
+
+export function booksByCatRender(data) {
+  const markup = booksByCatTemplate(data);
+  refs.bestBooks.innerHTML = markup;
+}
