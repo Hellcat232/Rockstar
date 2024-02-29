@@ -35,8 +35,10 @@ export function topBooksCategoriesTemplate(data) {
           <ul class="best-books-list">
             <li class="best-books-item">${booksTemplate}</li>
           </ul>
+          <div class="btn-see-more-wrap">
           <button class="btn-see-more" type="button" data-cat="${list_name}">SEE MORE</button>
         </div>
+          </div>
       `;
     })
     .join('\n');
@@ -52,12 +54,14 @@ export function topBooksTemplate(data, filter) {
     .filter(({ list_name }) => list_name === filter)
     .map(
       ({ author, list_name, book_image, title, _id }) => `
-    <div class="best-books-content"  id="${_id}">
+    <div class="best-books-wrap" >
+      <div class="best-books-content"  id="${_id}">
       <img class="best-books-image" src="${book_image}" alt="book" loading="lazy"/>
-      <p class="best-books-hidden-text">quick view</p>
+      <p class="best-books-overlay-text">quick view</p>
     </div>
     <h3 class="best-books-heading">${title}</h3>
     <p class="best-books-text">${author}</p>
+    </div>
   `
     )
     .join('\n');
