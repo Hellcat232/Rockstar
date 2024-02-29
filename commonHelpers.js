@@ -1,23 +1,32 @@
-import"./assets/modulepreload-polyfill-3cfb730f.js";import{a as c}from"./assets/vendor-0cb09735.js";async function b(){const s="https://books-backend.p.goit.global/books/"+"category-list";return(await c.get(s)).data}async function d(){const s="https://books-backend.p.goit.global/books/"+"top-books";return(await c.get(s)).data}function u(t){return t.map(e=>`<li class="sidebar-categories-item"><a class="sidebar-category-link">
-   ${e.list_name}
+import"./assets/modulepreload-polyfill-3cfb730f.js";import{a as i}from"./assets/vendor-0cb09735.js";async function d(){const o="https://books-backend.p.goit.global/books/"+"category-list";return(await i.get(o)).data}async function b(){const o="https://books-backend.p.goit.global/books/"+"top-books";return(await i.get(o)).data}async function g(e){const t="https://books-backend.p.goit.global/books/",o=`category?category=${e}`,s=t+o;return(await i.get(s)).data}function u(e){return e.map(t=>`<li class="sidebar-categories-item"><a class="sidebar-category-link">
+   ${t.list_name}
    </a>
   </li>`).join(`
-`)}function g(t){const e=u(t);a.categories.insertAdjacentHTML("beforeend",e)}function k(t){return t.map(({list_name:e,books:s})=>{let o;return window.innerWidth>=1440?o=i(s,e):window.innerWidth>=768?o=i(s.slice(0,3),e):o=i(s.slice(0,1),e),`
+`)}function k(e){const t=u(e);a.categories.insertAdjacentHTML("beforeend",t)}function p(e){return e.map(({list_name:t,books:o})=>{let s;return window.innerWidth>=1440?s=r(o,t):window.innerWidth>=768?s=r(o.slice(0,3),t):s=r(o.slice(0,1),t),`
         <div class="best-books-category">
-          <p class="best-books-subtitle">${e}</p>
+          <p class="best-books-subtitle">${t}</p>
           <ul class="best-books-list">
-            <li class="best-books-item">${o}</li>
+            <li class="best-books-item">${s}</li>
           </ul>
-          <button class="btn-see-more" type="button" data-cat="${e}">SEE MORE</button>
+          <button class="btn-see-more" type="button" data-cat="${t}">SEE MORE</button>
         </div>
       `}).join(`
-`)}function p(t){const e=k(t);a.bestBooks.insertAdjacentHTML("beforeend",e)}function i(t,e){return t.filter(({list_name:s})=>s===e).map(({author:s,list_name:o,book_image:n,title:r,_id:l})=>`
+`)}function m(e){const t=p(e);a.bestBooks.insertAdjacentHTML("beforeend",t)}function r(e,t){return e.filter(({list_name:o})=>o===t).map(({author:o,list_name:s,book_image:c,title:n,_id:l})=>`
     <div class="best-books-content"  id="${l}">
-      <img class="best-books-image" src="${n}" alt="book" loading="lazy"/>
+      <img class="best-books-image" src="${c}" alt="book" loading="lazy"/>
       <p class="best-books-hidden-text">quick view</p>
     </div>
-    <h3 class="best-books-heading">${r}</h3>
-    <p class="best-books-text">${s}</p>
+    <h3 class="best-books-heading">${n}</h3>
+    <p class="best-books-text">${o}</p>
   `).join(`
-`)}function m(t){const e=t.target.closest("li");!e||e===t.currentTarget||(a.categoriesItems.forEach(s=>s.classList.remove("sidebar-active")),e.classList.add("sidebar-active"))}const a={bestBooks:document.querySelector(".best-books-category"),categories:document.querySelector(".sidebar-categories"),allCategories:document.querySelector(".sidebar-all-categories")};async function f(){const t=await b(),e=await d();g(t),p(e),a.categoriesItems=document.querySelectorAll(".sidebar-categories-item"),a.allCategories.classList.add("sidebar-active"),a.categories.addEventListener("click",y)}f();function y(t){m(t)}
+`)}function y(e){const t=e.target.closest("li");!t||t===e.currentTarget||(a.categoriesItems.forEach(o=>o.classList.remove("sidebar-active")),t.classList.add("sidebar-active"))}function f(e){return`${e.target.closest("a").textContent}`}function h(e){return e.map(({author:t,list_name:o,book_image:s,title:c,_id:n})=>`
+
+  <div class="hardcover-wrap">
+            <ul class="hardcover-list">
+                <li class="hardcover-item" id="${n}">
+                    <img class="hardcover-img" src="${s}" alt="card">
+                    <h3 class="hardcover-subtitle">${c}</h3>
+                       <p class="hardcover-descr">${t}</p>
+                </li>`).join(`
+`)}function L(e){const t=h(e);a.bestBooks.innerHTML=t}const a={bestBooks:document.querySelector(".best-books-category"),categories:document.querySelector(".sidebar-categories"),allCategories:document.querySelector(".sidebar-all-categories")};async function v(){const e=await d(),t=await b();k(e),m(t),a.oneCategory=document.querySelector(".sidebar-category-link"),a.categoriesItems=document.querySelectorAll(".sidebar-categories-item"),a.allCategories.classList.add("sidebar-active"),a.categories.addEventListener("click",B)}v();async function B(e){const t=f(e);console.log(t);const o=await g(t.trim());console.log(o),L(o),y(e)}
 //# sourceMappingURL=commonHelpers.js.map
