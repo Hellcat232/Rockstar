@@ -1,4 +1,4 @@
-import"./assets/modulepreload-polyfill-3cfb730f.js";import{a as i}from"./assets/vendor-0cb09735.js";async function d(){const o="https://books-backend.p.goit.global/books/"+"category-list";return(await i.get(o)).data}async function b(){const o="https://books-backend.p.goit.global/books/"+"top-books";return(await i.get(o)).data}async function g(e){const t="https://books-backend.p.goit.global/books/",o=`category?category=${e}`,s=t+o;return(await i.get(s)).data}function u(e){return e.map(t=>`<li class="sidebar-categories-item"><a class="sidebar-category-link">
+import{a as i}from"./vendor-0cb09735.js";async function d(){const o="https://books-backend.p.goit.global/books/"+"category-list";return(await i.get(o)).data}async function b(){const o="https://books-backend.p.goit.global/books/"+"top-books";return(await i.get(o)).data}async function g(e){const t="https://books-backend.p.goit.global/books/",o=`category?category=${e}`,s=t+o;return(await i.get(s)).data}function u(e){return e.map(t=>`<li class="sidebar-categories-item"><a class="sidebar-category-link">
    ${t.list_name}
    </a>
   </li>`).join(`
@@ -28,5 +28,5 @@ import"./assets/modulepreload-polyfill-3cfb730f.js";import{a as i}from"./assets/
                     <h3 class="hardcover-subtitle">${c}</h3>
                        <p class="hardcover-descr">${t}</p>
                 </li>`).join(`
-`)}function L(e){const t=h(e);a.bestBooks.innerHTML=t}const a={bestBooks:document.querySelector(".best-books-category"),categories:document.querySelector(".sidebar-categories"),allCategories:document.querySelector(".sidebar-all-categories")};async function v(){const e=await d(),t=await b();k(e),m(t),a.oneCategory=document.querySelector(".sidebar-category-link"),a.categoriesItems=document.querySelectorAll(".sidebar-categories-item"),a.allCategories.classList.add("sidebar-active"),a.categories.addEventListener("click",B)}v();async function B(e){const t=f(e);console.log(t);const o=await g(t.trim());console.log(o),L(o),y(e)}
-//# sourceMappingURL=commonHelpers.js.map
+`)}function v(e){const t=h(e);a.bestBooks.innerHTML=t}const a={bestBooks:document.querySelector(".best-books-category"),categories:document.querySelector(".sidebar-categories"),allCategories:document.querySelector(".sidebar-all-categories")};async function B(){const e=await d(),t=await b();k(e),m(t),a.oneCategory=document.querySelector(".sidebar-category-link"),a.categoriesItems=document.querySelectorAll(".sidebar-categories-item"),a.allCategories.classList.add("sidebar-active"),a.categories.addEventListener("click",L)}B();async function L(e){const t=f(e);console.log(t);const o=await g(t.trim());console.log(o),v(o),y(e)}
+//# sourceMappingURL=main-3bb51cba.js.map
