@@ -3,8 +3,9 @@ import { refs } from '../main';
 export function categoriesTemplate(data) {
   return data
     .map(book => {
-      return `<li class="sidebar-categories-item">
+      return `<li class="sidebar-categories-item"><a class="sidebar-category-link">
    ${book.list_name}
+   </a>
   </li>`;
     })
     .join('\n');
@@ -50,9 +51,9 @@ export function topBooksTemplate(data, filter) {
   return data
     .filter(({ list_name }) => list_name === filter)
     .map(
-      ({ author, list_name, book_image, title }) => `
-    <div class="best-books-content">
-      <img class="best-books-image" src="${book_image}" alt="book" />
+      ({ author, list_name, book_image, title, _id }) => `
+    <div class="best-books-content"  id="${_id}">
+      <img class="best-books-image" src="${book_image}" alt="book" loading="lazy"/>
       <p class="best-books-hidden-text">quick view</p>
     </div>
     <h3 class="best-books-heading">${title}</h3>
