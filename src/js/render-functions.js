@@ -30,9 +30,7 @@ export function topBooksCategoriesTemplate(data) {
       }
 
       return `
-       
       <div class="best-books-category">
-         
           <p class="best-books-subtitle">${list_name}</p>
           <ul class="best-books-list">
             <li class="best-books-item">${booksTemplate}</li>
@@ -86,14 +84,16 @@ export function booksByCatTemplate(data) {
   return data
     .map(
       ({ author, list_name, book_image, title, _id }) => `
-
-  <div class="hardcover-wrap">
+<div class="hardcover-wrap">
             <ul class="hardcover-list">
                 <li class="hardcover-item" id="${_id}">
                     <img class="hardcover-img" src="${book_image}" alt="card">
+                    <p class="hardcover-overlay-text ">quick view</p>
                     <h3 class="hardcover-subtitle">${title}</h3>
-                       <p class="hardcover-descr">${author}</p>
-                </li>`
+                    <p class="hardcover-descr">${author}</p>
+                </li>
+            </ul>
+</div>`
     )
     .join('\n');
 }

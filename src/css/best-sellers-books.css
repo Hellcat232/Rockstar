@@ -5,6 +5,7 @@
 }
 .sidebar-category-link {
 }
+
 .best-books-title {
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
@@ -21,9 +22,18 @@
 }
 
 .best-books-category {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  max-width: 996px;
+
+  display: grid;
+  grid-template-columns: repeat(
+    5,
+    1fr
+  ); /* три колонки, кожна з однаковою шириною */
+  grid-template-rows: repeat(
+    5,
+    auto
+  ); /* два рядки, кожен автоматично розширюється на вміст */
+  gap: 40px 24px; /* проміжок між елементами */
 }
 .best-books-subtitle {
   font-family: 'DM Sans', sans-serif;
