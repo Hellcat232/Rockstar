@@ -25,7 +25,7 @@ button {
 
 .support-ukraine {
     max-width: 335px;
-    height: 474px;
+    height: 460px;
     justify-content: center;
     background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4F2EE8 18.03%, #FFFFFF 100%);
     border-radius: 16px;
@@ -38,7 +38,7 @@ button {
 .flex-ukraine-wrapper {
     display: flex;
     gap: 12px;
-    padding-top: 26px;
+    padding-top: 24px;
 }
 
 .support-ukraine-title {
@@ -51,7 +51,7 @@ button {
     width: 159px;
     height: 292px;
     overflow: hidden;
-    padding-bottom: 42px;
+    margin-top: 40px;
 }
 
 .number-support {
@@ -59,27 +59,32 @@ button {
 }
 
 .list-charity {
-    margin-top: 42px;
 }
 
 .item-charity {
     display: flex;
     gap: 16px;
+    margin-bottom: 20px;
 }
 
 .btn-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    align-items: flex-end;
+    padding-top: 20px;
 }
 
 .btn-scroll-up,
 .btn-scroll-down {
+
     cursor: pointer;
 }
 
 .hidden {
+    display: none;
+}
+
+.overlay {
     display: none;
 }
 
