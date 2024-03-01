@@ -14,7 +14,7 @@
 
   border-radius: 8px;
 }
-
+/* 
 .hardcover-item .hardcover-overlay-text {
   transform: translateY(100%);
 }
@@ -49,7 +49,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   cursor: pointer;
-}
+} */
 .hardcover-img {
   max-width: 335px;
   height: 485px;
