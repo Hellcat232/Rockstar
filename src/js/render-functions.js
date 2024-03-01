@@ -30,7 +30,9 @@ export function topBooksCategoriesTemplate(data) {
       }
 
       return `
-        <div class="best-books-category">
+       
+      <div class="best-books-category">
+         
           <p class="best-books-subtitle">${list_name}</p>
           <ul class="best-books-list">
             <li class="best-books-item">${booksTemplate}</li>

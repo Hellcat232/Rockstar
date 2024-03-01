@@ -5,6 +5,20 @@
 }
 .sidebar-category-link {
 }
+.best-books-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.19;
+  letter-spacing: -0.04em;
+  color: black;
+
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.best-books-title-colour {
+  color: #4f2ee8;
+}
 
 .best-books-category {
   display: flex;
@@ -177,6 +191,10 @@
 
   .best-books-heading {
     max-width: 218px;
+  }
+
+  .best-books-overlay-text {
+    padding-top: 50px;
   }
 }
 
