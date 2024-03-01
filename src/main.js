@@ -12,6 +12,7 @@ export const refs = {
   bestBooks: document.querySelector('.best-books-category'),
   categories: document.querySelector('.sidebar-categories'),
   allCategories: document.querySelector('.sidebar-all-categories'),
+  modalWindow: document.querySelector('modal-window'),
 };
 
 async function onPageLoad() {
