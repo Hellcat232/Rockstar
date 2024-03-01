@@ -35,4 +35,4 @@ import{a as i}from"./vendor-0cb09735.js";async function d(){const o="https://boo
                        <p class="hardcover-descr">${t}</p>
                 </li>`).join(`
 `)}function h(e){const t=v(e);a.bestBooks.innerHTML=t}const a={bestBooks:document.querySelector(".best-books-category"),categories:document.querySelector(".sidebar-categories"),allCategories:document.querySelector(".sidebar-all-categories")};async function B(){const e=await d(),t=await b();k(e),m(t),a.oneCategory=document.querySelector(".sidebar-category-link"),a.categoriesItems=document.querySelectorAll(".sidebar-categories-item"),a.allCategories.classList.add("sidebar-active"),a.categories.addEventListener("click",L)}B();async function L(e){const t=f(e);console.log(t);const o=await g(t.trim());console.log(o),h(o),y(e)}
-//# sourceMappingURL=main-ba309b15.js.map
+//# sourceMappingURL=main-579dbec5.js.map

@@ -24,10 +24,8 @@
     
     <script type="module" crossorigin src="/Rockstar/assets/modulepreload-polyfill-3cfb730f.js"></script>
     <script type="module" crossorigin src="/Rockstar/assets/vendor-0cb09735.js"></script>
-    <script type="module" crossorigin src="/Rockstar/assets/main-ba309b15.js"></script>
-    <script type="module" crossorigin src="/Rockstar/assets/support-ukraine-70f7f6ca.js"></script>
-    <link rel="stylesheet" href="/Rockstar/assets/main-f2d1e9c1.css">
-    <link rel="stylesheet" href="/Rockstar/assets/support-ukraine-3457b199.css">
+    <script type="module" crossorigin src="/Rockstar/assets/main-579dbec5.js"></script>
+    <link rel="stylesheet" href="/Rockstar/assets/main-dd885d91.css">
     <link rel="stylesheet" href="/Rockstar/assets/index-bc0c0c78.css">
   </head>
   <body>
@@ -38,112 +36,203 @@
         </li>
       </ul>
     </div>
-    <!DOCTYPE html>
+
+    <h1 class="best-books-title">
+      Best Sellers<span class="best-books-title-colour">Books</span>
+    </h1>
+    <div class="best-books-category"></div>
+    <div class="hardcover-wrap"></div>
+    <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <link rel="stylesheet" href="./css/support-ukraine.css">
 </head>
-<body>
-    <div class="support-ukraine">
-        <div class="container-support-ukraine">
-        <div class="flex-ukraine-wrapper">
-        <h3 class="support-ukraine-title">Support Ukraine</h3>
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAYAAAASYli2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgBrVWBcYMwDBS5DsAG9QZlA9gg3SBs0G6QbJB2AtoJ0g1IJyAbwAahE6gySLEwJpA2f6ezY0lv2bwcgAVAxJzsFe4FIqvJzkuDNzP+BB2SmdgMOLAgi6eCFGF6hezDBoAKrkKkXoXpBNlBAoTwzOM+EGyuHZnWdppDCEs27O5hmBArwseJzUq+tgHhxRmooj/OeL1gl5H5SpxRFDU0HMmywF1aXwtjPJN9cW6HlRfwyWPo8luvuoyGmIuAKcITjwbm8eTlBAnbGwgl5meSUN1FDAsJKWdQ4UMgsCFLQsn2YxFBqzZt/ORVgPAE6sieLhNv3lwlZLl0pqTzpEJSL87qz0wSEqyoM65SCHMeW/YBOLkYssNAt6z0Wql+q3zyMBxCrWl7X/kr3XoY6le1SYruGSsCG16ge3mtdjPoertSBCW63o3RPVtrmV8IOWGLY+grGDxV2o/+a6OSUrWzoFLVoTpJ6l/PSIck3G9wDZ+R7aDXnJ2/Qf/CWBw5dgDpFHsfRq3LPIL+Bcqhl8o7ODklXk63HnXnviNshbvAuj1i93hCL3L5k7dHNtBXLL55KMns+XdtjecF+xK4BfxVz0xes8lGNdwKdJ1RKcKS1zbwF+CM0O9B+j8yRZqTvSyJ/QW8Nv3IYT5pPAAAAABJRU5ErkJggg==" alt="ukrainian-symbol">
+<body> -->
+<div class="support-ukraine">
+  <div class="container-support-ukraine">
+    <div class="flex-ukraine-wrapper">
+      <h3 class="support-ukraine-title">Support Ukraine</h3>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAYAAAASYli2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHlSURBVHgBrVWBcYMwDBS5DsAG9QZlA9gg3SBs0G6QbJB2AtoJ0g1IJyAbwAahE6gySLEwJpA2f6ezY0lv2bwcgAVAxJzsFe4FIqvJzkuDNzP+BB2SmdgMOLAgi6eCFGF6hezDBoAKrkKkXoXpBNlBAoTwzOM+EGyuHZnWdppDCEs27O5hmBArwseJzUq+tgHhxRmooj/OeL1gl5H5SpxRFDU0HMmywF1aXwtjPJN9cW6HlRfwyWPo8luvuoyGmIuAKcITjwbm8eTlBAnbGwgl5meSUN1FDAsJKWdQ4UMgsCFLQsn2YxFBqzZt/ORVgPAE6sieLhNv3lwlZLl0pqTzpEJSL87qz0wSEqyoM65SCHMeW/YBOLkYssNAt6z0Wql+q3zyMBxCrWl7X/kr3XoY6le1SYruGSsCG16ge3mtdjPoertSBCW63o3RPVtrmV8IOWGLY+grGDxV2o/+a6OSUrWzoFLVoTpJ6l/PSIck3G9wDZ+R7aDXnJ2/Qf/CWBw5dgDpFHsfRq3LPIL+Bcqhl8o7ODklXk63HnXnviNshbvAuj1i93hCL3L5k7dHNtBXLL55KMns+XdtjecF+xK4BfxVz0xes8lGNdwKdJ1RKcKS1zbwF+CM0O9B+j8yRZqTvSyJ/QW8Nv3IYT5pPAAAAABJRU5ErkJggg==" alt="ukrainian-symbol" />
     </div>
     <div class="swiper">
-    <ul class="list-charity swiper-wrapper">
+      <ul class="list-charity swiper-wrapper">
         <li class="item-charity">
-            <p class="number-support">01</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,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" alt="Save the Children" class="charity-image"
-                    data-url="https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis">
-                <a href="https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis" target="_blank"
-                    class="overlay">Save the Children</a>
-            </div>
+          <p class="number-support">01</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIEAAAAgCAYAAAA14BsbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAfoSURBVHgB7Zp5bBVVFMZvlX1H2bcKsggIAuKCghKQIIpEBNEQhCgRl0gU/Acif4hLCAqKmEYFgSaYoLJZWU0ptCC7iAQQbKEFilJ2ZLNQ4Ph9nvPodJi2D1NC28yX/DLz5i5z594755x75zkXKlSoUKFCuZhoM4oI894PHgTnwfKYmJhMF6r0i4MP6oAZ4JLk6jwYCmrbBAlV2mSD/wCIA+ngilwrToSt4GNQ34UqPcKAtgBzQRIYBNZJ/joHLoOLYCKo7EKVXGEAbwUDQTLoB24x0guYBMvAEPCn/V4M6oEm4GXQ2IUq/jK/vs7e6O2ggi99WwGTYD4oByraOd1GqmdS/OxCFX9x0MFGGzQGf+NpATzpEwqYBOM8+TgRlnvS/gJdXajiLwxUK7DJ3mAxi/CtmH/HsSbICpgAJ0Fby8OJNFI0NojoNReq+AsDVQZ8DYaJrgYyPYOY5BnkLmCX5K4SDoHeltYMzPaUOwVywGZQxYUq3sIgtQRbwG32uz044xnQHLMKvF4ZtAadmN/OvwSnJa8LeBx8ZhalkwtVvIVBGgXifdf6gguSV/+AHWYdEsHvNkH8Gi66x9DZrMYrLlTxlg3qsIDrI+xNvh7FecozjthHS+FCFW+Z6e8RcJ17BvHXMQH2g3q+8qvAjwF1c++hEWjDyeJuknDvKuB2ttUVgcwCNrDn4vEWz/UaoLoEbLHjWlW2w84ribraMgH5Klp7K7qilKjJfjSfNN70pESnyQHlvwEJvmsdwGpPOd5/PWjnbrBEg+CKnt9zC3r+66iXgzgA7PT1CeOj50VXTgdEXWhlX1lOkA2iVrMpmGplHw64zxuWNtoVoTjbODMbBCXiKyHjgNM4rVFIPZfAonzSDkZOUFc5HKYC7h0sBwtBHdAPNAPb3Y3VQEBrNcUVrT4EXA4LSATpoLrTL67PgB/yK4g+5qCm4LQuOONugjgJcsBDYI4/EY2rjUM02778tJzpKxuZXCmeyxVc7oTLAPPBCXTEB6Lug5OkCbgXlAepSONb0hznLUAafu8RdSH3gePgV0BT2gVUBb8gT2pAW3qCWSABv/v42ss3+SlrXwrKH7Fy1a1vuHLaBnZy0Hx1s66R1geDkZ7gSaM76Ozyim6QbT8KkpH/Ao6LAV3SWV9e1lHf2sC2NfZcj7Qt0+qiS18HDoCWgKsyvpyrcI9jyF/e8rDPTjj9W0A6+5eVcZNoN6gR0IAXJDodE99XRFEfuNtr5m2gJ0vuXgNNJJef7cws9hSNUVJEYwxaojctnSuRn6yeEVb+PVH/e1R0u3ue6KbWGF9b6lq6WF7ud0yRXHfAbyMZds6dUy6Fm1j79lgbuS8yIaCPZlq9c10+klx38Leo2T9i95pk6fwSS9fBTbur7gB0tLayT5Kt7dRoSxd75si2/kTrGy7Zl4h+x8kAfUCsaKDP5+CWQKr170g24B1rUM+Axk+X6MRJ0NBXlo2kr/d/h+B3hrHW8ZHVx1nwmOhgNxcNjoZYWoKVW2L524puQvHrZX3R1Q0/afcHd4BPRZe31X33fcnqe9dzLTIJ3gZlraPZ4d3AHNGJN9TqHWd5G/vq/d7qnRHFJDguut/Cdh+1PuCLkd8kmGbnL1o9V2MCyZ0EfHYO/nOgK9hrtLB2b7fnirX+Yzuqie4PUQtprmiSaTbel2sj0pYuOnGgq/mu0Ud+AnOT7ekMmuWyuMY3qj2gKd0DGCxxmZoFBoPNYLivvjhr53TQEXwBToFWTk3pKDAT3APWOo01ohVdSI7dn31S1qk5pUZYvTSlyU59d56yduQkjvVXLJ4VE3QY7HXq+49buwtamTS1Y1IBeegCxqL93+G4D/BlpFX/ytpNV3HEk58ulnHeKftdhoOeBpY6Dc4446Zb45nWyEWnSpZ3l5Vlh9W0er3iJKB12YLjEjbIaeBIn8+O4cCPB69bu7oDvimM6Fc4HYRegA8RD7ItXy0wyfJwEPm2ZvnufcGOXLpVdYX/te43cKfTybbQ8tPlnfTlmwa4IcbAdinqZsfvdjoQXHUwBhro/p8icQvd5Gx37YtGcVCv2DnjkmNOn3WoU9/PWKChK0yia/YMUV/yql3jmvaQRK+JVo5mKFEC/kcg6vdp7i6aaYr8XY0m624wRtTkrgFrLY1L1I+s/JN2Ld5TJ/3mQdFP1wto3szk1fLdm/9xoAmmH0wDs8S3RBT1/XQzPcxc0m/SfzOYnGf1Ngt4rjaeuryiO/lcfEtE0f0JxkuMe+ge83MHrS0f+2C95C7Xve4gzte/dAtnre18npXWL7HW5yssbx0rvyjGU8EAp9EzZ9VbTiPWnS56s8oondEqTXsDzM4dQZlE18k05x0sL1cJjGA5QHQrzzqN8rnUegRcBkn8U6tohMtIPAG/0zx1cqb3srbS/K0BewMied6zu9MV0WqnUT9XIyuQlxOeS1ea9JX2m6sjfiSLWACa3l3+eq3uSvZcHe252I7/VhR2v/5O3dliK/IE4GpoAegLaO0Y+NIF3wWWWZ/w2Z62snSd/L3J6RvPOv5Avo2edtASMhjv5tRC0yqtB+cAxzgL+ROtrwc536qOFfDfRIdBtuhuX7ZELwZjbV2oki9Rs5wswX8sLUzhx6LSItElWm/zJdFYA/oqrpebu1AlTgVGyKJ+gz6Ku3Hc+aI/iqy/ucRgdL8VbAD7bfcrVKhQoUKFClXy9C+ea8U6SITbvAAAAABJRU5ErkJggg=="
+              alt="Save the Children"
+              class="charity-image"
+              data-url="https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis"
+            />
+            <a
+              href="https://www.savethechildren.net/what-we-do/emergencies/ukraine-crisis"
+              target="_blank"
+              class="overlay"
+              >Save the Children</a
+            >
+          </div>
         </li>
         <li class="item-charity">
-            <p class="number-support">02</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAgCAYAAABKHcuvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUJSURBVHgB7ZhpbBVVFMfPY1FEJbUp4FL1CYmyNAG1xgWRxBCihiaSGMGYKi4YwKDiGkElfFCk8gWjfgCjVpHEqCEKQYlLakSEtFg0WBWXvrZCDYpUBCUtdPwd5gy9DjOv75VHBpL+k1/u3HPPuTN37joj0qte5SXP866CWhidZ9xYmAr9JAH1kaPXTqiDvZKfpsILMEAS0KGG89bPhS9hFTRCHdxk9s/gTVgK5fAJNMNqSBNeDGUwkPwl5r8DamCY1T8ffoYGeBomYr4dToXFkpR4kDLPlzaoCrbB33CD2fX6FchYo5bBdmhyfMZBC/wEcyzdDJVWvg5W2vVa2Ar/6IuQpOQ0/FHLT7L8YkvnwXV2XWE+j1h+lqUzLN0Hv1uqqta8c68BcBIsMr/TJAGFFxYd3u+TTrB8i6X7oAEOwj34tJPeafZW88mABxthAUy0+tVHe/0x0kaYAyvleJDT462WdsKzMMry95ufztX9ZvsLbnNGQrmVd8Bu89NRUQwbvC7VQ6nT46dLUnIaPhfGa97s/SGtw9PxvQCuD4Yo6RKLvdjypfYyznFiUnA1TNBrsxXBmZKkwj2bR1ypxX0rJ6p4+BIYmGdMHxgJJ8eU97N6h3gJHVTiFAy7ISS6qPU1+/pUKjXXdcTnSpLnHdPb+FSFK9QhTDITJkM5BC9FF8bNsAZeJ7YpInaM+IeaqJfUCW2wGt4jvtWJe4nkMskuXXiXg06v+iCwzPu/Po94qGkhn1URPjq3G73upT53RcRP9nKTxo914mpzjNMF9Sm4tWDDj8oeIlli2V2gW95ZMe5peJmYND33pOSvNHxB/KiokZNFbfgfOikW4qyujb5W/EZnYAyVl8DZXOsUqsoS+gSxM7KU69CuM7aEynQ9qo6Ja7ZnCfOrhB68x0Pd87eqRrMNi4jT8o1Zhp/u5UXmGx7qr4bqGg17nHI9bwz2jhzqI6QbFaLHbxZ/6O2il38JF2LTRWWFY2oOuZTALMlB1KXb5jeuCc6XHihujg/nrT0Xsl0Y4zvN0n/DBdTxDsla0LP6AfF3Dl3x74UHITi16VRZJD1T3wjbFO69M2Rr4sV9HGTiGq6L0sOSmw6/cRtiGRgqXb2RFr+X1D5f/Bf0IWyHShgPI7yYs4BTt5bfB+Mcs25xX0e4PxNh03Wi24bno+IYe3DM1Y8ZXeEPhsq/E3/1V+nx95SIOqbT4OkSrxX0on4TSL4qxBzfb+kgmBRRrl9i8+y63Un/dHx2S/5/cPRL7/E8/NvdTFzDN4jfAy6VMb71lmrDl8IUy+un6XC71m3kB138YC98BQ1OHWo/ILnrI7iGmB0x5TfCyBAVrkPcUO/UIeQaGE5xD/aGdC1wKu1h3X+LLD+UutaLf4QNK/g2eFeilYGa4JngN3iN+n6U7NKX/H02h0LM8Q9gq/j/3QIVOdcVvLRBPMgeNwibLnx67NST15qYumuIu0OOgY56jts+fbdEbGemM+BTGnq553/f609J/cPzFgyGBdTRIoXVOjtUhZkZOBTkrM6Db6LSB7h8MabOS8X/JaVzUre54AfEQmKrpfA6L8Z+UXBRkLO6igYsE/9fXSaLm57f9YygB5rZxCyUhBT0jn7bbpKub+ctEb66fdRCf8vXhx1oiO4G+mvqFtLZcIVzjw7QI6cufsvxbYu4x7YcniNKNZLb6D28k6TkGMrz/6/pPNZj5R80tkN61atE9B/ajZ76NPsIZAAAAABJRU5ErkJggg==" alt="Project HOPE" class="charity-image"
-                    data-url="https://www.projecthope.org/country/ukraine/">
-                <a href="https://www.projecthope.org/country/ukraine/" target="_blank" class="overlay">Project HOPE</a>
-            </div>
-        <li class="item-charity">
-            <p class="number-support">03</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,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" alt="International Medical Corps" class="charity-image"
-                    data-url="https://internationalmedicalcorps.org/country/ukraine/">
-                <a href="https://internationalmedicalcorps.org/country/ukraine/" target="_blank" class="overlay">International
-                    Medical Corps</a>
-            </div>
+          <p class="number-support">02</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAgCAYAAABKHcuvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUJSURBVHgB7ZhpbBVVFMfPY1FEJbUp4FL1CYmyNAG1xgWRxBCihiaSGMGYKi4YwKDiGkElfFCk8gWjfgCjVpHEqCEKQYlLakSEtFg0WBWXvrZCDYpUBCUtdPwd5gy9DjOv75VHBpL+k1/u3HPPuTN37joj0qte5SXP866CWhidZ9xYmAr9JAH1kaPXTqiDvZKfpsILMEAS0KGG89bPhS9hFTRCHdxk9s/gTVgK5fAJNMNqSBNeDGUwkPwl5r8DamCY1T8ffoYGeBomYr4dToXFkpR4kDLPlzaoCrbB33CD2fX6FchYo5bBdmhyfMZBC/wEcyzdDJVWvg5W2vVa2Ar/6IuQpOQ0/FHLT7L8YkvnwXV2XWE+j1h+lqUzLN0Hv1uqqta8c68BcBIsMr/TJAGFFxYd3u+TTrB8i6X7oAEOwj34tJPeafZW88mABxthAUy0+tVHe/0x0kaYAyvleJDT462WdsKzMMry95ufztX9ZvsLbnNGQrmVd8Bu89NRUQwbvC7VQ6nT46dLUnIaPhfGa97s/SGtw9PxvQCuD4Yo6RKLvdjypfYyznFiUnA1TNBrsxXBmZKkwj2bR1ypxX0rJ6p4+BIYmGdMHxgJJ8eU97N6h3gJHVTiFAy7ISS6qPU1+/pUKjXXdcTnSpLnHdPb+FSFK9QhTDITJkM5BC9FF8bNsAZeJ7YpInaM+IeaqJfUCW2wGt4jvtWJe4nkMskuXXiXg06v+iCwzPu/Po94qGkhn1URPjq3G73upT53RcRP9nKTxo914mpzjNMF9Sm4tWDDj8oeIlli2V2gW95ZMe5peJmYND33pOSvNHxB/KiokZNFbfgfOikW4qyujb5W/EZnYAyVl8DZXOsUqsoS+gSxM7KU69CuM7aEynQ9qo6Ja7ZnCfOrhB68x0Pd87eqRrMNi4jT8o1Zhp/u5UXmGx7qr4bqGg17nHI9bwz2jhzqI6QbFaLHbxZ/6O2il38JF2LTRWWFY2oOuZTALMlB1KXb5jeuCc6XHihujg/nrT0Xsl0Y4zvN0n/DBdTxDsla0LP6AfF3Dl3x74UHITi16VRZJD1T3wjbFO69M2Rr4sV9HGTiGq6L0sOSmw6/cRtiGRgqXb2RFr+X1D5f/Bf0IWyHShgPI7yYs4BTt5bfB+Mcs25xX0e4PxNh03Wi24bno+IYe3DM1Y8ZXeEPhsq/E3/1V+nx95SIOqbT4OkSrxX0on4TSL4qxBzfb+kgmBRRrl9i8+y63Un/dHx2S/5/cPRL7/E8/NvdTFzDN4jfAy6VMb71lmrDl8IUy+un6XC71m3kB138YC98BQ1OHWo/ILnrI7iGmB0x5TfCyBAVrkPcUO/UIeQaGE5xD/aGdC1wKu1h3X+LLD+UutaLf4QNK/g2eFeilYGa4JngN3iN+n6U7NKX/H02h0LM8Q9gq/j/3QIVOdcVvLRBPMgeNwibLnx67NST15qYumuIu0OOgY56jts+fbdEbGemM+BTGnq553/f609J/cPzFgyGBdTRIoXVOjtUhZkZOBTkrM6Db6LSB7h8MabOS8X/JaVzUre54AfEQmKrpfA6L8Z+UXBRkLO6igYsE/9fXSaLm57f9YygB5rZxCyUhBT0jn7bbpKub+ctEb66fdRCf8vXhx1oiO4G+mvqFtLZcIVzjw7QI6cufsvxbYu4x7YcniNKNZLb6D28k6TkGMrz/6/pPNZj5R80tkN61atE9B/ajZ76NPsIZAAAAABJRU5ErkJggg=="
+              alt="Project HOPE"
+              class="charity-image"
+              data-url="https://www.projecthope.org/country/ukraine/"
+            />
+            <a
+              href="https://www.projecthope.org/country/ukraine/"
+              target="_blank"
+              class="overlay"
+              >Project HOPE</a
+            >
+          </div>
         </li>
-        <li class="item-charity">
-            <p class="number-support">04</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAgCAYAAACBxi9RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQYSURBVHgB7VlJaBVBEK1vXNC47/uOoqAgBndF8SBRQcF9QUXxoB7Uk6II6kFc0JMRNxDECOKConFFVFxw370oHtxFgxjck/jHV+ka0ylm/s83fYj58+BR3V01PT011V3158coATzPy4R4Se6QHYvFblIVRPUk+mpgY3KHGFVRVKMIThA50hFSdeRcMDMF9qM0QbIzUqMQyeJ7eY2RrH5RmiDa2o4QOdIRIkc6QnWcY7kU7tCaqr8E9mMpHNtwhl6mNAQnm8lU/qSTJQzDcUpTpJq1nQLRPRGih3SLwdOI6HshtkMhhoMfYbM9gV7jLuzzlG0viBVgFzAf3Ayb8wFz1oBYzk1wPWyKMdYU7QVgAZiDsd++cZHnDtPVQnorfX+lPxAwx3wKduQ50fN6GwXoV4asabCymwP+DLBbHTBnlqUfImNTpf8NbOnb6og8CZ61+rXADVZ/H3jb6jcA11DFsRlsDU4DOUp32UosuD3EUCpd83hwj5rjGrhO2jNBvuYeIuaqNU8biBwyz3WHzLP2BseAK6A/AXv7+Vpbbba5Ak6Sfh2wCfjen9yOyJVU9gHqqbc2Qz+g0v9rRGaDA6V9hxQwNl90F0WGnsXQtQM/i12W0s2S8adgHRmLgXkynqPsl1lrfw62AoutsQm+bWUpf/gFbJH2kwD9VJFrwQ/gEDxE2FepVWR2ymEVXQw/qnP9X2iQfP7tk/GOyr6PyFdgZ3AhmAG+VfpK40iO9AEgJ4VVtgIOqwsxAvwCXiBz/DQER+tJYNsNYjaZ5LAp4D6FIjPVeFykPupaiMwVyYmHk8te6bfxDZM5Un8/TNXx+vqwKuG0Nf9rpRsj8/DDPwPHyfiUgHkWk6l9TyHSbgTo/RqXE0ZHbkBy9K6W8VvKnjM0O5+3fL6sn22OiL6nb5is/NGOGIYb285sofSDPFMy+Oik9GEvYrfYZoPzwJ2Wzj+XX4A/wDdgPXAkRysc9pWVaHcn83VKut5Wae+AzSNpHySTkPhe12FzCbIvmTKIP7D8TXLQcdR3ILONOaGckbUcBh+SieKuZF2QKNnU99xioJrfTjZTpP0RbCv6Zp5JHFxqtLeuOya2M62xQyH3nKDu2QvMVzZ8j9nKro/orkp/FFgINpc+zxEHa3M/WUR65BZx1edI5G19H1HzDovi9fDW5Gh4LetbCuZDb/93tBE8Cj4uWaTJwHlCjTJVAEcn7DkCObq4MOdEsh3jn9R178hE+Cvpc3k1HnYfpL+ITAlkfOSlVv5UFP2piiJZRJb8bEug5zcyzOo/IPMmw1BAVRWJIrIc1yYsyNMJ0fdIR4gc6QiRIx0hcqQj8JePIirN3lwTxSk1ZFjtGaiz9lMaQpc//JMwgyKkjGhrOwJHZJxS385hcP2T8r/BHxHq30oMEWbRAAAAAElFTkSuQmCC" alt="RAZOM" class="charity-image"
-                    data-url="https://www.razomforukraine.org/">
-                <a href="https://www.razomforukraine.org/" target="_blank" class="overlay">RAZOM</a>
-            </div>
-        </li>
-        <li class="item-charity">
-            <p class="number-support">05</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAgCAYAAAC2COBlAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVuSURBVHgB7ZhpbFVFFIDnlcoiKAhEakCpxSpYgQaiooJWJXHBuAESF6qixqVqSwKiQqssooaW6o8qUbBKSYwKkQawxsaUqo1bqAsIokILIshiRKQiSB2/kzkvHW/ve+3jV2l6ki8zc2bO3HPenTkz9xnTIe1YrLWpgmlvQlDp8DvsgXNMexGC6QV1tkm2Q0/THoRAcmxzecocb4LTw+GKgG59SHB1Xn8ExsDFpi0LDk5X53fBIhhow+UQ9IYFug9FnjNtUCLRCg5eRrHW6/sN+sSw2wEDvPaESCSywpurN0UxJEEOfQfQSf0xGAXSvxQyoK83zxoYB5XYLMXmZur3wSCQFbMMfRn626hfI8+gXUs7mXopVNNe3MxbTR57bOKyEzoF5sr2+qepboG2V8ESmK+rpVr1xXCL1ktgltY/gkL4Vtt5Olakzrpjqqu2S00soXOcTVymhsyzVZ0SamzTEn/bG5Ok5Uztkx83xQtOMvM6b1w32A3fa3CNsAk2w+Cw4JL8Bq9UlkWBab3kY1McCGwsxZnwNWwGSTZXaXeD96x/W5i7m/pnoyZwBPZrW+xlaXaG5WETJAcVPHQuDm6kWgipJly2wQzGvhXS9xAcgPO1/ReMVwcmM7fotkMX7B83sWUhzIc12FRQyv6TfV4C/dTXelltVKtNIoLRabAQjnhL8KB1679XDJszoBJmeTrZVxXQHWZAre6VPO2/Q21k3/TT+gPadxd8oeM/hTtV/wi87z3jIrV71CQi1m1YWeffwZBW2vTQ/dPN0/WEUXBp2FivneLZ9wjqtT4EMjx9SnB8IgH2hVMSGP+gvunntX2BdfdTyax7rbsc9NG+H3TshdqWN/SOdeftDqsXdso/NfmUeHPJc/5Re0kwS0wior/I2TAMTm3FeFl+9RqAOHGSvnk5ApJ1rgKZC7LUsa/gzZDgGqw7AgZ4wR2GD/wVoGPnBn1JiuPkWKiiusu4rPcN7NaHZ5vYcj0MhBehO+RCf/jJuMNYNv9seAZyjMuqK+Fq23wvvw4HQQLvrLps9Xst4/Pj+BEeHEavUFRCVlQFh7UuN4w3rLuiRULMn4RfYRJshYkyXp0aAS/pOPnBJsBRGG1cqs8NzCVZV7Jhfy+4S6DMuBvLABNHkkMCm2PclScqW2CKOiwpOU3196v9vZ5tKsVqKCVNy146l/pkeMG4Ny8B7teg9sFsxj2ttqI73bhrmQS1Ab6kX5b2GOp5+oPIC5FjQd52oT56EXxu4gmTpNn/y6twotffBeZ5/bKZzwrMkeUlgRRtR/dXsupHW3erGAGZgednal1uLDfCrVa/OlSX5ZHi1dNbCm6K5/iGOOOqvHH5nj5VdfdoO1cTwcOq76p6+bKQK9TP1mW58aov07llHsmUklkr1LbANiUgsVuv84vUaJnn+xlcloO8+ocmtpSbpv0Ytu4z5VeX0rQsh2Ax43/0dDPVt5HGXdnkmiV77ATtl2RVC0Phb7gJNsFwf+JgcDu9epqJLUO9+i8h/dfBeRA9nBu1jH49yL6J3i1XwR/G/ZgbVS9n6j72m1ye5bJ9g3EJZZra3A7pOl5Wg+SDenjWdyKYLcu9uhwFIwP9snQGG5ckorLMNJd5OHa5cRtdZK+WU637BBJH/WUvR8JnED273oMMxj5B+TJ8os6v035JWlValzdXBCebkAQZdH6Ot5+OwmtwLUy07nbQ6PUXBWyjd8srtS3fZyut+ztCLuRyWG+x+j8M5QqYrnVJFu9G56S82zbdK8utSzbDdP5KtZX5V0Mn3a/ynRiJF5x8NxXZlmV53InasliXgmtCgvoYJpnjQFr85Qmki3HJQbLaNvZSg+mQDumQY5X/ADjZXuIgX0/gAAAAAElFTkSuQmCC" alt="Action against hunger" class="charity-image"
-                    data-url="https://www.actionagainsthunger.org/location/europe/ukraine/">
-                <a href="https://www.actionagainsthunger.org/location/europe/ukraine/" target="_blank" class="overlay">Action
-                    against hunger</a>
-            </div>
-        </li>
-        <li class="item-charity">
-            <p class="number-support">06</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,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" alt="Serhiy Prytula Charity Foundation" class="charity-image"
-                    data-url="https://prytulafoundation.org/en">
-                <a href="https://prytulafoundation.org/en" target="_blank" class="overlay">Serhiy Prytula Charity Foundation</a>
-            </div>
-        </li>
-        <li class="item-charity">
-            <p class="number-support">07</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,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" alt="Medicins Sans Frontieres" class="charity-image"
-                    data-url="https://www.msf.org/ukraine">
-                <a href="https://www.msf.org/ukraine" target="_blank" class="overlay">Medicins Sans Frontieres</a>
-            </div>
-        </li>
-        <li class="item-charity">
-            <p class="number-support">08</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAeCAYAAABdalL1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARRSURBVHgB7Zh5iFdVFMfPbxZTs3KpxjbLsAgSkywssQWNiKKIFIOopAWSiihaiCBEcQFH/MMNR0FU3P1DEREVtxHcd8V9d9z3HZeZeX4O9/zg8Xzvt+iI43i/8OHdd8+995137rn3LSJeXl5eXjWllNRhBUGg99ccivRU7pJSqdSh8HmR1H1VQitoC2/Ba+ICXSA1p6bhkzqdqVFZ5j4Or8Ib8IW4YDeQ/HUcSrRApj5QccwoglwE7WAAXAjy0xSo1oJ4xYvYPAq/wu4swbwOS+FFWATXxCuzCFIx9ICKmICeh3L4Ex6Cn2G+eOUmgvUslMLZhIz9xbL23i1/m9n6CbZCeDhwD5JaI/UH2idsCWPThWyD1E+68Ui7Ag2E5CHaT4Il0CjG9gkch3dCdfoQaajEtC82+2/QUZJ9/A7ayR3KrtcLboSCujDXoA6G1dAqMmCTSLuf4CPJz7GZsFUzMsb2OVTBh6G6R2AubIxOBOf/QSe4CmMSrtfUJmqg1IBsNXW3a6p25hrUrtauf6hO946j6cAG7im5HFraeSpp2Zqt0Mq3BNUcTcUF1ez9zZ8/QnUlsM4y9TloEL5epP9T0ZUXZNligiwrEHtb2A+VSUGNflWUg35yfWlO16P8vbiX3C7WpgPsgGOWBXNgIuXJ0MIuPBw2UVwAp3WGI461hKkUt8Jo+EbiNQrOw4/qj9V9C+PhdVhhtiYwlvI4y+7uGnzOl8Dvds02aqM4huNs+N/6aZKsCtx752D1OXBP+NZxDvGev8FisE9ylQVEpftcZ5gDh2CNZdUseBfGB+7J2ND6lcF2aAwTbTabgU5Qi1CmPha4jf+MLlHr2y0uU81Wav50sfFWWgZ2tPp/rc02sxdasJ6Gi9APnoQjMMzGbASnzKZt99okp/fieYHbdupliJOOuTmXTFXNsmM3+BrUEZ1hzYzO8ATsgjdhPTN3xdpr1rwMb6evC1XYp8DB0PjPwwswn/ozVnddklVmY/WAD6CcfkcjbfbCK7ARekNxxN5e3Pe++qjZdonDFugK6f36htmqOWg26qorkQTR7oS41bs9aosL6mK7oHZ4SdwSnizuP4EuVZ3Ry+J+xtzOK1CB9avMpTHO7zYfOolbymUxzUaYXYP6l7hECN9bdXq48NAZfKg2e7Fk9m2nxGxdBTENNfM0ePpAmWnnK0H3yGbi9jOd6enQ2paBPizes5taJZl1xMbrYH11cppn6TNI3E1W4M+eGLu+Vm2DT2GajRcO4DJx+/f7toU9Q7kNzIALcgfCnzXRuqRff5qNP4hlBR31Z8MQih9T1r8zuqf04XAahovL3MbwGXZ9MJ2krEu0KjSmLhddajohurX0FbfVrLX+ByR5G5hrjAzVadv94oKiW06pnevr4D9wzcY8h0+6939F+W+YIC45hkJP0GfCYTgVGvssVET8vz8U5PkBkWUszcBa91Xm5eXl5eXl5eXlVVt0ExDiQIrWX6L7AAAAAElFTkSuQmCC" alt="World vision" class="charity-image"
-                    data-url="https://www.wvi.org/emergencies/ukraine">
-                <a href="https://www.wvi.org/emergencies/ukraine" target="_blank" class="overlay">World vision</a>
-            </div>
-        </li>
-        <li class="item-charity">
-            <p class="number-support">09</p>
-            <div class="image-wrapper">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAAAKCAYAAAC+CdC0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN+SURBVHgB7ZdbSFVBFIbXMU2zoqSgCxJ0g+gC9mBFD2UPJj2UGUJREUQPXTSIILpAFCQVitRLiND9oQwiKDMfijIKzC6CWEblpSxKobDMS2m5+39nDs0ZZx88UvjiDx/7zMyatWfPmlkzJyBD+ifyPC8Kj/lgA0gFiWAUiAZdoAU0gDJQEAgEGq3+ATxWgV0+ryhEnyL+CMB4Bp47HUaHYdRiON2HxyTL5gkYDWY5+leAy/Dh6f4ZeKRYNs2gCiy36j+AN2CZRK5P4JXjXeH0UtSkLu6nfTuoFfWNNfxGaC1+nwdx/ej/DmSi31MWdMAYg3xRQXYpG/anRHdI8dxKNHugXO2wOQtKffp3giw9IPbPd9jQZ46jvhLkeQNTFTjpRaZiUOhFrlZPjXMEqLPaGkAuOASugQ6rPTcYMHAEdBtttaDHss8KxiJa/p+44k6ACRy4DL64c6t82rjipznqO8AXoxwPxhllZpndoAY8B6+NtgOiMslM0APSLd/DMS9jRO2uLUZ9GVgtauc7FS5oUTJwMSVyh8WAvRygRK5z4JZRHg8KJHTSqOPgtlH+CjY5/HXrMZmqQMrJ6x0wdpqjzyWwQ/9m34ngKkg2bDhPafCTDh/8zjlgnahgJIEEyyfnph4U6W/MMNq4eDaC2L5DEe7mBB5ZDFqnuMXD9Iz+oCmiDlZb36TvOUfdELVy54kKGAPXLpGpDgOsCRYwhsk+ds9gd9esgK0raLM1pn5KePXAd7dRboRvXiCSLbt41PNc56JaIqELnpeQ96AalIPHoBLMldCAia4LfrO9wHLAQbwnjUF7Ab6L2uqmTsNgv27j6omx2n+D++K+hNSBbeCiqOBTI2VwVQquWHU8R3hja/bpswDtR40yF+5Khx3TIrPCVKPuF7gHHogKHMVALNS43hkn/heZ2CDRWEltGBhvLoXSd1tOF38xTZSAra5G+G2C3/Xa7xoZfK3QuHQTfHTUJ2nCiTujSUIDRnFDpMrfRWsrG+zxaRsGjknobrsOHoL63jMNE3wBE8wtux0sAkyHY3Vninm4Uw/ukagVe4epg7ciUWnS1A/t97NOVTxUMx2DaxWVouz+bQ7bHl1vn8NdDtsuh89wavMZh5/4zTyXmEm4eDdLZO+j3mJ+SlwNmDNmNf7FMoNWDPve4yrg51HfbJaK+oNYrl/iyZAGXX8AXlh85iJsnWcAAAAASUVORK5CYII=" alt="UNITED24" class="charity-image"
-                    data-url="https://u24.gov.ua/uk">
-                <a href="https://u24.gov.ua/uk" target="_blank" class="overlay">UNITED24</a>
-            </div>
-        </li>
-    </ul>
-</div>
-    </div>
-    <div class="btn-wrapper">
-    <button class="btn-scroll-down">
-    <img src="/Rockstar/assets/btn-scroll-down-f1e1dcea.svg" alt="" class="btn-scroll-down">
-</button>
-<button class="btn-scroll-up hidden">
-    <img src="/Rockstar/assets/btn-scroll-up-ab8176c0.svg" alt="" class="btn-scroll-up">
-</button>
-</div>
-</div>
 
+        <li class="item-charity">
+          <p class="number-support">03</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,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"
+              alt="International Medical Corps"
+              class="charity-image"
+              data-url="https://internationalmedicalcorps.org/country/ukraine/"
+            />
+            <a
+              href="https://internationalmedicalcorps.org/country/ukraine/"
+              target="_blank"
+              class="overlay"
+              >International Medical Corps</a
+            >
+          </div>
+        </li>
+        <li class="item-charity">
+          <p class="number-support">04</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAAAgCAYAAACBxi9RAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQYSURBVHgB7VlJaBVBEK1vXNC47/uOoqAgBndF8SBRQcF9QUXxoB7Uk6II6kFc0JMRNxDECOKConFFVFxw370oHtxFgxjck/jHV+ka0ylm/s83fYj58+BR3V01PT011V3158coATzPy4R4Se6QHYvFblIVRPUk+mpgY3KHGFVRVKMIThA50hFSdeRcMDMF9qM0QbIzUqMQyeJ7eY2RrH5RmiDa2o4QOdIRIkc6QnWcY7kU7tCaqr8E9mMpHNtwhl6mNAQnm8lU/qSTJQzDcUpTpJq1nQLRPRGih3SLwdOI6HshtkMhhoMfYbM9gV7jLuzzlG0viBVgFzAf3Ayb8wFz1oBYzk1wPWyKMdYU7QVgAZiDsd++cZHnDtPVQnorfX+lPxAwx3wKduQ50fN6GwXoV4asabCymwP+DLBbHTBnlqUfImNTpf8NbOnb6og8CZ61+rXADVZ/H3jb6jcA11DFsRlsDU4DOUp32UosuD3EUCpd83hwj5rjGrhO2jNBvuYeIuaqNU8biBwyz3WHzLP2BseAK6A/AXv7+Vpbbba5Ak6Sfh2wCfjen9yOyJVU9gHqqbc2Qz+g0v9rRGaDA6V9hxQwNl90F0WGnsXQtQM/i12W0s2S8adgHRmLgXkynqPsl1lrfw62AoutsQm+bWUpf/gFbJH2kwD9VJFrwQ/gEDxE2FepVWR2ymEVXQw/qnP9X2iQfP7tk/GOyr6PyFdgZ3AhmAG+VfpK40iO9AEgJ4VVtgIOqwsxAvwCXiBz/DQER+tJYNsNYjaZ5LAp4D6FIjPVeFykPupaiMwVyYmHk8te6bfxDZM5Un8/TNXx+vqwKuG0Nf9rpRsj8/DDPwPHyfiUgHkWk6l9TyHSbgTo/RqXE0ZHbkBy9K6W8VvKnjM0O5+3fL6sn22OiL6nb5is/NGOGIYb285sofSDPFMy+Oik9GEvYrfYZoPzwJ2Wzj+XX4A/wDdgPXAkRysc9pWVaHcn83VKut5Wae+AzSNpHySTkPhe12FzCbIvmTKIP7D8TXLQcdR3ILONOaGckbUcBh+SieKuZF2QKNnU99xioJrfTjZTpP0RbCv6Zp5JHFxqtLeuOya2M62xQyH3nKDu2QvMVzZ8j9nKro/orkp/FFgINpc+zxEHa3M/WUR65BZx1edI5G19H1HzDovi9fDW5Gh4LetbCuZDb/93tBE8Cj4uWaTJwHlCjTJVAEcn7DkCObq4MOdEsh3jn9R178hE+Cvpc3k1HnYfpL+ITAlkfOSlVv5UFP2piiJZRJb8bEug5zcyzOo/IPMmw1BAVRWJIrIc1yYsyNMJ0fdIR4gc6QiRIx0hcqQj8JePIirN3lwTxSk1ZFjtGaiz9lMaQpc//JMwgyKkjGhrOwJHZJxS385hcP2T8r/BHxHq30oMEWbRAAAAAElFTkSuQmCC"
+              alt="RAZOM"
+              class="charity-image"
+              data-url="https://www.razomforukraine.org/"
+            />
+            <a
+              href="https://www.razomforukraine.org/"
+              target="_blank"
+              class="overlay"
+              >RAZOM</a
+            >
+          </div>
+        </li>
+        <li class="item-charity">
+          <p class="number-support">05</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAAgCAYAAAC2COBlAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVuSURBVHgB7ZhpbFVFFIDnlcoiKAhEakCpxSpYgQaiooJWJXHBuAESF6qixqVqSwKiQqssooaW6o8qUbBKSYwKkQawxsaUqo1bqAsIokILIshiRKQiSB2/kzkvHW/ve+3jV2l6ki8zc2bO3HPenTkz9xnTIe1YrLWpgmlvQlDp8DvsgXNMexGC6QV1tkm2Q0/THoRAcmxzecocb4LTw+GKgG59SHB1Xn8ExsDFpi0LDk5X53fBIhhow+UQ9IYFug9FnjNtUCLRCg5eRrHW6/sN+sSw2wEDvPaESCSywpurN0UxJEEOfQfQSf0xGAXSvxQyoK83zxoYB5XYLMXmZur3wSCQFbMMfRn626hfI8+gXUs7mXopVNNe3MxbTR57bOKyEzoF5sr2+qepboG2V8ESmK+rpVr1xXCL1ktgltY/gkL4Vtt5Olakzrpjqqu2S00soXOcTVymhsyzVZ0SamzTEn/bG5Ok5Uztkx83xQtOMvM6b1w32A3fa3CNsAk2w+Cw4JL8Bq9UlkWBab3kY1McCGwsxZnwNWwGSTZXaXeD96x/W5i7m/pnoyZwBPZrW+xlaXaG5WETJAcVPHQuDm6kWgipJly2wQzGvhXS9xAcgPO1/ReMVwcmM7fotkMX7B83sWUhzIc12FRQyv6TfV4C/dTXelltVKtNIoLRabAQjnhL8KB1679XDJszoBJmeTrZVxXQHWZAre6VPO2/Q21k3/TT+gPadxd8oeM/hTtV/wi87z3jIrV71CQi1m1YWeffwZBW2vTQ/dPN0/WEUXBp2FivneLZ9wjqtT4EMjx9SnB8IgH2hVMSGP+gvunntX2BdfdTyax7rbsc9NG+H3TshdqWN/SOdeftDqsXdso/NfmUeHPJc/5Re0kwS0wior/I2TAMTm3FeFl+9RqAOHGSvnk5ApJ1rgKZC7LUsa/gzZDgGqw7AgZ4wR2GD/wVoGPnBn1JiuPkWKiiusu4rPcN7NaHZ5vYcj0MhBehO+RCf/jJuMNYNv9seAZyjMuqK+Fq23wvvw4HQQLvrLps9Xst4/Pj+BEeHEavUFRCVlQFh7UuN4w3rLuiRULMn4RfYRJshYkyXp0aAS/pOPnBJsBRGG1cqs8NzCVZV7Jhfy+4S6DMuBvLABNHkkMCm2PclScqW2CKOiwpOU3196v9vZ5tKsVqKCVNy146l/pkeMG4Ny8B7teg9sFsxj2ttqI73bhrmQS1Ab6kX5b2GOp5+oPIC5FjQd52oT56EXxu4gmTpNn/y6twotffBeZ5/bKZzwrMkeUlgRRtR/dXsupHW3erGAGZgednal1uLDfCrVa/OlSX5ZHi1dNbCm6K5/iGOOOqvHH5nj5VdfdoO1cTwcOq76p6+bKQK9TP1mW58aov07llHsmUklkr1LbANiUgsVuv84vUaJnn+xlcloO8+ocmtpSbpv0Ytu4z5VeX0rQsh2Ax43/0dDPVt5HGXdnkmiV77ATtl2RVC0Phb7gJNsFwf+JgcDu9epqJLUO9+i8h/dfBeRA9nBu1jH49yL6J3i1XwR/G/ZgbVS9n6j72m1ye5bJ9g3EJZZra3A7pOl5Wg+SDenjWdyKYLcu9uhwFIwP9snQGG5ckorLMNJd5OHa5cRtdZK+WU637BBJH/WUvR8JnED273oMMxj5B+TJ8os6v035JWlValzdXBCebkAQZdH6Ot5+OwmtwLUy07nbQ6PUXBWyjd8srtS3fZyut+ztCLuRyWG+x+j8M5QqYrnVJFu9G56S82zbdK8utSzbDdP5KtZX5V0Mn3a/ynRiJF5x8NxXZlmV53InasliXgmtCgvoYJpnjQFr85Qmki3HJQbLaNvZSg+mQDumQY5X/ADjZXuIgX0/gAAAAAElFTkSuQmCC"
+              alt="Action against hunger"
+              class="charity-image"
+              data-url="https://www.actionagainsthunger.org/location/europe/ukraine/"
+            />
+            <a
+              href="https://www.actionagainsthunger.org/location/europe/ukraine/"
+              target="_blank"
+              class="overlay"
+              >Action against hunger</a
+            >
+          </div>
+        </li>
+        <li class="item-charity">
+          <p class="number-support">06</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAAAgCAYAAAAhWUe/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAcZSURBVHgB7Zl7kI9VGMef394sYWVEKJektEW6SmWY0F+VMjWVMkY1yaQpppJbialEk4wuU+iCSTcRZVTulcitcWsjVrM2cl2Xtey2+/b9znne9uzpdyOb3x/nmfnMOe85z7m95/I+53lFvHjx4sWLFy9evHjx4sWLl9MnkXiZQRBcjaCLxJedkUjkoyhl6yG4BGwCDUA+aAT2gyyQg3J/QI86NcB6cK4WP59VgAPgd8C6jkK/BPoXIV4HrNN6W2gbpaC+lmGYDo6B46qfre1vQz0HUU8G4k3Yf3AF4PMuredP7UsLbYd9aYpy21GOZXYhHkiKSaLJfALBqwn0FmNgNznlaiEYDhaImcQ+4DXwIPgQXAVuA/3AeDETWQQuBrNBT3AULFQ9TsQEMRM1BiwHa8BTYBboDqaAm7X+ftqVc8A00FHj20FbMBm0AveAAeAa0BuM1bJvgIHal25gKngdPKIMw5hPSIpJWpJ6FaBQzC4hO0C8wfDF7ceAF6luDrhFzGRxx9wrZve0A2ViJjdPy3LCNoKVKM/wCFiH+H6rz9xFudRD+hLVOVvz7YX3HXhU4+zvtzoO7tDe2i/udO6+3xTKBWCF9r8cnAW+EbMo60mKSrKTyaPnLjGrmbQGW+Lo8+g6gR36JMIbxByDn4AloCmYBx4HncCv4E3QHuwR8/IOgmKtazMoYESPtm1anhNVU9s4LGYxcBENEjM5e8Xs3i/F7HLW+RDI1DpWiplo7jwu1t1a/z6wCjTWuqnLhcRF/LaYEyTljtiEwmMWVAB+qzo4eesDI4vilM8EEZCmz2n6HNFnNy/NKmvrRKz0dFsnbMN6zrLbstvR7+S/6nfCdLvuKPrpkqKSIdUoWOllGg30ucLJDxLkiWto4Lnc0Slznkvd+qx2KmLVb4Xlcequ0n6qSYa96qNIlbwEul7OsHBn0vrLjZHfWMyE8riZLsbUDyVXvKSUcDJpzbVLoMfvxIVyEoJdTMt1sBiLcakY0571vCLGkqXwjjoEupci/owY44eG1TSkF1h18d7ZH7QRYxh9jfzpmvc8gjlijC5epcYh74Dm0Wirjef3nL6N0HHTKPqc/eMxCnkB8WZirGMaWV+BluAxMBw6xVr+PjFHNg2sEe7QxVyfeD3rhjJjrHZ7IMhG2seIX4Z4T8RHSfT31xdBvlrryQkKrVFDhhfil8CLFvM1rxRMcvIKYxlASGsAtoJbQUvQRQ2VbE2/g84C0Ej1u4HVdAjwRYONobGC8G597guagzbgTquthapDA2cqGKXGS0OwQ50Mbv+WgD6gM9jC/mj6aq3rWrAZ3E+DCrwLBqpOK+1PE1Ab5ILrwR7QUcfFvvTg+3PaHQzGaLwrWBrt04W0uiBfx5b0p802gHihHmYbDoFxGvAizh0zGXkrrTzeG5vEqJcWJVcmdx6dBvlahjuT9fM6kucYNyVgq5jLP68QtbiIEHK39ILuT5Zuntsg+w39kYjOBZ+JuXZ8gPRYV6hC5PFlzhDjNJil6QVsC+l0GLRBnAuZzoTZCGcifA5Mp/dK9Tnp9Baxr78gvUjHKv9BeoFlYu7ldHgsT6ZQtViz6qYbgugshHT1TURaodXms4AutWVIn6HpDcVc5G8EXyD9MHeImMv+art+pPNbvhc6fznt8nR5WYwHh5f7DnG6maO7tjN4K6wCdA+MG7MreEDrzUMa6+RY6B4cINUkaKeGtjtUzKeNJ0JSk2k7DTiQGqwsRKpOdpaVly0JXIF4AXSB0edZE8zXCaBwAnj55o6b5xQ7T8xKnKDPnEgaX1mO3nzVjSb8lrJ/o9GHYzF0OG5+z0eDSWCmlcdx3842UH6Tlc4+0ykxlgtNkpNTsf65gDk27nbaG53w7lonU9CeLHpjCpz8cNI4QHpSyqy8HIkhes5nqEObK4teHBo536sKvS07nWL0/vB7wqN4PMrRP8uXyRc3iN9z61jOlNhCHXp8iuLo8KgfivoWRCnLcY4Da9HmXOiEpwI/NVwc+yQ54btsGhg/dYmm8afCKqe9ygfjNOmvfain7f0gZqcOkQSSYVXKeP0oOmGDdeLkucLjYTgNEDHfVbrC1llt0oI9JOYFDXLq467kju2DFzkFeg8jPhJ8SsNDzCKqLZUv6HTffSO6CPkpeIdGEp6PyMkLfx6sEDMxXMTNxVjGT4ft6PPEwHxgF4MN4DrQPtz9yPoRwfsI/7HSY3ZcLcP6curCXTbHTtCdmaud5S6ho/yQrrwrpfLYDHTAdUEz6GzQ8vTfNg53ha5umvKNtD76Swv0OsEjqNgySKhP3Z2hMeIK8ttq+SIn/XIE2zl52lcaRlt0cjkm+o+34vmoUy5T89baHqLAuBa5G3ndYVs/hwsjML8I7bs6f7vtpr51GoRGI/tLg/G4ePHixYsXL168ePHixYsXL/+T/A2K0AeuFdl4WQAAAABJRU5ErkJggg=="
+              alt="Serhiy Prytula Charity Foundation"
+              class="charity-image"
+              data-url="https://prytulafoundation.org/en"
+            />
+            <a
+              href="https://prytulafoundation.org/en"
+              target="_blank"
+              class="overlay"
+              >Serhiy Prytula Charity Foundation</a
+            >
+          </div>
+        </li>
+        <li class="item-charity">
+          <p class="number-support">07</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAF4AAAAgCAYAAACb+s/fAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAaeSURBVHgB7VlriFVVFF5jY1lpjWY11ZBDZRoO9sAeoj+GVDJSshAU7KEYZGEo9DIkVAS1GpvKIfNBKWooKhoqGUbSwyzUVNScGmsUFS85oWXpaNru+2Z/17vnzLl3EhlB7vngY9+z99qvtddae51zzRJcvHDOtQOHgkWW4MIAyi4DDzuPry3BhQGV7TI4CXayBC0LKLmNa4wTYPsc8oXsYwmslZ0//gp+Ly4oKDgSNkrZA8CZeNwBzrEE5w8odJqs/XuwWHUdwRHgavBYxCtO5fKKBOcAZjPgNeBgcJXLDoaizTwYS3B+gBIfACuk1DjsBOfqUBpiPDgIrAR7WIL/DyisrfN5+4YYRR8FPwVfBrtI0cXgcHApeCiQ3cHDsAS5oZAyFqyNKJtxfIUsOR3nqeyRzqebx1x29LYE8ZDVTo1YK7EffAEsCWSZwSwEj7jm8QV4myVoDOdj8ksRhdeDC8D7Y+RLYrwhin/AmeBdMXPxvsjv0ENLBHcHCqPyx7lMKGGcHw2WRvp1zKJ8egC95nrJlcg7eMmudz4c8VDKLZ8BBTzv/DeY+eCYoJ6xe5Ta9sdZqPMfzbZL4bXgBB1If3Ciy+0Vr1o+w/mLtGPkeZxrHLvn5OhfCk7WIS13Te+HbJhgCc5aeKVrelkyLNzeTF8qv6YZRTP/Z0ibAZa7fP+0DAW0lsKzWeqKmD79Y+oGZOm/ERwDdgYLLM/QZMPOfz1knB0N5nq1H4oPYkuCfoNRLAVHov7DyJh3ojgJHgV5Of8GXqpm1hWp/Bu8SfUpkGthunkArAfbgYcD+a7gXsx3VPPcjOJfPB9wPkyeNv8RrwR1e51Pe+vAbnjeoj5FGs8kzzsrhXZmb7fg93H8TjmfRKQC2TZBH66tbWQ/9cF+TXsoC9cbKugJcI9rHgwfhZG+69XG7KQ4po2skActkMWvUv0m1fOdoFZ14/V7jfNvwm9p/CHOh6aFGmOY5ugL/grOdv7PGYZC3knPOf82PUjj7FbZVf0+AreA7zsfTmtUt0LjM4kYqrn7qH+lxuf6d4FvaP3rwTngVudD6BTtYZ32zJfJIZy3VaAcfjdZAN5qzWMeTu100PceFOV65Mk3yoJ06lep/nOwr5pnm7da9u0ADpOlfAyOBXtinkdQ0lILZUFPmbe8veBWtC/SWPSgP8BXwGngRpCp64PgCfBZ8DPJvoN+1c5790Pgn+AP5r2j2rxnnYFMTz0/Df5sPgpwXnr6d+Br4CnwOq1tlnmrZp+t4L2qrwIPgpvTUSL8Hp/Spgm6xVqVcVhjGcUWasIQYaxvCAdgd3AxuE31H5hXNtsmmlf21arfD14B9sD4A7VOuu/rUhTXtQfs5/xbNRV4uRTATOsybbQU7K0xuaZC7WuU1sCXOB7WcP2u1ho2cwyMS8UyZHH8GeAAcKXGYlmuPiyrpEMaSRfw7WBuhnSGyPJ0pGgU41FJq7gW7AY+qs1E8QlObVDQ53EUyyMyVMod9Ap5EhffSZukBaTfereDjP+/g6vNWzwXxoMtUx9aTnutZZ75+yfdbyfmYKpKL3tRGy/QWKyjZ9HaN2g/+8x79CLFfBpFGX4vYzjRusvZbt6z6NW00MfM31/UzyzJ8HDYn8baS/v5ErxBc9YH+9yp/WzHXCsbKd75i2c8+Iw2HwUnquQm0Hmf+lCuxrxlEXQ/nvySdChykTfbfAcPnGWDgp3PADZZ5gYOsQysMG+tLCdBnvH3J5Dxt9R83H4Tg64LOyoE0K15oaxVNQ9kEmTrAjl62Xvm3ZZZTWfz4WQ65LZFxpyHota8tVG+A2TGRGToZZPNhwjGZnoZw08FM56I7JPmvWoq2gbi+RKUZ6yFkbZsKqN1UM9LZj5YxUtIC6R7d1f7avWhwntB5tss43NTDAG/gFQG3e+4eSWE6GM+htPdGSIOgXebj/9nIa9k+KCXUfGllrkzQlCGcbhO66TsN+ZDUTjeCBT3gUwO+JGOl2g67LUoGi5X5ZVzzVvGu2Bn1I1OK134MfhN6+2H9odzKJ2gZW7TPPwTnIr/Cn0ORuR4YaY0P8n2uib5rr/cdohVGrcmZt6uGocoN3+Y1WEmJmzUvGUqS83H4xZHGMt5gzPNSmWRnW5+A1ObUXYIpnK8nHgxMmtYZT5biYIvSbRIKoaWfyO4K0aOoYOHN8V8lsEQFvfW61QyrHCPV5r34IyA/8N9iB4LLZPRlVrE0y5aKOUrSv+OaS/OJh+pb5utT3Q85z/qpVliCRIkSJB/+A+Pm5/78OWS6wAAAABJRU5ErkJggg=="
+              alt="Medicins Sans Frontieres"
+              class="charity-image"
+              data-url="https://www.msf.org/ukraine"
+            />
+            <a
+              href="https://www.msf.org/ukraine"
+              target="_blank"
+              class="overlay"
+              >Medicins Sans Frontieres</a
+            >
+          </div>
+        </li>
+        <li class="item-charity">
+          <p class="number-support">08</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAAeCAYAAABdalL1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARRSURBVHgB7Zh5iFdVFMfPbxZTs3KpxjbLsAgSkywssQWNiKKIFIOopAWSiihaiCBEcQFH/MMNR0FU3P1DEREVtxHcd8V9d9z3HZeZeX4O9/zg8Xzvt+iI43i/8OHdd8+995137rn3LSJeXl5eXjWllNRhBUGg99ccivRU7pJSqdSh8HmR1H1VQitoC2/Ba+ICXSA1p6bhkzqdqVFZ5j4Or8Ib8IW4YDeQ/HUcSrRApj5QccwoglwE7WAAXAjy0xSo1oJ4xYvYPAq/wu4swbwOS+FFWATXxCuzCFIx9ICKmICeh3L4Ex6Cn2G+eOUmgvUslMLZhIz9xbL23i1/m9n6CbZCeDhwD5JaI/UH2idsCWPThWyD1E+68Ui7Ag2E5CHaT4Il0CjG9gkch3dCdfoQaajEtC82+2/QUZJ9/A7ayR3KrtcLboSCujDXoA6G1dAqMmCTSLuf4CPJz7GZsFUzMsb2OVTBh6G6R2AubIxOBOf/QSe4CmMSrtfUJmqg1IBsNXW3a6p25hrUrtauf6hO946j6cAG7im5HFraeSpp2Zqt0Mq3BNUcTcUF1ez9zZ8/QnUlsM4y9TloEL5epP9T0ZUXZNligiwrEHtb2A+VSUGNflWUg35yfWlO16P8vbiX3C7WpgPsgGOWBXNgIuXJ0MIuPBw2UVwAp3WGI461hKkUt8Jo+EbiNQrOw4/qj9V9C+PhdVhhtiYwlvI4y+7uGnzOl8Dvds02aqM4huNs+N/6aZKsCtx752D1OXBP+NZxDvGev8FisE9ylQVEpftcZ5gDh2CNZdUseBfGB+7J2ND6lcF2aAwTbTabgU5Qi1CmPha4jf+MLlHr2y0uU81Wav50sfFWWgZ2tPp/rc02sxdasJ6Gi9APnoQjMMzGbASnzKZt99okp/fieYHbdupliJOOuTmXTFXNsmM3+BrUEZ1hzYzO8ATsgjdhPTN3xdpr1rwMb6evC1XYp8DB0PjPwwswn/ozVnddklVmY/WAD6CcfkcjbfbCK7ARekNxxN5e3Pe++qjZdonDFugK6f36htmqOWg26qorkQTR7oS41bs9aosL6mK7oHZ4SdwSnizuP4EuVZ3Ry+J+xtzOK1CB9avMpTHO7zYfOolbymUxzUaYXYP6l7hECN9bdXq48NAZfKg2e7Fk9m2nxGxdBTENNfM0ePpAmWnnK0H3yGbi9jOd6enQ2paBPizes5taJZl1xMbrYH11cppn6TNI3E1W4M+eGLu+Vm2DT2GajRcO4DJx+/f7toU9Q7kNzIALcgfCnzXRuqRff5qNP4hlBR31Z8MQih9T1r8zuqf04XAahovL3MbwGXZ9MJ2krEu0KjSmLhddajohurX0FbfVrLX+ByR5G5hrjAzVadv94oKiW06pnevr4D9wzcY8h0+6939F+W+YIC45hkJP0GfCYTgVGvssVET8vz8U5PkBkWUszcBa91Xm5eXl5eXl5eXlVVt0ExDiQIrWX6L7AAAAAElFTkSuQmCC"
+              alt="World vision"
+              class="charity-image"
+              data-url="https://www.wvi.org/emergencies/ukraine"
+            />
+            <a
+              href="https://www.wvi.org/emergencies/ukraine"
+              target="_blank"
+              class="overlay"
+              >World vision</a
+            >
+          </div>
+        </li>
+        <li class="item-charity">
+          <p class="number-support">09</p>
+          <div class="image-wrapper">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG0AAAAKCAYAAAC+CdC0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAN+SURBVHgB7ZdbSFVBFIbXMU2zoqSgCxJ0g+gC9mBFD2UPJj2UGUJREUQPXTSIILpAFCQVitRLiND9oQwiKDMfijIKzC6CWEblpSxKobDMS2m5+39nDs0ZZx88UvjiDx/7zMyatWfPmlkzJyBD+ifyPC8Kj/lgA0gFiWAUiAZdoAU0gDJQEAgEGq3+ATxWgV0+ryhEnyL+CMB4Bp47HUaHYdRiON2HxyTL5gkYDWY5+leAy/Dh6f4ZeKRYNs2gCiy36j+AN2CZRK5P4JXjXeH0UtSkLu6nfTuoFfWNNfxGaC1+nwdx/ej/DmSi31MWdMAYg3xRQXYpG/anRHdI8dxKNHugXO2wOQtKffp3giw9IPbPd9jQZ46jvhLkeQNTFTjpRaZiUOhFrlZPjXMEqLPaGkAuOASugQ6rPTcYMHAEdBtttaDHss8KxiJa/p+44k6ACRy4DL64c6t82rjipznqO8AXoxwPxhllZpndoAY8B6+NtgOiMslM0APSLd/DMS9jRO2uLUZ9GVgtauc7FS5oUTJwMSVyh8WAvRygRK5z4JZRHg8KJHTSqOPgtlH+CjY5/HXrMZmqQMrJ6x0wdpqjzyWwQ/9m34ngKkg2bDhPafCTDh/8zjlgnahgJIEEyyfnph4U6W/MMNq4eDaC2L5DEe7mBB5ZDFqnuMXD9Iz+oCmiDlZb36TvOUfdELVy54kKGAPXLpGpDgOsCRYwhsk+ds9gd9esgK0raLM1pn5KePXAd7dRboRvXiCSLbt41PNc56JaIqELnpeQ96AalIPHoBLMldCAia4LfrO9wHLAQbwnjUF7Ab6L2uqmTsNgv27j6omx2n+D++K+hNSBbeCiqOBTI2VwVQquWHU8R3hja/bpswDtR40yF+5Khx3TIrPCVKPuF7gHHogKHMVALNS43hkn/heZ2CDRWEltGBhvLoXSd1tOF38xTZSAra5G+G2C3/Xa7xoZfK3QuHQTfHTUJ2nCiTujSUIDRnFDpMrfRWsrG+zxaRsGjknobrsOHoL63jMNE3wBE8wtux0sAkyHY3Vninm4Uw/ukagVe4epg7ciUWnS1A/t97NOVTxUMx2DaxWVouz+bQ7bHl1vn8NdDtsuh89wavMZh5/4zTyXmEm4eDdLZO+j3mJ+SlwNmDNmNf7FMoNWDPve4yrg51HfbJaK+oNYrl/iyZAGXX8AXlh85iJsnWcAAAAASUVORK5CYII="
+              alt="UNITED24"
+              class="charity-image"
+              data-url="https://u24.gov.ua/uk"
+            />
+            <a href="https://u24.gov.ua/uk" target="_blank" class="overlay"
+              >UNITED24</a
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="btn-wrapper">
+    <button class="btn-scroll-down">
+      <img
+        src="/Rockstar/assets/btn-scroll-down-f1e1dcea.svg"
+        alt=""
+        class="btn-scroll-down"
+      />
+    </button>
+    <button class="btn-scroll-up hidden">
+      <img
+        src="/Rockstar/assets/btn-scroll-up-ab8176c0.svg"
+        alt=""
+        class="btn-scroll-up"
+      />
+    </button>
+  </div>
+</div>
+<!-- <script type="module" src="./js/support-ukraine.js"></script>
 </body>
-</html>
+</html> -->
  -->
 
     <!-- shoping-list-empty/> -->
