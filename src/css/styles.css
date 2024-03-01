@@ -9,9 +9,6 @@
 @import url('./header.css');
 @import url('./side-bar.css');
 @import url('./best-sellers-books.css');
-@import url('./support-ukraine.css');
-@import url('./shoping-list-books.css');
-@import url('./shoping-list-empty.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
