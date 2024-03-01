@@ -1,0 +1,91 @@
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+.support-ukraine {
+    max-width: 335px;
+    height: 474px;
+    justify-content: center;
+    background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4F2EE8 18.03%, #FFFFFF 100%);
+    border-radius: 16px;
+}
+
+.container-support-ukraine {
+    margin-left: 40px;
+}
+
+.flex-ukraine-wrapper {
+    display: flex;
+    gap: 12px;
+    padding-top: 26px;
+}
+
+.support-ukraine-title {
+    color: white;
+    font-size: 24px;
+    height: 28px;
+}
+
+.swiper{
+    width: 159px;
+    height: 292px;
+    overflow: hidden;
+    padding-bottom: 42px;
+}
+
+.number-support {
+    color: white;
+}
+
+.list-charity {
+    margin-top: 42px;
+}
+
+.item-charity {
+    display: flex;
+    gap: 16px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-scroll-up,
+.btn-scroll-down {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+
+@media (min-width: 1440px) {
+    .support-ukraine {
+        max-width: 356px;
+    }
+}
