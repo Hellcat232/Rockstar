@@ -35,3 +35,14 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.charity-image');
+
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+      const url = image.getAttribute('data-url');
+      window.open(url, '_blank');
+    });
+  });
+});
