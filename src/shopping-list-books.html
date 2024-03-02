@@ -12,68 +12,51 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/shoping-list-books.css" />
   </head>
   <body>
+    <load src="partials/header.html" />
+    <load src="partials/support-ukraine.html" />
     <main>
-      <div class="book-card">
-        <ul class="shopinglist-section-one">
-          <li class="shopinglist-section-one-block">
-            <div class="shopinglist-section-one-img">
-              <img
-                class="shopinglist-section-one-img"
-                src="./img/Rectangle 13.png"
-                alt="books"
-              />
+      <section class="homepage">
+        <div class="container">
+          <div class="navigation-category navigation-category-shopping-list">
+            <aside class="aside-menu support-box-wrapper">
+              <aside class="support-box">
+                <h3 class="support-title">
+                  Support Ukraine
+                  <svg class="support-svg" width="20" height="32">
+                    <use href="./img/icons.svg#icon-trident"></use>
+                  </svg>
+                </h3>
+                <div class="slider-container">
+                  <ul class="support-list js-support"></ul>
+                </div>
+                <div class="button-support slider-button">
+                  <button class="support-button">
+                    <svg class="support-button-svg" width="20" height="20">
+                      <use href="./img/icons.svg#icon-arrow-scroll-down"></use>
+                    </svg>
+                  </button>
+                </div>
+              </aside>
+            </aside>
+            <div class="gallery gallery-shopping-list">
+              <h1 class="shopping-list-title">Shopping <span>List</span></h1>
+              <div class="shopping-list"></div>
             </div>
-          </li>
-          <li class="shopinglist-one-block-right">
-            <div class="shopinglist-right">
-              <div class="shopinglist-right-top">
-                <h3 class="shopinglist-right-title">I will find you</h3>
-                <p class="shopinglist-right-subtitle">Hardcover fiction</p>
-              </div>
-              <img class="shopinglist-one-basket" 
-              onclick="removeBookFromList()" 
-              src="./img/blocks.png" alt="remove">
-              </img>
-            </div>
-            <div class="shopinglist-one-block-text">
-              <p class="shopinglist-one-text">
-                David Burroughs was once a devoted father to his three-year-old
-                son Matthew, living a dream life just a short drive away from
-                the working-class suburb where he and his wife, Cheryl, first
-                fell in love--until one fateful night when David woke suddenly
-                to discover Matthew had been murdered while David was asleep
-                just down the hall.
-              </p>
-            </div>
-            <div class="shopinglist-right-bottom">
-              <p class="shopinglist-right-bottom-text">Harlan Coben</p>
-              <ul class="shopinglist-right-bottom-links">
-                <li>
-                  <a href="#">
-                    <img
-                      class="shopinglist-right-bottom-img"
-                      src="./img/links.png"
-                      alt="amazon"
-                    />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <script src="./main.js" type="module"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./js/shopping-list-books.js"></script>
+    <script type="module" src="./js/support-ukraine.js"></script>
   </body>
 </html>
