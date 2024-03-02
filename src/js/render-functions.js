@@ -30,13 +30,17 @@ export function topBooksCategoriesTemplate(data) {
       }
 
       return `
-        <div class="best-books-category">
+       
+      <div class="best-books-category">
+         
           <p class="best-books-subtitle">${list_name}</p>
           <ul class="best-books-list">
             <li class="best-books-item">${booksTemplate}</li>
           </ul>
+          <div class="btn-see-more-wrap">
           <button class="btn-see-more" type="button" data-cat="${list_name}">SEE MORE</button>
         </div>
+          </div>
       `;
     })
     .join('\n');
@@ -52,12 +56,14 @@ export function topBooksTemplate(data, filter) {
     .filter(({ list_name }) => list_name === filter)
     .map(
       ({ author, list_name, book_image, title, _id }) => `
-    <div class="best-books-content"  id="${_id}">
+    <div class="best-books-wrap" >
+      <div class="best-books-content"  id="${_id}">
       <img class="best-books-image" src="${book_image}" alt="book" loading="lazy"/>
-      <p class="best-books-hidden-text">quick view</p>
+      <p class="best-books-overlay-text">quick view</p>
     </div>
     <h3 class="best-books-heading">${title}</h3>
     <p class="best-books-text">${author}</p>
+    </div>
   `
     )
     .join('\n');
@@ -72,8 +78,15 @@ export function clickAddClass(e) {
 }
 
 export function catLink(e) {
-  const categoryLink = e.target.closest('a').textContent;
+  const categoryLink = e.target.closest('li').textContent.trim();
   return `${categoryLink}`;
+}
+
+export function catByBtn(e) {
+  if (e.target.classList.contains('btn-see-more')) {
+    const catByBtn = e.target.dataset.cat.trim();
+    return catByBtn;
+  }
 }
 
 export function booksByCatTemplate(data) {
@@ -87,7 +100,9 @@ export function booksByCatTemplate(data) {
                     <img class="hardcover-img" src="${book_image}" alt="card">
                     <h3 class="hardcover-subtitle">${title}</h3>
                        <p class="hardcover-descr">${author}</p>
-                </li>`
+                </li>
+                </ul>
+                </div>`
     )
     .join('\n');
 }
@@ -95,4 +110,14 @@ export function booksByCatTemplate(data) {
 export function booksByCatRender(data) {
   const markup = booksByCatTemplate(data);
   refs.bestBooks.innerHTML = markup;
+}
+
+export function addCategoryTitle(category) {
+  const titleWords = category.split(' ');
+  const lastWord = titleWords.slice(-1);
+  const firstWords = titleWords.slice(0, -1);
+  const title = `<h1 class="best-books-title">${firstWords.join(
+    ' '
+  )} <span class="best-books-title-colour">${lastWord.join(' ')}</span></h1>`;
+  refs.categoryTitle.innerHTML = title;
 }

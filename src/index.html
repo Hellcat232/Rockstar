@@ -21,45 +21,19 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/shoping-list-empty.css" />
+    <!-- <link rel="stylesheet" href="./css/shoping-list-empty.css" /> -->
+    <link rel="stylesheet" href="./css/hardcover-fictions.css" />
   </head>
   <body>
-    <div class="sidebar">
-      <ul class="sidebar-categories">
-        <li class="sidebar-categories-item sidebar-all-categories">
-          All categories
-        </li>
-      </ul>
-    </div>
-    <div class="best-books-category"></div>
-    <div class="hardcover-wrap"></div>
-    <!-- <load ="partials/header.html" /> -->
+    <load src="../src/partials/header.html" />
+    <load src="../src/partials/allCategories.html" />
+    <load src="../src/partials/bestBooks.html" />
+    <load src="../src/partials/harcoverWrap.html" />
+    <load src="../src/partials/support-ukraine.html" />
 
-    <!-- shoping-list-empty/> -->
-    <div class="shoping-list-no-books">
-      <p class="shopping">Shopping <span class="list">List</span></p>
-    </div>
-    <div class="there-are-no-books-available">
-      <p class="no-books-available-title">
-        This page is empty, add some books and proceed to order.
-      </p>
-      <img
-        class="img-no-books-available"
-        src="./images/210b7c153f359ccee64b08ebb363e1bd.png"
-        alt="book"
-      />
-    </div>
-    <!-- shoping-list-empty/> -->
+    <load src="../src/partials/modal.html" />
 
-    <!-- <section>
-      <h1>Example page title</h1>
-      Path to images as from index.html file
-      <img src="./img/javascript.svg" alt="" />
-    </section> -->
-
-    <!-- Loads the specified .html file -->
-    <!-- <load ="partials/vite-promo.html" /> -->
-
+    <script type="module" src="./js/support-ukraine.js"></script>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
