@@ -78,8 +78,15 @@ export function clickAddClass(e) {
 }
 
 export function catLink(e) {
-  const categoryLink = e.target.closest('a').textContent;
+  const categoryLink = e.target.closest('li').textContent.trim();
   return `${categoryLink}`;
+}
+
+export function catByBtn(e) {
+  if (e.target.classList.contains('btn-see-more')) {
+    const catByBtn = e.target.dataset.cat.trim();
+    return catByBtn;
+  }
 }
 
 export function booksByCatTemplate(data) {
@@ -101,4 +108,14 @@ export function booksByCatTemplate(data) {
 export function booksByCatRender(data) {
   const markup = booksByCatTemplate(data);
   refs.bestBooks.innerHTML = markup;
+}
+
+export function addCategoryTitle(category) {
+  const titleWords = category.split(' ');
+  const lastWord = titleWords.slice(-1);
+  const firstWords = titleWords.slice(0, -1);
+  const title = `<h1 class="best-books-title">${firstWords.join(
+    ' '
+  )} <span class="best-books-title-colour">${lastWord.join(' ')}</span></h1>`;
+  refs.categoryTitle.innerHTML = title;
 }
