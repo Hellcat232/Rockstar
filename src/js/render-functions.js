@@ -89,23 +89,40 @@ export function catByBtn(e) {
   }
 }
 
+// export function booksByCatTemplate(data) {
+//   return data
+//     .map(
+//       ({ author, list_name, book_image, title, _id }) => `
+//   <div class="hardcover-wrap">
+//             <ul class="hardcover-list" data-name="${list_name}">
+//                 <li class="hardcover-item" id="${_id}">
+//                     <img class="hardcover-img" src="${book_image}" alt="card">
+//                     <h3 class="hardcover-subtitle">${title}</h3>
+//                        <p class="hardcover-descr">${author}</p>
+//                 </li>
+//                 </ul>
+//                 </div>`
+//     )
+//     .join('\n');
+// }
 export function booksByCatTemplate(data) {
-  return data
-    .map(
-      ({ author, list_name, book_image, title, _id }) => `
-
+  return `
   <div class="hardcover-wrap">
-            <ul class="hardcover-list">
-                <li class="hardcover-item" id="${_id}">
-                    <img class="hardcover-img" src="${book_image}" alt="card">
-                    <h3 class="hardcover-subtitle">${title}</h3>
-                       <p class="hardcover-descr">${author}</p>
-                </li>
-                </ul>
-                </div>`
-    )
-    .join('\n');
+    <ul class="hardcover-list">
+      ${data.map(
+        ({ author, list_name, book_image, title, _id }) => `
+          <li class="hardcover-item" id="${_id}">
+            <img class="hardcover-img" src="${book_image}" alt="card">
+            <h3 class="hardcover-subtitle">${title}</h3>
+            <p class="hardcover-descr">${author}</p>
+          </li>
+        `
+      ).join('\n')}
+    </ul>
+  </div>
+  `;
 }
+
 
 export function booksByCatRender(data) {
   const markup = booksByCatTemplate(data);
