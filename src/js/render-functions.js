@@ -112,7 +112,11 @@ export function booksByCatTemplate(data) {
       ${data.map(
         ({ author, list_name, book_image, title, _id }) => `
           <li class="hardcover-item" id="${_id}">
-            <img class="hardcover-img" src="${book_image}" alt="card">
+          <div class="hardcover-books-content">
+          <img class="hardcover-img" src="${book_image}" alt="card">
+          <p class="hardcover-books-overlay-text">quick view</p>
+          </div>
+            
             <h3 class="hardcover-subtitle">${title}</h3>
             <p class="hardcover-descr">${author}</p>
           </li>
