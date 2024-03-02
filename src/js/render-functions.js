@@ -100,7 +100,9 @@ export function booksByCatTemplate(data) {
                     <img class="hardcover-img" src="${book_image}" alt="card">
                     <h3 class="hardcover-subtitle">${title}</h3>
                        <p class="hardcover-descr">${author}</p>
-                </li>`
+                </li>
+                </ul>
+                </div>`
     )
     .join('\n');
 }
