@@ -1,4 +1,9 @@
-import { booksCategory, topBooks, booksByCategory } from './js/books-api';
+import {
+  booksCategory,
+  topBooks,
+  booksByCategory,
+  booksID,
+} from './js/books-api';
 import {
   categoriesRender,
   topBooksTemplate,
