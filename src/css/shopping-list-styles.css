@@ -19,22 +19,26 @@ ul {
 }
 
 .shopping-list-header {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 .shopping-list-support-ukraine {
     display: none;
 }
 
 .shopping-list-and-support-ukraine {
-    display: flex;
+    /* padding: 40px 20px; */
+    /* justify-content: center; */
+    /* padding-left: 20px;
+    padding-right: 20px; */
 }
 
 .shopping-list-container {
         max-width: 375px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 40px 20px;
+        margin: 0 auto;
+        /* padding: 40px 20px; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
         
 }
 
@@ -84,6 +88,7 @@ padding: 30px 24px;
 width: 335px;
 height: 170px;
 display: flex;
+justify-content: space-between;
 padding: 14px;
 gap: 14px;
 background-color: #fff;
@@ -115,6 +120,7 @@ text-overflow: ellipsis;
   width: 144px; 
   height: 1.2em; 
   white-space: nowrap;
+
 }
 
 .shopping-list-book-category {
@@ -133,6 +139,7 @@ text-overflow: ellipsis;
 
 .shopping-list-card-top-line {
     display: flex;
+    flex-shrink: 0;
     justify-content: space-between;
     margin-bottom: 8px;
 }
@@ -210,12 +217,32 @@ color: #b4afaf;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
+    .shopping-list-container {
+        padding: 40px 32px;
+        max-width: 768px;
+    }
 
+    .shopping-list-card {
+        width: 704px;
+        height: 213px;
+        gap: 24px;
+        padding: 24px;
+    }
+
+    .shopping-list-book-cover {
+        width: 116px;
+        height: 165px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
+    .shopping-list-container {
+        /* padding: 40px 32px; */
+        max-width: 1440px;
+    }
 
 }
