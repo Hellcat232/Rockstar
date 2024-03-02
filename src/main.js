@@ -1,4 +1,9 @@
-import { booksCategory, topBooks, booksByCategory } from './js/books-api';
+import {
+  booksCategory,
+  topBooks,
+  booksByCategory,
+  booksID,
+} from './js/books-api';
 import {
   categoriesRender,
   topBooksCategoriesRender,
@@ -9,6 +14,8 @@ import {
   addCategoryTitle,
 } from './js/render-functions';
 
+import { headerBtnFuction } from './js/header';
+
 export const refs = {
   bestBooks: document.querySelector('.best-books-category'),
   categories: document.querySelector('.sidebar-categories'),
@@ -16,6 +23,10 @@ export const refs = {
   categoryTitle: document.querySelector('.best-books-title'),
   modalWindow: document.querySelector('modal-window'),
   seeMoreBtn: document.querySelector('.best-books-category'),
+  headerBtn: document.querySelector('.header-burger-btn'),
+  headerIcon: document.querySelector('.header-burger-icon'),
+  headerMenu: document.querySelector('.header-modal-menu'),
+  burgerSvg: document.querySelector('#burger-svg'),
 };
 
 async function onPageLoad() {
@@ -46,3 +57,5 @@ async function onCategoriesClick(e) {
   addCategoryTitle(catLink(e));
   clickAddClass(e);
 }
+
+refs.headerBtn.addEventListener('click', headerBtnFuction);
