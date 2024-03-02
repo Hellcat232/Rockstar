@@ -94,15 +94,16 @@
 }
 .header-modal-menu-navigation-list {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  display: block;
   position: absolute;
   top: 247px;
 }
 .header-modal-menu-navigation-list-item {
   display: flex;
   align-items: center;
+}
+.mb16 {
+  margin-bottom: 16px;
 }
 .header-modal-menu-home-link {
   font-weight: 700;
