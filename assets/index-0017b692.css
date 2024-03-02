@@ -1,0 +1,1 @@
+.hardcover-wrap{display:flex;flex-direction:column;flex-wrap:wrap}@media screen and (min-width: 768px){.hardcover-list{min-width:768px;display:flex;flex-direction:row;flex-wrap:wrap;gap:25px;align-items:center}.hardcover-img{width:218px;height:316px;margin-bottom:40px}.hardcover-subtitle{text-transform:uppercase}}
