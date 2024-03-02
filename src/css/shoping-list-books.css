@@ -69,12 +69,10 @@ body {
   border: 2px solid rgba(79, 46, 232, 0.4);
   border-radius: 16px;
   padding: 14px;
-  /* width: 335px; */
   max-width: 335px;
   height: 170px;
   display: flex;
   justify-content: space-between;
-  /* margin-top: 20px; */
   background-color: var(--header-bg-color);
   box-sizing: border-box;
 }
@@ -240,11 +238,7 @@ body {
 }
 
 .shopping-list .book-app {
-  /* display: flex;
-  align-items: center; */
   padding-top: 0;
-  /* padding-top: 20px; */
-  /* gap: 8px; */
 }
 
 .shopping-list .name-author {
