@@ -2,6 +2,7 @@
 // import 'tui-pagination/dist/tui-pagination.css';
 import { shoppingList, removeFromShoppingList } from "./shopping-list-functions.js";
 import { renderShoppingList } from "./shopping-list-render.js";
+// import '../main.js'
 
 renderShoppingList();
 

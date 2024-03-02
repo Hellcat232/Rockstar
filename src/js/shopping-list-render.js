@@ -8,13 +8,15 @@ export function renderShoppingListBook(shoppingList) {
             
                                 <img class="shopping-list-book-cover" src="${book.book_image}" alt="cover">   
                         
-                                <div>
+                                <div class="shopping-list-card-wrap">
                                     <div class="shopping-list-card-top-line">
-                                        <h2 class="shopping-list-book-title">${book.title}</h2>
-                                        <h3 class="shopping-list-book-category">${book.list_name}</h3>
+                                        <div class="title-category-wrap">
+                                            <h2 class="shopping-list-book-title">${book.title}</h2>
+                                            <h3 class="shopping-list-book-category">${book.list_name}</h3>
+                                        </div>
 
                                         <button data-id="${book._id}" type="button" class="shopping-list-item-remove-button">
-                                        <svg width="38" height="38" class="mob-close-btn-icon" alt="bin">
+                                        <svg width="16" height="16" class="icon-bin" alt="bin">
                                             <use href="./images/icons.svg#icon-bin"></use>
                                         </svg>
                                     </button>
