@@ -30,8 +30,8 @@ async function onSeeMoreClick(e) {
 }
 
 async function onCategoriesClick(e) {
-  if (catLink(e) === 'All categories') onPageLoad();
   const booksByCat = await booksByCategory(catLink(e));
+  if (catLink(e) === 'All categories') onPageLoad();
   booksByCatRender(booksByCat);
   addCategoryTitle(catLink(e));
   clickAddClass(e);
