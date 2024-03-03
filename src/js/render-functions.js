@@ -109,20 +109,21 @@ export function booksByCatTemplate(data) {
   return `
   <div class="hardcover-wrap">
     <ul class="hardcover-list">
-      ${data.map(
-        ({ author, list_name, book_image, title, _id }) => `
+      ${data
+        .map(
+          ({ author, list_name, book_image, title, _id }) => `
           <li class="hardcover-item" id="${_id}">
             <img class="hardcover-img" src="${book_image}" alt="card">
             <h3 class="hardcover-subtitle">${title}</h3>
             <p class="hardcover-descr">${author}</p>
           </li>
         `
-      ).join('\n')}
+        )
+        .join('\n')}
     </ul>
   </div>
   `;
 }
-
 
 export function booksByCatRender(data) {
   const markup = booksByCatTemplate(data);

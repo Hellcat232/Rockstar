@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 //modal-window
+=======
+>>>>>>> Stashed changes
 import * as basicLightbox from 'basiclightbox';
 import './books-api';
 
@@ -43,5 +46,10 @@ function openModal(book) {
 
   modal.show();
 }
+<<<<<<< Updated upstream
 //перевіряю):
 console.log(clickItem(event));
+=======
+//перевіряю, чи працює
+clickItem();
+>>>>>>> Stashed changes

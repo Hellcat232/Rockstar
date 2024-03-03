@@ -14,6 +14,7 @@ import {
   addCategoryTitle,
 } from './js/render-functions';
 
+import './js/modal';
 import { headerBtnFuction } from './js/header';
 
 export const refs = {
