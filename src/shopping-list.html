@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping list</title>
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/shopping-list-styles.css" />
 </head>
-<body>
-   <script type="module" src="./js/shopping-list-functions.js"></script> 
+<body class="shopping-list-background">
+    <div class="shopping-list-header">
+        <load src="../src/partials/header.html" />
+    </div>
+
+    <main >
+        <div class="shopping-list-and-support-ukraine">
+            <div class="shopping-list-support-ukraine">
+                <load src="../src/partials/support-ukraine.html"/>
+            </div>
+            
+            
+            <div class="shopping-list-content">
+                <h1 class="shopping-list-title">Shopping <span class="shopping-list-title-violet">List</span></h1>
+                
+                <div class="shopping-list-container">
+                    <ul class="shopping-list-is-filled">
+                    </ul>
+                    <!-- <div id="pagination1" class="tui-pagination"></div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./js/shopping-list-functions.js"></script> 
+    <script type="module" src="./js/shopping-list-render.js"></script>
+    <script type="module" src="./js/shopping-list.js"></script>
 </body>
 </html>
