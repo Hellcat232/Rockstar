@@ -79,32 +79,62 @@ export function clickAddClass(e) {
 
 export function catLink(e) {
   const categoryLink = e.target.closest('li').textContent.trim();
-  return `${categoryLink}`;
+  return categoryLink;
 }
 
 export function catByBtn(e) {
   if (e.target.classList.contains('btn-see-more')) {
     const catByBtn = e.target.dataset.cat.trim();
+    console.log(catByBtn);
+    refs.categoriesItems.forEach(elem => {
+      elem.classList.remove('sidebar-active');
+      if (elem.textContent.trim() === catByBtn)
+        elem.classList.add('sidebar-active');
+      console.log(elem.textContent.trim());
+    });
+
     return catByBtn;
   }
 }
 
+// export function booksByCatTemplate(data) {
+//   return data
+//     .map(
+//       ({ author, list_name, book_image, title, _id }) => `
+//   <div class="hardcover-wrap">
+//             <ul class="hardcover-list" data-name="${list_name}">
+//                 <li class="hardcover-item" id="${_id}">
+//                     <img class="hardcover-img" src="${book_image}" alt="card">
+//                     <h3 class="hardcover-subtitle">${title}</h3>
+//                        <p class="hardcover-descr">${author}</p>
+//                 </li>
+//                 </ul>
+//                 </div>`
+//     )
+//     .join('\n');
+// }
 export function booksByCatTemplate(data) {
-  return data
-    .map(
-      ({ author, list_name, book_image, title, _id }) => `
-
+  return `
   <div class="hardcover-wrap">
-            <ul class="hardcover-list">
-                <li class="hardcover-item" id="${_id}">
-                    <img class="hardcover-img" src="${book_image}" alt="card">
-                    <h3 class="hardcover-subtitle">${title}</h3>
-                       <p class="hardcover-descr">${author}</p>
-                </li>
-                </ul>
-                </div>`
-    )
-    .join('\n');
+    <ul class="hardcover-list">
+      ${data
+        .map(
+          ({ author, list_name, book_image, title, _id }) => `
+          <li class="hardcover-item" id="${_id}">
+          <div class="hardcover-books-content">
+          <img class="hardcover-img" src="${book_image}" alt="card">
+          <p class="hardcover-books-overlay-text">quick view</p>
+          </div>
+            
+            <h3 class="hardcover-subtitle">${title}</h3>
+            <p class="hardcover-descr">${author}</p>
+          </li>
+        `
+        )
+        .join('\n')}
+    </ul>
+  </div>
+  `;
 }
 
 export function booksByCatRender(data) {

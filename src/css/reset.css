@@ -33,3 +33,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.global-block-support-and-allcat {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.global-books-block {
+  display: block;
+}
