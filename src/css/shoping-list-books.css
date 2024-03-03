@@ -9,7 +9,7 @@
 .shopinglist-section-one {
   width: 335px;
   height: 170px;
-  background-color: #fff;
+  background-color: var(--header-main-background);
   border: 2px solid rgba(79, 46, 232, 0.4);
   border-radius: 16px;
   padding: 14px;

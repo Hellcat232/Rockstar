@@ -4,6 +4,7 @@
 }
 .header {
   position: relative;
+  margin-bottom: 104px;
 }
 .header-container {
   position: fixed;
@@ -15,13 +16,22 @@
   flex-direction: row;
   padding: 18px 20px;
   align-items: center;
-  border: 1.5px solid #000;
+  border: 1.5px solid var(--header-border);
   border-radius: 0 0 8px 8px;
-  background-color: #fff;
+  background-color: var(--header-main-background);
   z-index: 50;
 }
 .header-logo-link {
   margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.header-boofshelf {
+  color: var(--main-color);
+  font-weight: 500;
+  letter-spacing: -0.04em;
 }
 .header-label-toggle {
   background-color: #4f2ee8;
@@ -58,7 +68,7 @@
 .header-burger-btn {
   background-color: transparent;
   border: none;
-  stroke: #000;
+  stroke: var(--header-border);
   font-size: 0;
   display: block;
   opacity: 1;
@@ -115,6 +125,11 @@
 }
 .mb16 {
   margin-bottom: 16px;
+  width: 72px;
+}
+.header-burger-icon {
+  stroke: var(--main-color);
+  fill: var(--main-color);
 }
 .header-modal-menu-home-link {
   font-weight: 700;
@@ -152,6 +167,9 @@
   align-items: center;
 }
 @media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 112px;
+  }
   .header-modal-menu {
     display: none;
     opacity: 0;
@@ -213,7 +231,13 @@
     display: flex;
     align-items: center;
   }
-  .header-shopping-list-link,
+  .header-shopping-list-link {
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
   .header-home-link {
     text-decoration: none;
     color: #111;
