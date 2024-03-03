@@ -16,6 +16,8 @@ import {
 
 import { headerBtnFuction } from './js/header';
 
+import './js/support-ukraine';
+
 export const refs = {
   bestBooks: document.querySelector('.best-books-category'),
   categories: document.querySelector('.sidebar-categories'),
