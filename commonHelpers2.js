@@ -1,0 +1,56 @@
+import"./assets/modulepreload-polyfill-3cfb730f.js";let s=JSON.parse(localStorage.getItem("shoppingList"))||[];function l(i){return!!s.find(e=>e._id===i)}function p(i){if(!i._id||!i.book_image||!i.title||!i.list_name||!i.author||!i.buy_links)throw new Error("Book _id, cover, title, category, author, buyLinks are required");l(i._id)||(s.push(i),localStorage.setItem("shoppingList",JSON.stringify(s)))}window.atsl=p;window.sl=s;function a(i){s=s.filter(e=>e._id!==i),localStorage.setItem("shoppingList",JSON.stringify(s))}const o=document.querySelector(".shopping-list-is-filled");function r(i){return i.map(t=>`<li class="shopping-list-book-item">
+                        <div class="shopping-list-card">
+            
+                                <img class="shopping-list-book-cover" src="${t.book_image}" alt="cover">   
+                        
+                                <div class="shopping-list-card-wrap">
+                                    <div class="shopping-list-card-top-line">
+                                        <div class="title-category-wrap">
+                                            <h2 class="shopping-list-book-title">${t.title}</h2>
+                                            <h3 class="shopping-list-book-category">${t.list_name}</h3>
+                                        </div>
+
+                                        <button data-id="${t._id}" type="button" class="shopping-list-item-remove-button">
+                                        <svg width="16" height="16" class="icon-bin" alt="bin">
+                                            <use href="./images/icons.svg#icon-bin"></use>
+                                        </svg>
+                                    </button>
+                                    </div>
+        
+                                    <p class="shopping-list-book-description">${t.description}</p>
+        
+                                    <div class="shopping-list-card-bottom-line">
+                                        <p class="shopping-list-book-author">${t.author}</p>
+                                        <ul class="shopping-list-buy-links">
+                                            <li class="shopping-list-buy-link-item">
+                                                <a rel="noreferrer noopener nofollow" class="shopping-list-buy-link" href="${t.buy_links[0].url}" target="_blank">
+                                                <svg width="32" height="11" class="shopping-list-buy-link-amazon" alt="logo-amazon">
+                                            <use href="./images/icons.svg#icon-amazon-1"></use>
+                                        </svg>   
+                                                </a>
+                                            </li>
+                                            <li class="shopping-list-buy-link-item">
+                                                <a rel="noreferrer noopener nofollow" class="shopping-list-buy-link" href="${t.buy_links[1].url} " target="_blank">
+                                                <svg width="16" height="16" class="shopping-list-buy-link-applebooks" alt="logo-apple-books">
+                                            <use href="./images/icons.svg#icon-apple-ibooks"></use>
+                                        </svg>    
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            </li>`).join("")}function g(){let i=` <div class="shopping-list-is-empty">
+    <p class="shopping-list-text">This page is empty, add some books and proceed to order.</p>
+    <picture>
+        <source srcset="
+                      ./images/Book-picture-tab-min.png    1x,
+                      ./images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
+        <source srcset="
+                      ./images/Book-picture-mob-min.png    1x,
+                      ./images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
+        <img class="shopping-list-image" src="./images/Book-picture-tab-min.png" alt="Stack of books">
+    </picture>
+</div>`;o.innerHTML=i}function c(){return o.innerHTML=r(s)}function n(){s.length!==0?c():g()}n();document.querySelectorAll(".shopping-list-item-remove-button").forEach(i=>{i.addEventListener("click",e=>{console.log(i.dataset.id),a(i.dataset.id),i.closest("li.shopping-list-book-item").remove(),s.length===0&&n()})});
+//# sourceMappingURL=commonHelpers2.js.map
