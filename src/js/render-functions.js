@@ -85,12 +85,10 @@ export function catLink(e) {
 export function catByBtn(e) {
   if (e.target.classList.contains('btn-see-more')) {
     const catByBtn = e.target.dataset.cat.trim();
-    console.log(catByBtn);
     refs.categoriesItems.forEach(elem => {
       elem.classList.remove('sidebar-active');
       if (elem.textContent.trim() === catByBtn)
         elem.classList.add('sidebar-active');
-      console.log(elem.textContent.trim());
     });
 
     return catByBtn;
