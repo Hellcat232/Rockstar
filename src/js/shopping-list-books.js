@@ -1,7 +1,7 @@
-import {
-  removeItemFromLocalStorage,
-  getItemFromLocalStorage,
-} from './localStorage';
+// import {
+//   removeItemFromLocalStorage,
+//   getItemFromLocalStorage,
+// } from './localStorage';
 
 import trashIcon from '../img/icons.svg#icon-trash';
 import amazonIcon from '../img/shopping-list-books/amazon-default (1).png';
