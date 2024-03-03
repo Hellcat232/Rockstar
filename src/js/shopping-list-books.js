@@ -43,7 +43,7 @@ function renderBookCard(book) {
                 <h3 class="type-name">${list_name}</h3>
                 <button data-id="${_id}" class="basket" type="button">
                   <svg class="trash" width="16" height="16">
-                    <use href="./img/icons.svg#icon-trash"></use>
+                    <use href="../img/icons.svg#icon-trash"></use>
                   </svg>
                 </button>
               </div>
