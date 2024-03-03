@@ -3,7 +3,7 @@ import { booksCategory, topBooks, booksByCategory, booksID } from './books-api';
 import '../main';
 import './render-functions';
 
-const data = await booksByCategory();
+const data = booksByCategory();
 
 // document.addEventListener('DOMContentLoaded', function () {});
 
