@@ -58,6 +58,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    color: var(--main-color);
 }
 
 .hardcover-descr {
@@ -198,7 +199,7 @@ position: relative;
 
           .hardcover-books-content {
               max-width: 180px;
-              margin-bottom: 40px;
+              /* margin-bottom: 40px; */
           }
     
           .hardcover-books-overlay-text {
