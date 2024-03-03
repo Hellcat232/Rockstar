@@ -43,4 +43,4 @@ function openModal(book) {
   modal.show();
 }
 //перевіряю, чи працює
-clickItem();
+// clickItem();
