@@ -2,24 +2,22 @@ import * as basicLightbox from 'basiclightbox';
 import './books-api';
 
 const booksEl = document.querySelector('.best-books-category');
+document.addEventListener('DOMContentLoaded', function () {
+  function clickItem(event) {
+    const itemEl = event.target.closest('.best-books-item');
 
-booksEl.addEventListener('click', clickItem);
+    if (itemEl) {
+      const bookId = itemEl.dataset.id;
+      const selectedBook = data.find(book => book._id === bookId);
 
-function clickItem(event) {
-  const itemEl = event.target.closest('.best-books-item');
-
-  if (itemEl) {
-    const bookId = itemEl.dataset.id;
-    const selectedBook = data.find(book => book._id === bookId);
-
-    if (selectedBook) {
-      openModal(selectedBook);
+      if (selectedBook) {
+        openModal(selectedBook);
+      }
     }
   }
-}
 
-function openModal(book) {
-  const modalContent = `
+  function openModal(book) {
+    const modalContent = `
     <div class="modal-content-wrap">
       <img class="modal-books-img" src="${book.book_image}" alt="" loading="eager" />
       <div class="modal-text-wrap">
@@ -32,15 +30,17 @@ function openModal(book) {
     </div>
   `;
 
-  const modal = basicLightbox.create(modalContent, {});
+    const modal = basicLightbox.create(modalContent, {});
 
-  const modalCloseBtn = document.querySelector('.modal-close-btn');
+    const modalCloseBtn = document.querySelector('.modal-close-btn');
 
-  modalCloseBtn.addEventListener('click', () => {
-    modal.close();
-  });
+    modalCloseBtn.addEventListener('click', () => {
+      modal.close();
+    });
 
-  modal.show();
-}
+    modal.show();
+  }
+});
+
 //перевіряю, чи працює
 // clickItem();
