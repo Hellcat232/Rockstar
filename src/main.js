@@ -24,7 +24,7 @@ export const refs = {
 };
 
 onPageLoad();
-booksEl.addEventListener('click', clickItem);
+
 refs.headerBtn.addEventListener('click', headerBtnFuction);
 refs.headerToggle.addEventListener('change', colorSchemeChange);
 choosenColorScheme();
