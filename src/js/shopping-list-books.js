@@ -3,6 +3,11 @@ import {
   getItemFromLocalStorage,
 } from './localStorage';
 
+import trashIcon from '../img/icons.svg#icon-trash';
+import amazonIcon from '../img/shopping-list-books/amazon-default (1).png';
+import appleIcon from '../img/shopping-list-books/book-default (1).png';
+import booksIcon from '../img/shopping-list-books/book-pile-2x (1).png';
+
 const shoppingList = getItemFromLocalStorage();
 const shoppingListContainer = document.querySelector('.shopping-list-books');
 
@@ -14,7 +19,7 @@ function renderShopList() {
 
   if (shoppingList.length === 0) {
     shoppingListContainer.innerHTML = `<p class="shopping-list-empty-text">This page is empty, add some books and proceed to order.</p>
-                                       <img class="no-book" src="../img/book-pile.png" alt="Book" />`;
+                                       <img class="no-book" src="../img/shopping-list-books/book-pile.png" alt="Book" />`;
     return;
   }
 
