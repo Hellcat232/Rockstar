@@ -34,6 +34,10 @@ img {
   height: auto;
 }
 
+body {
+  min-width: 375px;
+}
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
@@ -49,4 +53,37 @@ img {
 
 .global-books-block {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .main-wrapper {
+    display: inline-grid;
+  }
+  .global-block-support-and-allcat {
+    display: grid;
+    grid-template-columns: 337px 335px;
+    margin-bottom: 100px;
+  }
+
+  .main-wrapper .support-ukraine {
+    height: 474px;
+  }
+
+  .main-wrapper .best-books-title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 0 24px;
+  }
+
+  .global-block-support-and-allcat {
+    display: flex;
+    gap: 86px;
+  }
 }
