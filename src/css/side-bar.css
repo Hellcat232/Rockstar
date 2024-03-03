@@ -9,7 +9,7 @@
 }
 
 .sidebar::-webkit-scrollbar-thumb {
-  background-color: #e0e0e0;
+  background-color: var(--categories-scroll-bar);
   border-radius: 12px;
   height: 114px;
 }
@@ -23,7 +23,7 @@
   font-size: 16px;
   line-height: 1.12;
   letter-spacing: -0.02em;
-  color: rgba(17, 17, 17, 0.6);
+  color: var(--categories-item);
   margin-bottom: 24px;
   text-transform: none;
   transition: color 0.5s ease;
@@ -34,7 +34,7 @@
   cursor: pointer;
   font-weight: 700;
   text-transform: uppercase;
-  color: #4f2ee8;
+  color: var(--categories-item-hover);
 }
 
 .sidebar-categories-item:active {
@@ -48,7 +48,7 @@
   line-height: 1.12;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #4f2ee8;
+  color: var(--categories-item-hover);
 }
 
 @media screen and (min-width: 768px) {

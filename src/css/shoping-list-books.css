@@ -1,71 +1,15 @@
-body {
-  background-color: var(--main-bg-color);
+.book-card {
+  max-width: 375px;
+  margin: auto;
+  padding: 40px 20px 20px 20px;
 }
 
-.shopping-list-title {
-  margin-bottom: 40px;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 1.1875;
-  letter-spacing: -0.04em;
-  transition: 0.4s ease-in-out;
-}
+/**********************/
 
-.light-theme .shopping-list-title {
-  color: #111;
-}
-
-.trash {
-  background: url(../img/trash-copy.png) no-repeat;
-  height: 16px;
-  width: 16px;
-  background-size: contain;
-}
-
-.dark-theme .shopping-list-title {
-  color: #fff;
-}
-
-.shopping-list-title > span {
-  color: #4f2ee8;
-}
-
-.aside-menu.support-box-wrapper {
-  display: none;
-}
-
-.title {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  color: var(--first-text-color);
-}
-
-.navigation-category-shopping-list {
-  gap: 0;
-}
-
-.shopping-support {
-  display: none;
-}
-
-.support-ua-panel {
-  display: none;
-}
-
-.shopping-list {
-  display: flex;
-  gap: 40px;
-}
-
-/* .description {} */
-
-.main-name-list {
-  color: var(--color-of-categoryAll-text);
-}
-
-/* .main-name {} */
-
-.one-book {
+.shopinglist-section-one {
+  width: 335px;
+  height: 170px;
+  background-color: var(--header-main-background);
   border: 2px solid rgba(79, 46, 232, 0.4);
   border-radius: 16px;
   padding: 14px;

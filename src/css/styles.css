@@ -19,11 +19,33 @@
   font-weight: 400;
 
   color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: var(--main-background);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --main-color: #111;
+  --header-border: #000;
+  --header-main-background: #fff;
+  --main-background: rgba(255, 255, 255, 0.87);
+  --btn-border: #4f2ee8;
+  --categories-scroll-bar: #e0e0e0;
+  --categories-item: rgba(17, 17, 17, 0.6);
+  --categories-item-hover: #4f2ee8;
+  color-scheme: light;
+}
+
+.dark {
+  --main-color: #fff;
+  --header-border: #fff;
+  --header-main-background: #111;
+  --main-background: #202024;
+  --btn-border: #4f2ee8;
+  --categories-scroll-bar: rgba(17, 17, 17, 0.6);
+  --categories-item: rgba(255, 255, 255, 0.6);
+  --categories-item-hover: #eac645;
+  color-scheme: dark;
 }

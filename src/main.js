@@ -15,6 +15,8 @@ import {
 } from './js/render-functions';
 
 import { headerBtnFuction } from './js/header';
+import { colorSchemeChange } from './js/color-toggle';
+import { choosenColorScheme } from './js/color-toggle';
 
 import './js/support-ukraine';
 
@@ -29,6 +31,8 @@ export const refs = {
   headerIcon: document.querySelector('.header-burger-icon'),
   headerMenu: document.querySelector('.header-modal-menu'),
   burgerSvg: document.querySelector('#burger-svg'),
+  headerToggle: document.querySelector('#headerToggle'),
+  root: document.querySelector(':root'),
 };
 
 async function onPageLoad() {
@@ -61,3 +65,5 @@ async function onCategoriesClick(e) {
 }
 
 refs.headerBtn.addEventListener('click', headerBtnFuction);
+refs.headerToggle.addEventListener('change', colorSchemeChange);
+choosenColorScheme();
