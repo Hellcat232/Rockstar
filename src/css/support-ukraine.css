@@ -65,6 +65,11 @@ button {
     display: flex;
     gap: 16px;
     margin-bottom: 20px;
+    align-items: center;
+}
+
+.image-wrapper {
+    cursor: pointer;
 }
 
 .btn-wrapper {
