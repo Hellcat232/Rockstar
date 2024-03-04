@@ -3,50 +3,35 @@ import { booksCategory, topBooks, booksByCategory, booksID } from './books-api';
 import '../main';
 import './render-functions';
 
-const data = booksByCategory();
+function openModal(bookDetails) {
+  const modal = basicLightbox.create(`
+    <div class="modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-book-details">${bookDetails}</div>
+      </div>
+    </div>
+  `);
 
-document.addEventListener('DOMContentLoaded', function () {});
+  modal.show();
 
-// booksEl.addEventListener('click', event => clickItem(event));
+  const modalCloseBtn = modal.element().querySelector('.modal-close');
+  modalCloseBtn.addEventListener('click', () => modal.close());
+}
 
-// function clickItem(event, data) {
-//   const itemEl = event.target.closest('.best-books-item');
-//   let selectedBook;
+function handleBookClick(book) {
+  const bookDetails = `
+    <h2>${book.title}</h2>
+    <p>${book.author}</p>
+    <img src="${book.imageUrl}" alt="${book.title}">
+  `;
+  openModal(bookDetails);
+}
 
-//   if (itemEl) {
-//     const bookId = itemEl.dataset.id;
+const book = {
+  title: 'Book Title',
+  author: 'Author Name',
+  imageUrl: 'https://example.com/book.jpg',
+};
 
-//     if (event.target.nodeName === 'IMG') {
-//       const selectedBook = event.target.dataset.id;
-//     }
-
-//     if (selectedBook) {
-//       openModal(selectedBook);
-//     }
-//   }
-// }
-
-// function openModal(book) {
-//   const modalContent = `
-//     <div class="modal-content-wrap">
-//       <img class="modal-books-img" src="${book.book_image}" alt="" loading="eager" />
-//       <div class="modal-text-wrap">
-//         <div class="hello-beautiful-modal">
-//           <h3 class="modal-title">${book.title}</h3>
-//           <p class="modal-authors-name">${book.author}</p>
-//         </div>
-//         <p class="modal-book-notice">${book.description}</p>
-//       </div>
-//     </div>
-//   `;
-
-//   const modal = basicLightbox.create(modalContent);
-
-//   const modalCloseBtn = document.querySelector('.modal-close-btn');
-
-//   modalCloseBtn.addEventListener('click', () => {
-//     modal.close();
-//   });
-
-//   modal.show();
-// }
+handleBookClick(book);

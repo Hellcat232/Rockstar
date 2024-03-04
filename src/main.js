@@ -5,7 +5,7 @@ import './js/modal';
 import { headerBtnFuction } from './js/header';
 import { colorSchemeChange } from './js/color-toggle';
 import { choosenColorScheme } from './js/color-toggle';
-
+import './js/modal';
 import './js/support-ukraine';
 
 export const refs = {
