@@ -15,7 +15,7 @@ export const refs = {
   categoryTitle: document.querySelector('.best-books-title'),
   loader: document.querySelector('.loader'),
   loader1: document.querySelector('.loader1'),
-  loader2: document.querySelector('.loader'),
+  scrollToEl: document.querySelector('.global-books-block'),
   modalWindow: document.querySelector('modal-window'),
   seeMoreBtn: document.querySelector('.best-books-category'),
   headerBtn: document.querySelector('.header-burger-btn'),
