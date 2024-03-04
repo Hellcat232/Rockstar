@@ -21,6 +21,13 @@
   text-align: left;
 }
 
+.modal-button-add:hover {
+  background-color: #4f2ee8;
+}
+.modal-button-add:focus {
+  background-color: #4f2ee8;
+}
+
 .shopping {
   /* margin-bottom: 120px */
 }
