@@ -41,7 +41,9 @@ async function onSeeMoreClick(e) {
     booksByCatRender(booksByCat);
     addCategoryTitle(catByBtn(e));
     refs.loader1.classList.add('hidden');
-    refs.scrollToEl.scrollIntoView({ behavior: 'smooth' });
+    refs.scrollToEl.scrollIntoView({
+      behavior: 'smooth',
+    });
   } catch {
     errNotify(err);
   }
@@ -57,7 +59,9 @@ async function onCategoriesClick(e) {
     addCategoryTitle(catLink(e));
     clickAddClass(e);
     refs.loader.classList.add('hidden');
-    refs.scrollToEl.scrollIntoView({ behavior: 'smooth' });
+    refs.scrollToEl.scrollIntoView({
+      behavior: 'smooth',
+    });
   } catch {
     errNotify(err);
   }
@@ -69,4 +73,25 @@ export function errNotify(err) {
     message: `Error: ${err}`,
     position: 'topRight',
   });
+}
+
+export function scrollTop() {
+  window.addEventListener('scroll', onScrollShowBtn);
+
+  function onScrollShowBtn() {
+    window.scrollY > 200
+      ? refs.btnToTop.classList.add('show')
+      : refs.btnToTop.classList.remove('show');
+  }
+
+  refs.btnToTop.addEventListener('click', onClickGoTop);
+
+  function onClickGoTop() {
+    if (window.scrollY != 0) {
+      setTimeout(function () {
+        window.scrollTo(0, window.scrollY - 70);
+        onClickGoTop();
+      }, 10);
+    }
+  }
 }

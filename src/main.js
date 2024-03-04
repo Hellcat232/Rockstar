@@ -1,5 +1,5 @@
 import './js/action-functions';
-import { onPageLoad } from './js/action-functions';
+import { onPageLoad, scrollTop } from './js/action-functions';
 
 import './js/modal';
 import { headerBtnFuction } from './js/header';
@@ -24,9 +24,11 @@ export const refs = {
   burgerSvg: document.querySelector('#burger-svg'),
   headerToggle: document.querySelector('#headerToggle'),
   root: document.querySelector(':root'),
+  btnToTop: document.querySelector('.to-top'),
 };
 
 onPageLoad();
+scrollTop();
 
 refs.headerBtn.addEventListener('click', headerBtnFuction);
 refs.headerToggle.addEventListener('change', colorSchemeChange);
