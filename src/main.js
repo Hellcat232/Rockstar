@@ -29,7 +29,7 @@ export const refs = {
 
 onPageLoad();
 scrollTop();
-
+handleBookClick(book);
 refs.headerBtn.addEventListener('click', headerBtnFuction);
 refs.headerToggle.addEventListener('change', colorSchemeChange);
 choosenColorScheme();

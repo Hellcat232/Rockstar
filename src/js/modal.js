@@ -3,21 +3,25 @@ import { booksCategory, topBooks, booksByCategory, booksID } from './books-api';
 import '../main';
 import './render-functions';
 
-function openModal(bookDetails) {
-  const modal = basicLightbox.create(`
-    <div class="modal">
-      <div class="modal-content">
-        <span class="modal-close">&times;</span>
-        <div class="modal-book-details">${bookDetails}</div>
-      </div>
+const book = {
+  title: 'Book Title',
+  author: 'Author Name',
+  imageUrl: 'https://example.com/book.jpg',
+};
+
+const instance = basicLightbox.create(
+  `
+   <div class="modal">
+       <h2>${book.title}</h2>
+    <p>${book.author}</p>
+    <img src="${book.imageUrl}" alt="${book.title}">
     </div>
-  `);
+`
+);
 
-  modal.show();
+instance.show();
 
-  const modalCloseBtn = modal.element().querySelector('.modal-close');
-  modalCloseBtn.addEventListener('click', () => modal.close());
-}
+function openModal(bookDetails) {}
 
 function handleBookClick(book) {
   const bookDetails = `
@@ -27,11 +31,3 @@ function handleBookClick(book) {
   `;
   openModal(bookDetails);
 }
-
-const book = {
-  title: 'Book Title',
-  author: 'Author Name',
-  imageUrl: 'https://example.com/book.jpg',
-};
-
-handleBookClick(book);
