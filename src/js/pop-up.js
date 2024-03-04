@@ -43,9 +43,11 @@ export function bindPopUps(books) {
                                           </ul>
                                       </div>
                                  </div>
-                            </div>
+                                 </div>
+                            
             <button data-id="${book._id}" type="button" class="add-to-sl-button">${shoppingListhasBook(book._id) ? 'Remove' : 'ADD TO SHOPPING LIST'}</button>
-            <p class='book-added-text'>the book has been added</p>
+            <p class='book-added-text'>Сongratulations! You have added the book to the shopping list. To delete, press the button “Remove from the shopping list”.</p>
+            
           </div>
         `)
       
