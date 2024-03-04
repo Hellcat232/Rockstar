@@ -128,6 +128,13 @@ a {
   cursor: pointer;
 }
 
+.modal-button-add:hover {
+  background-color: #4f2ee8;
+}
+.modal-button-add:focus {
+  background-color: #4f2ee8;
+}
+
 .text-button-to-shoping-list {
   width: 155px;
   height: 18px;
