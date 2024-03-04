@@ -112,6 +112,9 @@ export function catByBtn(e) {
 //     .join('\n');
 // }
 export function booksByCatTemplate(data) {
+  // booksToClick.concat(data);
+  // console.log(booksToClick);
+
   return `
   <div class="hardcover-wrap">
     <ul class="hardcover-list">
@@ -133,6 +136,7 @@ export function booksByCatTemplate(data) {
     </ul>
   </div>
   `;
+  
 }
 
 export function booksByCatRender(data) {
