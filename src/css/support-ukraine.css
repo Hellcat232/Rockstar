@@ -78,8 +78,24 @@ button {
 .btn-scroll-up,
 .btn-scroll-down {
     cursor: pointer;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    /* Це властивість, яка робить елемент круглим */
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.btn-scroll-up-svg,
+.btn-scroll-down-svg {
+    width: 20px;
+    height: 20px;
+    fill: #4F2EE8;
+    /* Колір іконки */
+    z-index: 0;
+}
 .hidden {
     display: none;
 }
