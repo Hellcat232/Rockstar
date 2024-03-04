@@ -23,7 +23,7 @@ export async function onPageLoad() {
     topBooksCategoriesRender(topBooksResponse);
     refs.loader.classList.add('hidden');
     refs.loader1.classList.add('hidden');
-  } catch {
+  } catch (err) {
     errNotify(err);
   }
 
@@ -44,7 +44,7 @@ async function onSeeMoreClick(e) {
     refs.scrollToEl.scrollIntoView({
       behavior: 'smooth',
     });
-  } catch {
+  } catch (err) {
     errNotify(err);
   }
 }
@@ -62,7 +62,7 @@ async function onCategoriesClick(e) {
     refs.scrollToEl.scrollIntoView({
       behavior: 'smooth',
     });
-  } catch {
+  } catch (err) {
     errNotify(err);
   }
 }
