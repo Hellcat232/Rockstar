@@ -1,6 +1,7 @@
 import '../css/pop-up.css'
 import * as basicLightbox from 'basiclightbox'
 import 'basiclightbox/dist/basicLightbox.min.css'
+import { shoppingListhasBook, addToShoppingList, removeFromShoppingList } from './shopping-list-functions';
 
 
 export function bindPopUps(books) {
@@ -8,7 +9,8 @@ export function bindPopUps(books) {
       const bookElement = document.getElementById(book._id); 
       bookElement.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(`${book._id} clicked`)
+        console.log(`${book._id} clicked`);
+
         const instance = basicLightbox.create(`
           <div class="modal">
             <button class="modal-close-btn" type="button">
@@ -42,12 +44,22 @@ export function bindPopUps(books) {
                                       </div>
                                  </div>
                             </div>
-            <button type="button" class="add-to-sl-button">ADD TO SHOPPING LIST</button>
+            <button data-id="${book._id}" type="button" class="add-to-sl-button">${shoppingListhasBook(book._id) ? 'Remove' : 'ADD TO SHOPPING LIST'}</button>
+            <p class='book-added-text'>the book has been added</p>
           </div>
-      `)
+        `)
       
         console.log(instance);
         instance.show()
+        
+        document.querySelector('.add-to-sl-button').addEventListener('click', (e) => {
+          if(shoppingListhasBook(book._id)){
+            removeFromShoppingList(book._id)
+          } else {
+            addToShoppingList(book)
+            document.querySelector('.book-added-text') // change the class
+          }
+        })
       })
     });
   }

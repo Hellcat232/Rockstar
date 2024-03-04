@@ -5,8 +5,10 @@ export function shoppingListhasBook(id){
  }
 
 export function addToShoppingList(book) {
+  console.log('adding the book', book)
+    console.log(!book._id, !book.book_image, !book.title, !book.list_name, !book.author, !book.buy_links)
     if (!book._id || !book.book_image || !book.title || !book.list_name || !book.author || !book.buy_links){
-      throw new Error('Book _id, cover, title, category, author, buyLinks are required');
+      throw new Error('Book _id, book_image, title, list_name, author, buy_links are required');
     }
 
     if (!shoppingListhasBook(book._id)) {
