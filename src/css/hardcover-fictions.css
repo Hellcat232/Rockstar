@@ -18,14 +18,14 @@
 
 .hardcover-wrap {
         max-width: 375px;
-            margin-left: auto;
+            /* margin-left: auto;
             margin-right: auto;
             padding-left: 20px;
-            padding-right: 20px;
+            padding-right: 20px; */
 }
 
 .hardcover-list {
-    /* max-width: 375px; */
+    min-width: 375px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,13 +34,13 @@
 
 .hardcover-item {
     
-   /* max-width: 335px; */
+   max-width: 335px;
 }
 
 .hardcover-img {
     border-radius: 8px;
     width: 335px;
-    /* height: 485px; */
+    height: 485px;
 /* cursor: pointer;
     object-fit: cover; */
     /* margin-bottom: 14px; */
@@ -80,6 +80,7 @@ position: relative;
     overflow: hidden;
     border-radius: 8px;
     margin-bottom: 14px;
+    min-width: 335px;
 }
 .hardcover-books-overlay-text {
     text-align: center;
@@ -160,7 +161,7 @@ position: relative;
     .hardcover-descr {}
 }
   .hardcover-books-content {
-      max-width: 218px;
+      min-width: 218px;
   }
 .hardcover-books-overlay-text {
      padding-top: 50px;
@@ -180,7 +181,7 @@ position: relative;
         gap: 24px;
     }
 .hardcover-item{
-    width: 180px;
+    max-width: 180px;
 }
     .hardcover-img {
         width: 180px;
@@ -198,7 +199,7 @@ position: relative;
     .hardcover-descr {}
 
           .hardcover-books-content {
-              max-width: 180px;
+              min-width: 180px;
               /* margin-bottom: 40px; */
           }
     
