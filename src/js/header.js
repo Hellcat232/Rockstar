@@ -1,4 +1,4 @@
-import { refs } from '../main';
+import { refs } from './refs';
 
 export function headerBtnFuction() {
   refs.headerMenu.classList.toggle('hidden');
@@ -22,3 +22,5 @@ export function headerBtnFuction() {
     refs.headerIcon.setAttribute('height', '28');
   }
 }
+
+refs.headerBtn.addEventListener('click', headerBtnFuction);

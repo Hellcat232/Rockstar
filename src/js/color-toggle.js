@@ -1,4 +1,4 @@
-import { refs } from '../main';
+import { refs } from './refs';
 
 export function colorSchemeChange(e) {
   e.preventDefault();
@@ -21,3 +21,6 @@ export function choosenColorScheme() {
     refs.headerToggle.checked = false;
   }
 }
+
+refs.headerToggle.addEventListener('change', colorSchemeChange);
+choosenColorScheme();
