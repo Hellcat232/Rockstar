@@ -11,6 +11,7 @@ import {
   addCategoryTitle,
 } from './render-functions';
 import { refs } from '../main';
+import { bindPopUps } from './pop-up';
 
 export async function onPageLoad() {
   refs.loader.classList.remove('hidden');
@@ -23,6 +24,9 @@ export async function onPageLoad() {
     topBooksCategoriesRender(topBooksResponse);
     refs.loader.classList.add('hidden');
     refs.loader1.classList.add('hidden');
+    topBooksResponse.forEach((category) => {
+      bindPopUps(category.books)
+    })
   } catch (err) {
     errNotify(err);
   }
@@ -38,12 +42,16 @@ async function onSeeMoreClick(e) {
   refs.loader1.classList.remove('hidden');
   try {
     const booksByCat = await booksByCategory(catByBtn(e));
+    
     booksByCatRender(booksByCat);
     addCategoryTitle(catByBtn(e));
     refs.loader1.classList.add('hidden');
     refs.scrollToEl.scrollIntoView({
       behavior: 'smooth',
     });
+
+    console.log(' the first function')
+    bindPopUps(booksByCat);
   } catch (err) {
     errNotify(err);
   }
@@ -62,17 +70,21 @@ async function onCategoriesClick(e) {
     refs.scrollToEl.scrollIntoView({
       behavior: 'smooth',
     });
+
+    console.log('second function')
+    bindPopUps(booksByCat);
   } catch (err) {
     errNotify(err);
   }
 }
 
 export function errNotify(err) {
-  iziToast.warning({
-    title: 'Caution',
-    message: `Error: ${err}`,
-    position: 'topRight',
-  });
+  throw err;
+  // iziToast.warning({
+  //   title: 'Caution',
+  //   message: `Error: ${err}`,
+  //   position: 'topRight',
+  // });
 }
 
 export function scrollTop() {

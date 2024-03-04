@@ -1,11 +1,9 @@
 import './js/action-functions';
 import { onPageLoad, scrollTop } from './js/action-functions';
 
-import './js/modal';
 import { headerBtnFuction } from './js/header';
 import { colorSchemeChange } from './js/color-toggle';
 import { choosenColorScheme } from './js/color-toggle';
-import './js/modal';
 import './js/support-ukraine';
 
 export const refs = {
@@ -29,7 +27,7 @@ export const refs = {
 
 onPageLoad();
 scrollTop();
-handleBookClick(book);
+
 refs.headerBtn.addEventListener('click', headerBtnFuction);
 refs.headerToggle.addEventListener('change', colorSchemeChange);
 choosenColorScheme();
