@@ -27,7 +27,7 @@
     <link rel="modulepreload" crossorigin href="/Rockstar/assets/modulepreload-polyfill-3cfb730f.js">
     <link rel="modulepreload" crossorigin href="/Rockstar/assets/vendor-0f1e0a6f.js">
     <link rel="stylesheet" href="/Rockstar/assets/vendor-e5212ee8.css">
-    <link rel="stylesheet" href="/Rockstar/assets/index-9256779b.css">
+    <link rel="stylesheet" href="/Rockstar/assets/index-fe38fe96.css">
   </head>
   <body>
     <header class="header">
@@ -76,30 +76,35 @@
       </svg>
     </button>
   </div>
-
-  <div class="header-modal-menu hidden">
-    <div class="background"></div>
-    <nav class="header-modal-menu-navigation">
-      <ul class="header-modal-menu-navigation-list">
-        <li class="header-modal-menu-navigation-list-item mb16 header-current">
-          <a href="../index.html" class="header-modal-menu-home-link">Home</a>
-        </li>
-        <li class="header-modal-menu-navigation-list-item">
-          <a
-            href="./shopping-list.html"
-            class="header-modal-menu-shopping-list-link"
-            >Shopping list</a
-          >
-          <svg class="header-modal-menu-icon" width="20" height="20">
-            <use
-              href="../img/header/symbol-defs.svg#icon-shopping-bucket"
-            ></use>
-          </svg>
-        </li>
-      </ul>
-    </nav>
-  </div>
 </header>
+
+    <div class="header-modal-menu">
+  <nav class="header-modal-menu-navigation">
+    <ul class="header-modal-menu-navigation-list">
+      <li class="header-modal-menu-navigation-list-item mb16 header-current">
+        <a href="../index.html" class="header-modal-menu-home-link">Home</a>
+      </li>
+
+      <li class="header-modal-menu-navigation-list-item">
+        <a
+          href="./shopping-list.html"
+          class="header-modal-menu-shopping-list-link"
+          >Shopping list</a
+        >
+        <svg class="header-modal-menu-icon" width="20" height="20">
+          <use href="../img/header/symbol-defs.svg#icon-shopping-bucket"></use>
+        </svg>
+      </li>
+    </ul>
+  </nav>
+  <div class="header-modal-wrap">
+    <img
+      class="image-group"
+      src="../img/header/header-bacground-menu.png"
+      alt="header-bacground-menu"
+    />
+  </div>
+</div>
 
     <div class="main-wrapper">
       <div class="global-block-support-and-allcat">
@@ -321,9 +326,9 @@
 
         
       </div>
+      <div>
+        <button type="button" class="to-top">▲</button>
       </div>
-          <button type="button" class="to-top">▲</button>
-        </div>
     </div>
 
     <div id="modal" class="modal">
