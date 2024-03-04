@@ -109,6 +109,42 @@
   .sidebar-categories {
     max-width: 309px;
   }
+
+  .to-top {
+    opacity: 0;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    cursor: pointer;
+    display: block;
+    font-size: 25px;
+    color: #fff;
+    border: 2px;
+    background: radial-gradient(
+      183.6% 183.01% at 59.76% -23.42%,
+      #4f2ee8 18.03%,
+      #ffffff 105%
+    );
+    padding: 15px 10px;
+    border-radius: 10px;
+    z-index: 15;
+
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .to-top.show {
+    opacity: 1;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .to-top:hover,
+  .to-top:focus {
+    scale: 0.9;
+  }
 }
 @media screen and (min-width: 1440px) {
   .sidebar {
