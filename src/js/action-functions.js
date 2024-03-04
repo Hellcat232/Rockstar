@@ -41,6 +41,7 @@ async function onSeeMoreClick(e) {
     booksByCatRender(booksByCat);
     addCategoryTitle(catByBtn(e));
     refs.loader1.classList.add('hidden');
+    refs.scrollToEl.scrollIntoView({ behavior: 'smooth' });
   } catch {
     errNotify(err);
   }
@@ -56,6 +57,7 @@ async function onCategoriesClick(e) {
     addCategoryTitle(catLink(e));
     clickAddClass(e);
     refs.loader.classList.add('hidden');
+    refs.scrollToEl.scrollIntoView({ behavior: 'smooth' });
   } catch {
     errNotify(err);
   }
