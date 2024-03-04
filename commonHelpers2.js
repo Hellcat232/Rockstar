@@ -1,4 +1,4 @@
-import{b as t,r as l}from"./assets/shopping-list-functions-64bce7ec.js";import{c as p,b as a}from"./assets/vendor-a024345d.js";const e=document.querySelector(".shopping-list-is-filled");function c(i){return i.map(s=>`<li class="shopping-list-book-item">
+import{c as o,a as l}from"./assets/support-ukraine-02352ba4.js";const e=document.querySelector(".shopping-list-is-filled");function p(i){return i.map(s=>`<li class="shopping-list-book-item">
                         <div class="shopping-list-card">
             
                                 <img class="shopping-list-book-cover" src="${s.book_image}" alt="cover">   
@@ -41,7 +41,7 @@ import{b as t,r as l}from"./assets/shopping-list-functions-64bce7ec.js";import{c
                                     
                                 </div>
                             </div>
-                            </li>`).join("")}function r(){let i=` <div class="shopping-list-is-empty">
+                            </li>`).join("")}function a(){let i=` <div class="shopping-list-is-empty">
     <p class="shopping-list-text">This page is empty, add some books and proceed to order.</p>
     <picture>
         <source srcset="
@@ -52,16 +52,5 @@ import{b as t,r as l}from"./assets/shopping-list-functions-64bce7ec.js";import{c
                       ./images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
         <img class="shopping-list-image" src="./images/Book-picture-tab-min.png" alt="Stack of books">
     </picture>
-</div>`;e.innerHTML=i}function g(){return e.innerHTML=c(t)}function n(){t.length!==0?g():r()}window.lb=p;document.querySelector("#my-button").addEventListener("click",i=>{console.log("clicked");const o=a.create(`
-    <div class="modal">
-      <div>
-      <button type="button" class="modal-close-button">x</button>
-      <p>
-          Your first lightbox with just a few lines of code.
-          Yes, it's really that simple.
-      </p>
-      <button type="button" class="add-to-sl-button">ADD TO SHOPPING LIST</button>
-      </div>
-    </div>
-`);console.log(o),o.show()});n();document.querySelectorAll(".shopping-list-item-remove-button").forEach(i=>{i.addEventListener("click",o=>{console.log(i.dataset.id),l(i.dataset.id),i.closest("li.shopping-list-book-item").remove(),t.length===0&&n()})});
+</div>`;e.innerHTML=i}function r(){return e.innerHTML=p(o)}function t(){o.length!==0?r():a()}t();document.querySelectorAll(".shopping-list-item-remove-button").forEach(i=>{i.addEventListener("click",n=>{console.log(i.dataset.id),l(i.dataset.id),i.closest("li.shopping-list-book-item").remove(),o.length===0&&t()})});
 //# sourceMappingURL=commonHelpers2.js.map
