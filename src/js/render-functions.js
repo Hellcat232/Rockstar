@@ -141,6 +141,7 @@ export function booksByCatRender(data) {
 }
 
 export function addCategoryTitle(category) {
+  if (!category) return;
   let title;
   if (category === 'All categories') {
     title = `<h1 class="best-books-title">
