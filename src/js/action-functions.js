@@ -10,7 +10,7 @@ import {
   catByBtn,
   addCategoryTitle,
 } from './render-functions';
-import { refs } from '../main';
+import { refs } from './refs';
 import { bindPopUps } from './pop-up';
 
 export async function onPageLoad() {
@@ -24,9 +24,15 @@ export async function onPageLoad() {
     topBooksCategoriesRender(topBooksResponse);
     refs.loader.classList.add('hidden');
     refs.loader1.classList.add('hidden');
-    topBooksResponse.forEach((category) => {
-      bindPopUps(category.books)
-    })
+    console.log('on page load');
+    let books = topBooksResponse
+      .flatMap(category => {
+        return category.books;
+      })
+      .filter((book, index, self) => {
+        return self.indexOf(book) === index;
+      });
+    bindPopUps(books);
   } catch (err) {
     errNotify(err);
   }
@@ -35,14 +41,17 @@ export async function onPageLoad() {
   refs.categoriesItems = document.querySelectorAll('.sidebar-categories-item');
   refs.allCategories.classList.add('sidebar-active');
   refs.categories.addEventListener('click', onCategoriesClick);
-  refs.seeMoreBtn.addEventListener('click', onSeeMoreClick);
+  // refs.seeMoreBtn.addEventListener('click', onSeeMoreClick);
+  document.querySelectorAll('.btn-see-more').forEach((btn) => {
+    btn.addEventListener('click', onSeeMoreClick)
+  })
 }
 
 async function onSeeMoreClick(e) {
   refs.loader1.classList.remove('hidden');
   try {
     const booksByCat = await booksByCategory(catByBtn(e));
-    
+
     booksByCatRender(booksByCat);
     addCategoryTitle(catByBtn(e));
     refs.loader1.classList.add('hidden');
@@ -50,7 +59,6 @@ async function onSeeMoreClick(e) {
       behavior: 'smooth',
     });
 
-    console.log(' the first function')
     bindPopUps(booksByCat);
   } catch (err) {
     errNotify(err);
@@ -62,7 +70,10 @@ async function onCategoriesClick(e) {
 
   try {
     const booksByCat = await booksByCategory(catLink(e));
-    if (catLink(e) === 'All categories') onPageLoad();
+    if (catLink(e) === 'All categories') {
+      console.log('from onCategoriesClick');
+      onPageLoad()
+    };
     booksByCatRender(booksByCat);
     addCategoryTitle(catLink(e));
     clickAddClass(e);
@@ -71,7 +82,6 @@ async function onCategoriesClick(e) {
       behavior: 'smooth',
     });
 
-    console.log('second function')
     bindPopUps(booksByCat);
   } catch (err) {
     errNotify(err);
@@ -79,12 +89,12 @@ async function onCategoriesClick(e) {
 }
 
 export function errNotify(err) {
+  iziToast.warning({
+    title: 'Caution',
+    message: `Error: ${err}`,
+    position: 'topRight',
+  });
   throw err;
-  // iziToast.warning({
-  //   title: 'Caution',
-  //   message: `Error: ${err}`,
-  //   position: 'topRight',
-  // });
 }
 
 export function scrollTop() {

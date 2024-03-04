@@ -7,6 +7,9 @@ import { shoppingListhasBook, addToShoppingList, removeFromShoppingList } from '
 export function bindPopUps(books) {
     books.forEach(book => {
       const bookElement = document.getElementById(book._id); 
+      if (!bookElement) {
+        return;
+      }
       bookElement.addEventListener('click', (e) => {
         e.preventDefault();
         console.log(`${book._id} clicked`);

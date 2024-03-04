@@ -1,4 +1,4 @@
-import { refs } from '../main';
+import { refs } from './refs';
 
 export function categoriesTemplate(data) {
   return data

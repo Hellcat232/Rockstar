@@ -1,11 +1,10 @@
 // import Pagination from 'tui-pagination';
 // import 'tui-pagination/dist/tui-pagination.css';
+import './support-ukraine';
+import './color-toggle.js';
+import './header.js'
 import { shoppingList, removeFromShoppingList } from "./shopping-list-functions.js";
 import { renderShoppingList } from "./shopping-list-render.js";
-// import '../main.js'
-// import * as basicLightbox from 'basiclightbox'
-// import 'basiclightbox/dist/basicLightbox.min.css'
-
 
 renderShoppingList();
 
