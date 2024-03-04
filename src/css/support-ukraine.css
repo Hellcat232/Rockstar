@@ -24,7 +24,7 @@ button {
 
 
 .support-ukraine {
-    max-width: 335px;
+    width: 335px;
     height: 460px;
     justify-content: center;
     background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4F2EE8 18.03%, #FFFFFF 100%);
@@ -39,6 +39,7 @@ button {
     display: flex;
     gap: 12px;
     padding-top: 24px;
+    align-items: center;
 }
 
 .support-ukraine-title {
@@ -67,7 +68,6 @@ button {
     margin-bottom: 20px;
     align-items: center;
 }
-
 .image-wrapper {
     cursor: pointer;
 }
@@ -96,6 +96,6 @@ button {
 
 @media (min-width: 1440px) {
     .support-ukraine {
-        max-width: 356px;
+        width: 356px;
     }
 }
