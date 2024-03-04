@@ -7,7 +7,7 @@ const data = booksByCategory();
 
 // document.addEventListener('DOMContentLoaded', function () {});
 
-booksEl.addEventListener('click', event => clickItem(event));
+// booksEl.addEventListener('click', event => clickItem(event));
 
 function clickItem(event, data) {
   const itemEl = event.target.closest('.best-books-item');

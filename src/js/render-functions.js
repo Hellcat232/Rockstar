@@ -32,7 +32,7 @@ export function topBooksCategoriesTemplate(data) {
       return `
        
       <div class="best-books-category">
-         
+
           <p class="best-books-subtitle">${list_name}</p>
           <ul class="best-books-list">
             <li class="best-books-item">${booksTemplate}</li>
@@ -141,11 +141,19 @@ export function booksByCatRender(data) {
 }
 
 export function addCategoryTitle(category) {
-  const titleWords = category.split(' ');
-  const lastWord = titleWords.slice(-1);
-  const firstWords = titleWords.slice(0, -1);
-  const title = `<h1 class="best-books-title">${firstWords.join(
-    ' '
-  )} <span class="best-books-title-colour">${lastWord.join(' ')}</span></h1>`;
-  refs.categoryTitle.innerHTML = title;
+  let title;
+  if (category === 'All categories') {
+    title = `<h1 class="best-books-title">
+    Best Sellers<span class="best-books-title-colour"> Books</span>
+  </h1>`;
+    refs.categoryTitle.innerHTML = title;
+  } else {
+    const titleWords = category.split(' ');
+    const lastWord = titleWords.slice(-1);
+    const firstWords = titleWords.slice(0, -1);
+    title = `<h1 class="best-books-title">${firstWords.join(
+      ' '
+    )} <span class="best-books-title-colour">${lastWord.join(' ')}</span></h1>`;
+    refs.categoryTitle.innerHTML = title;
+  }
 }
