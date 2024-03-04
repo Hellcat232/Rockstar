@@ -108,7 +108,7 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: var(--main-color);
+  color: #111;
 
   border-radius: 0 0 8px 8px;
 
@@ -137,7 +137,7 @@
   line-height: 1.12;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  color: black;
+  color: var(--main-color);
 
   text-overflow: ellipsis;
   white-space: nowrap;
