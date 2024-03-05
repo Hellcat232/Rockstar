@@ -149,23 +149,8 @@
   stroke: var(--main-color);
   fill: var(--main-color);
 }
-.header-modal-menu-home-link {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.28571;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  color: #111;
-}
-.header-current {
-  border-radius: 36px;
-  padding: 8px 16px;
-  background-color: #eac645;
-}
-.header-modal-menu-shopping-list-link {
+
+.header-modal-menu-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
@@ -178,6 +163,18 @@
 .header-modal-menu-icon {
   stroke: #fff;
   fill: #fff;
+}
+.header-modal-current {
+  border-radius: 36px;
+  padding: 8px 16px;
+  background-color: #eac645;
+}
+.link-current {
+  color: #111;
+}
+.svg-current {
+  stroke: #111;
+  fill: #111;
 }
 .header-burger-btn {
   display: flex;
