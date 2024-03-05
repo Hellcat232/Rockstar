@@ -71,6 +71,7 @@ ul {
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--shopping-list-text);
+  width: 244px;
 }
 
 .shopping-list-is-filled {
@@ -251,6 +252,9 @@ ul {
     width: 28px;
     height: 27px;
   }
+  .shopping-list-is-empty {
+    margin-left: 170px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -258,6 +262,7 @@ ul {
     padding: 40px 24px;
     max-width: 1440px;
     gap: 40px;
+    justify-content: start;
   }
 
   .shopping-list-support-ukraine {
@@ -275,6 +280,10 @@ ul {
     height: 213px;
     gap: 24px;
     padding: 24px;
+  }
+
+  .shopping-list-is-empty {
+    margin: 100px 0 0 315px;
   }
 }
 
