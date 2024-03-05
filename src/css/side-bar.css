@@ -1,4 +1,5 @@
 .sidebar {
+  min-width: 335px;
   max-width: 335px;
   height: 228px;
   overflow-y: auto;
@@ -15,7 +16,7 @@
 }
 
 .sidebar-categories {
-  max-width: 307px;
+  min-width: 307px;
   position: relative;
 }
 
@@ -102,12 +103,12 @@
 
 @media screen and (min-width: 768px) {
   .sidebar {
-    max-width: 337px;
+    min-width: 337px;
     height: 472px;
   }
 
   .sidebar-categories {
-    max-width: 309px;
+    min-width: 309px;
   }
 
   .to-top {
@@ -148,11 +149,11 @@
 }
 @media screen and (min-width: 1440px) {
   .sidebar {
-    max-width: 356px;
+    min-width: 356px;
     height: 472px;
   }
 
   .sidebar-categories {
-    max-width: 328px;
+    min-width: 328px;
   }
 }

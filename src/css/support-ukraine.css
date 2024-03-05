@@ -1,8 +1,8 @@
 ul,
 li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -10,103 +10,105 @@ h2,
 h3,
 h4,
 h5 {
-    margin: 0;
+  margin: 0;
 }
 
 button {
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none;
-    cursor: pointer;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
-
-
 .support-ukraine {
-    max-width: 335px;
-    height: 460px;
-    justify-content: center;
-    background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4F2EE8 18.03%, #FFFFFF 100%);
-    border-radius: 16px;
+  max-width: 335px;
+  height: 460px;
+  justify-content: center;
+  background: radial-gradient(
+    183.6% 183.01% at 59.76% -23.42%,
+    #4f2ee8 18.03%,
+    #ffffff 100%
+  );
+  border-radius: 16px;
 }
 
 .container-support-ukraine {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .flex-ukraine-wrapper {
-    display: flex;
-    gap: 12px;
-    padding-top: 24px;
+  display: flex;
+  gap: 12px;
+  padding-top: 24px;
 }
 
 .support-ukraine-title {
-    color: white;
-    font-size: 24px;
-    height: 28px;
+  color: white;
+  font-size: 24px;
+  height: 28px;
 }
 
-.swiper{
-    width: 159px;
-    height: 292px;
-    overflow: hidden;
-    margin-top: 40px;
+.swiper {
+  width: 159px;
+  height: 292px;
+  overflow: hidden;
+  margin-top: 40px;
 }
 
 .number-support {
-    color: white;
+  color: white;
 }
 
 .list-charity {
+  cursor: pointer;
 }
 
 .item-charity {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 20px;
-    align-items: center;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .btn-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 20px;
 }
 
 .btn-scroll-up,
 .btn-scroll-down {
-    cursor: pointer;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    /* Це властивість, яка робить елемент круглим */
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  cursor: pointer;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  /* Це властивість, яка робить елемент круглим */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-scroll-up-svg,
 .btn-scroll-down-svg {
-    width: 20px;
-    height: 20px;
-    fill: #4F2EE8;
-    /* Колір іконки */
-    z-index: 0;
+  width: 20px;
+  height: 20px;
+  fill: #4f2ee8;
+  /* Колір іконки */
+  z-index: 0;
 }
 .hidden {
-    display: none;
+  display: none;
 }
 
 .overlay {
-    display: none;
+  display: none;
 }
 
-
 @media (min-width: 1440px) {
-    .support-ukraine {
-        max-width: 356px;
-    }
+  .support-ukraine {
+    min-width: 356px;
+  }
 }
