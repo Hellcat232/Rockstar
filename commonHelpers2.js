@@ -1,4 +1,4 @@
-import{c as o,a as l}from"./assets/check-page-30e88e65.js";const e=document.querySelector(".shopping-list-is-filled");function p(i){return i.map(s=>`<li class="shopping-list-book-item">
+import{c as o,a as l}from"./assets/check-page-30e88e65.js";const t=document.querySelector(".shopping-list-container");function p(i){return'<ul class="shopping-list-is-filled">'+i.map(s=>`<li class="shopping-list-book-item">
                         <div class="shopping-list-card">
             
                                 <img class="shopping-list-book-cover" src="${s.book_image}" alt="cover">   
@@ -12,7 +12,7 @@ import{c as o,a as l}from"./assets/check-page-30e88e65.js";const e=document.quer
 
                                         <button data-id="${s._id}" type="button" class="shopping-list-item-remove-button">
                                         <svg width="16" height="16" class="icon-bin" alt="bin">
-                                            <use href="./images/icons.svg#icon-bin"></use>
+                                            <use href="./img/icons.svg#icon-bin"></use>
                                         </svg>
                                     </button>
                                     </div>
@@ -25,14 +25,14 @@ import{c as o,a as l}from"./assets/check-page-30e88e65.js";const e=document.quer
                                             <li class="shopping-list-buy-link-item">
                                                 <a rel="noreferrer noopener nofollow" class="shopping-list-buy-link" href="${s.buy_links[0].url}" target="_blank">
                                                 <svg width="32" height="11" class="shopping-list-buy-link-amazon" alt="logo-amazon">
-                                            <use href="./images/icons.svg#icon-amazon-1"></use>
+                                            <use href="./img/icons.svg#icon-amazon-1"></use>
                                         </svg>   
                                                 </a>
                                             </li>
                                             <li class="shopping-list-buy-link-item">
                                                 <a rel="noreferrer noopener nofollow" class="shopping-list-buy-link" href="${s.buy_links[1].url} " target="_blank">
                                                 <svg width="16" height="16" class="shopping-list-buy-link-applebooks" alt="logo-apple-books">
-                                            <use href="./images/icons.svg#icon-apple-ibooks"></use>
+                                            <use href="./img/icons.svg#icon-apple-ibooks"></use>
                                         </svg>    
                                                 </a>
                                             </li>
@@ -41,16 +41,16 @@ import{c as o,a as l}from"./assets/check-page-30e88e65.js";const e=document.quer
                                     
                                 </div>
                             </div>
-                            </li>`).join("")}function a(){let i=` <div class="shopping-list-is-empty">
+                            </li>`).join("")+"</ul>"}function a(){let i=` <div class="shopping-list-is-empty">
     <p class="shopping-list-text">This page is empty, add some books and proceed to order.</p>
     <picture>
         <source srcset="
-                      ../images/Book-picture-tab-min.png    1x,
-                     ../images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
+                      ./img/Book-picture-tab-min.png    1x,
+                     ./img/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
         <source srcset="
-                      ../images/Book-picture-mob-min.png    1x,
-                     ../images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
-        <img class="shopping-list-image" src="../images/Book-picture-tab-min.png" alt="Stack of books">
+                      ./img/Book-picture-mob-min.png    1x,
+                     ./img/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
+        <img class="shopping-list-image" src="./img/Book-picture-tab-min.png" alt="Stack of books">
     </picture>
-</div>`;e.innerHTML=i}function r(){return e.innerHTML=p(o)}function t(){o.length!==0?r():a()}t();document.querySelectorAll(".shopping-list-item-remove-button").forEach(i=>{i.addEventListener("click",n=>{console.log(i.dataset.id),l(i.dataset.id),i.closest("li.shopping-list-book-item").remove(),o.length===0&&t()})});
+</div>`;t.innerHTML=i}function r(){return t.innerHTML=p(o)}function e(){o.length!==0?r():a()}e();document.querySelectorAll(".shopping-list-item-remove-button").forEach(i=>{i.addEventListener("click",n=>{console.log(i.dataset.id),l(i.dataset.id),i.closest("li.shopping-list-book-item").remove(),o.length===0&&e()})});
 //# sourceMappingURL=commonHelpers2.js.map
