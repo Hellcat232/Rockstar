@@ -7,7 +7,7 @@ function getCurrentFileName() {
 
 function addClassBasedOnFileName() {
   const fileName = getCurrentFileName();
-
+  console.log(fileName);
   if (fileName === 'index.html' || fileName === 'Rockstar') {
     refs.element[0].classList.add('header-current');
     refs.modalElement[0].classList.add('header-modal-current');
