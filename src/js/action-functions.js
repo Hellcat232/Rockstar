@@ -24,7 +24,7 @@ export async function onPageLoad() {
     topBooksCategoriesRender(topBooksResponse);
     refs.loader.classList.add('hidden');
     refs.loader1.classList.add('hidden');
-    console.log('on page load');
+    // console.log('on page load');
     let books = topBooksResponse
       .flatMap(category => {
         return category.books;
