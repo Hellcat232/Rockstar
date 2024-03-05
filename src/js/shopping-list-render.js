@@ -65,7 +65,7 @@ export function renderEmptyShoppingList() {
         <source srcset="
                       /src/images/Book-picture-mob-min.png    1x,
                      /src/images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
-        <img class="shopping-list-image" src="./images/Book-picture-tab-min.png" alt="Stack of books">
+        <img class="shopping-list-image" src="images/Book-picture-tab-min.png" alt="Stack of books">
     </picture>
 </div>`;
 
