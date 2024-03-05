@@ -1,34 +1,12 @@
 
-
-
-/* .title-hardcover {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.1875;
-    letter-spacing: -0.04em;
-    color: #111;
-    margin-bottom: 40px;
-    margin-top: 40px;
-} */
-
-/* span {
-    color: #4f2ee8;
-} */
-
 .hardcover-wrap {
         max-width: 375px;
-            /* margin-left: auto;
-            margin-right: auto;
-            padding-left: 20px;
-            padding-right: 20px; */
 }
 
 .hardcover-list {
     min-width: 375px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 40px;
 }
 
@@ -41,9 +19,6 @@
     border-radius: 8px;
     width: 335px;
     height: 485px;
-/* cursor: pointer;
-    object-fit: cover; */
-    /* margin-bottom: 14px; */
 }
 
 .hardcover-subtitle {
@@ -72,11 +47,11 @@
     margin-bottom: 40px;
 
     text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .hardcover-books-content{
-position: relative;
+    position: relative;
     overflow: hidden;
     border-radius: 8px;
     margin-bottom: 14px;
@@ -133,9 +108,7 @@ position: relative;
     }
 
     .hardcover-wrap {
-            min-width: 768px;
-                padding-left: 32px;
-                padding-right: 32px;
+        min-width: 768px;
     }
 
     .hardcover-list {
@@ -157,53 +130,44 @@ position: relative;
     .hardcover-subtitle {
         text-transform: uppercase;
     }
-
-    .hardcover-descr {}
+    
 }
   .hardcover-books-content {
-      min-width: 218px;
+    min-width: 218px;
   }
 .hardcover-books-overlay-text {
-     padding-top: 50px;
+    padding-top: 50px;
  }
 @media screen and (min-width: 1440px) {
 
-    .hardcover-wrap {
-            min-width: 1098px;
-                margin: 0 auto;
-                /* padding-left: 32px; */
-                padding-right: 24px;
-                margin-bottom: 136px;
+.hardcover-wrap {
+    min-width: 1098px;
+    margin: 0 auto;
     }
 
-    .hardcover-list {
-        min-width: 1098px;
-        gap: 24px;
+.hardcover-list {
+    min-width: 1098px;
+    gap: 24px;
     }
 .hardcover-item{
     max-width: 180px;
 }
-    .hardcover-img {
-        width: 180px;
-        height: 256px;
+.hardcover-img {
+    width: 180px;
+    height: 256px;
+}
 
-        
+.hardcover-subtitle {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.125;
     }
 
-    .hardcover-subtitle {
-        text-transform: uppercase;
-        font-size: 16px;
-        line-height: 1.125;
+.hardcover-books-content {
+    min-width: 180px;
     }
-
-    .hardcover-descr {}
-
-          .hardcover-books-content {
-              min-width: 180px;
-              /* margin-bottom: 40px; */
-          }
     
-          .hardcover-books-overlay-text {
-              padding-top: 45px;
-          }
+.hardcover-books-overlay-text {
+    padding-top: 45px;
+    }
 }
