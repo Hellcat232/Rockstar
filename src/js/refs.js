@@ -23,4 +23,5 @@ export const refs = {
   modalLinks: document.querySelectorAll('.header-modal-menu-link'),
   links: document.querySelectorAll('.header-link'),
   svg1: document.querySelector('.header-bucket-icon'),
+  headerContainer: document.querySelector('.header-container'),
 };

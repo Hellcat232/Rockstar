@@ -4,14 +4,10 @@
 }
 .header {
   position: relative;
-  margin-bottom: 104px;
+  margin-bottom: 40px;
 }
 .header-container {
-  /* min-width: 375px; */
-
-  position: fixed;
   top: 0;
-  /* left: 0; */
   width: 100%;
   font-family: 'DM Sans', sans-serif;
   display: flex;
@@ -21,7 +17,7 @@
   border: 1.5px solid var(--header-border);
   border-radius: 0 0 8px 8px;
   background-color: var(--header-main-background);
-  z-index: 50;
+  z-index: 10000;
 }
 .header-logo-link {
   margin-right: auto;
@@ -185,9 +181,6 @@
   align-items: center;
 }
 @media screen and (min-width: 768px) {
-  .header {
-    margin-bottom: 112px;
-  }
   .header-modal-menu {
     display: none;
     opacity: 0;

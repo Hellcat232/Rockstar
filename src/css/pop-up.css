@@ -133,7 +133,7 @@
   line-height: 1.2;
   letter-spacing: -0.04em;
   text-align: center;
-  color: rgba(17, 17, 17, 0.5);
+  color: var(--shopping-list-text);
   text-wrap: wrap;
   margin: 0 120px;
 }
