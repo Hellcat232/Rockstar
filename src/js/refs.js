@@ -15,7 +15,6 @@ export const refs = {
   headerToggle: document.querySelector('#headerToggle'),
   root: document.querySelector(':root'),
   btnToTop: document.querySelector('.to-top'),
-
   element: document.querySelectorAll('.header-navigation-list-item'),
   modalElement: document.querySelectorAll(
     '.header-modal-menu-navigation-list-item'
