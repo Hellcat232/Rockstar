@@ -45,11 +45,11 @@ import{c as o,a as l}from"./assets/support-ukraine-02352ba4.js";const e=document
     <p class="shopping-list-text">This page is empty, add some books and proceed to order.</p>
     <picture>
         <source srcset="
-                      ./images/Book-picture-tab-min.png    1x,
-                      ./images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
+                      /src/images/Book-picture-tab-min.png    1x,
+                     /src/images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
         <source srcset="
-                      ./images/Book-picture-mob-min.png    1x,
-                      ./images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
+                      /src/images/Book-picture-mob-min.png    1x,
+                     /src/images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
         <img class="shopping-list-image" src="./images/Book-picture-tab-min.png" alt="Stack of books">
     </picture>
 </div>`;e.innerHTML=i}function r(){return e.innerHTML=p(o)}function t(){o.length!==0?r():a()}t();document.querySelectorAll(".shopping-list-item-remove-button").forEach(i=>{i.addEventListener("click",n=>{console.log(i.dataset.id),l(i.dataset.id),i.closest("li.shopping-list-book-item").remove(),o.length===0&&t()})});
