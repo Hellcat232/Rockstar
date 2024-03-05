@@ -99,7 +99,7 @@
   background-position: center;
   z-index: 1;
   opacity: 1;
-  transition: opacity 0.5s ease-in-outa;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .header-modal-wrap {
