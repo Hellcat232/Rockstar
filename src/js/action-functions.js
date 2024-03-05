@@ -105,11 +105,22 @@ export function errNotify(err) {
 
 export function scrollTop() {
   window.addEventListener('scroll', onScrollShowBtn);
+  let prevScrollPos = window.pageYOffset;
 
   function onScrollShowBtn() {
     window.scrollY > 200
       ? refs.btnToTop.classList.add('show')
       : refs.btnToTop.classList.remove('show');
+
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+      document.querySelector('.header-container').style.top = '0';
+    } else {
+      document.querySelector('.header-container').style.top = '-118px';
+    }
+
+    prevScrollPos = currentScrollPos;
   }
 
   refs.btnToTop.addEventListener('click', onClickGoTop);
