@@ -42,9 +42,9 @@ export async function onPageLoad() {
   refs.allCategories.classList.add('sidebar-active');
   refs.categories.addEventListener('click', onCategoriesClick);
   // refs.seeMoreBtn.addEventListener('click', onSeeMoreClick);
-  document.querySelectorAll('.btn-see-more').forEach((btn) => {
-    btn.addEventListener('click', onSeeMoreClick)
-  })
+  document.querySelectorAll('.btn-see-more').forEach(btn => {
+    btn.addEventListener('click', onSeeMoreClick);
+  });
 }
 
 async function onSeeMoreClick(e) {
@@ -66,21 +66,27 @@ async function onSeeMoreClick(e) {
 }
 
 async function onCategoriesClick(e) {
+  if (catLink(e) === undefined) return;
   refs.loader.classList.remove('hidden');
 
   try {
     const booksByCat = await booksByCategory(catLink(e));
+    console.log(catLink(e));
+
     if (catLink(e) === 'All categories') {
-      console.log('from onCategoriesClick');
-      onPageLoad()
-    };
+      //   console.log('from onCategoriesClick');
+      onPageLoad();
+    }
+
     booksByCatRender(booksByCat);
     addCategoryTitle(catLink(e));
+    console.log(catLink(e));
     clickAddClass(e);
     refs.loader.classList.add('hidden');
-    refs.scrollToEl.scrollIntoView({
-      behavior: 'smooth',
-    });
+    if (window.innerWidth < 1440)
+      refs.scrollToEl.scrollIntoView({
+        behavior: 'smooth',
+      });
 
     bindPopUps(booksByCat);
   } catch (err) {

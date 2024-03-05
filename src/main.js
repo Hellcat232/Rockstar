@@ -5,6 +5,6 @@ import './js/header';
 import './js/color-toggle';
 import './js/support-ukraine';
 
-console.log('main');
+// console.log('main');
 onPageLoad();
 scrollTop();

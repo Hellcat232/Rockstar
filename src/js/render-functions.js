@@ -78,8 +78,8 @@ export function clickAddClass(e) {
 }
 
 export function catLink(e) {
-  const categoryLink = e.target.closest('li').textContent.trim();
-  return categoryLink;
+  const categoryLink = e.target.closest('li');
+  if (categoryLink) return categoryLink.textContent.trim();
 }
 
 export function catByBtn(e) {
@@ -136,7 +136,6 @@ export function booksByCatTemplate(data) {
     </ul>
   </div>
   `;
-  
 }
 
 export function booksByCatRender(data) {
