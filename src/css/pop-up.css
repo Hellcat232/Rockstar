@@ -36,9 +36,7 @@
 }
 
 .add-to-sl-button:focus {
-  background-color: #4f2ee8;
-  color: #fff;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }
 
 .modal-close-btn {
@@ -133,9 +131,9 @@
   line-height: 1.2;
   letter-spacing: -0.04em;
   text-align: center;
-  color: rgba(17, 17, 17, 0.5);
-  text-wrap: wrap;
-  margin: 0 120px;
+  color: var(--main-color);
+  margin: 0 auto;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -176,5 +174,10 @@
 
   .pop-up-book-description {
     margin-bottom: 20px;
+  }
+
+  .book-added-text{
+    text-wrap: wrap;
+    width: 324px;
   }
 }
