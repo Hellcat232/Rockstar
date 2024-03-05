@@ -24,19 +24,19 @@ ul {
 }
 
 .shopping-list-and-support-ukraine {
-  display: flex;
   max-width: 375px;
   padding: 40px 20px;
   margin: 0 auto;
 }
 
+.shopping-list-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .shopping-list-container {
-  /* max-width: 375px;
-        padding: 0 20px; */
-  /* margin: 0 auto; */
-  /* padding: 40px 20px; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
+  display: flex;
+  justify-content: center;
 }
 
 .shopping-list-title {
@@ -56,11 +56,13 @@ ul {
 }
 
 .shopping-list-is-empty {
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 120px;
   gap: 14px;
-  margin: 120px 35px 0 35px;
+  
 }
 
 .shopping-list-text {
@@ -204,6 +206,8 @@ ul {
 
 .shopping-list-buy-link-amazon {
   filter: grayscale(100%);
+  fill: var(--main-color);
+  stroke: var(--main-color);
 }
 
 .shopping-list-buy-link-applebooks {
@@ -229,6 +233,12 @@ ul {
   .shopping-list-and-support-ukraine {
     padding: 40px 32px;
     max-width: 768px;
+  }
+
+  .shopping-list-is-empty {
+    width: 349px;
+    padding-top: 140px;
+    gap: 20px;
   }
 
   .shopping-list-card {
@@ -259,6 +269,7 @@ ul {
 
 @media screen and (min-width: 1440px) {
   .shopping-list-and-support-ukraine {
+    display: flex;
     padding: 40px 24px;
     max-width: 1440px;
     gap: 40px;
@@ -273,6 +284,7 @@ ul {
 
   .shopping-list-container {
     padding: 0;
+    
   }
 
   .shopping-list-card {

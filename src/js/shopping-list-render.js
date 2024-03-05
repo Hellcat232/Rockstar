@@ -1,6 +1,6 @@
 import { shoppingList } from './shopping-list-functions.js';
 export const shoppingListElement = document.querySelector(
-  '.shopping-list-is-filled'
+  '.shopping-list-container'
 );
 
 export function renderShoppingListBook(shoppingList) {
@@ -20,7 +20,7 @@ export function renderShoppingListBook(shoppingList) {
 
                                         <button data-id="${book._id}" type="button" class="shopping-list-item-remove-button">
                                         <svg width="16" height="16" class="icon-bin" alt="bin">
-                                            <use href="./images/icons.svg#icon-bin"></use>
+                                            <use href="./img/icons.svg#icon-bin"></use>
                                         </svg>
                                     </button>
                                     </div>
@@ -33,14 +33,14 @@ export function renderShoppingListBook(shoppingList) {
                                             <li class="shopping-list-buy-link-item">
                                                 <a rel="noreferrer noopener nofollow" class="shopping-list-buy-link" href="${book.buy_links[0].url}" target="_blank">
                                                 <svg width="32" height="11" class="shopping-list-buy-link-amazon" alt="logo-amazon">
-                                            <use href="./images/icons.svg#icon-amazon-1"></use>
+                                            <use href="./img/icons.svg#icon-amazon-1"></use>
                                         </svg>   
                                                 </a>
                                             </li>
                                             <li class="shopping-list-buy-link-item">
                                                 <a rel="noreferrer noopener nofollow" class="shopping-list-buy-link" href="${book.buy_links[1].url} " target="_blank">
                                                 <svg width="16" height="16" class="shopping-list-buy-link-applebooks" alt="logo-apple-books">
-                                            <use href="./images/icons.svg#icon-apple-ibooks"></use>
+                                            <use href="./img/icons.svg#icon-apple-ibooks"></use>
                                         </svg>    
                                                 </a>
                                             </li>
@@ -52,7 +52,7 @@ export function renderShoppingListBook(shoppingList) {
                             </li>`;
     })
     .join('');
-  return booksToAdd;
+  return '<ul class="shopping-list-is-filled">' + booksToAdd + '</ul>';
 }
 
 export function renderEmptyShoppingList() {
@@ -60,12 +60,12 @@ export function renderEmptyShoppingList() {
     <p class="shopping-list-text">This page is empty, add some books and proceed to order.</p>
     <picture>
         <source srcset="
-                      ../images/Book-picture-tab-min.png    1x,
-                     ../images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
+                      ./img/Book-picture-tab-min.png    1x,
+                     ./img/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
         <source srcset="
-                      ../images/Book-picture-mob-min.png    1x,
-                     ../images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
-        <img class="shopping-list-image" src="../images/Book-picture-tab-min.png" alt="Stack of books">
+                      ./img/Book-picture-mob-min.png    1x,
+                     ./img/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
+        <img class="shopping-list-image" src="./img/Book-picture-tab-min.png" alt="Stack of books">
     </picture>
 </div>`;
 
