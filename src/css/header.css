@@ -2,12 +2,18 @@
   padding: 0;
   margin: 0;
 }
+
+main {
+  margin-top: 118px;
+}
+
 .header {
   position: relative;
   margin-bottom: 40px;
 }
 .header-container {
   top: 0;
+  position: fixed;
   width: 100%;
   font-family: 'DM Sans', sans-serif;
   display: flex;
@@ -18,6 +24,7 @@
   border-radius: 0 0 8px 8px;
   background-color: var(--header-main-background);
   z-index: 10000;
+  transition: top 0.4s;
 }
 .header-logo-link {
   margin-right: auto;
