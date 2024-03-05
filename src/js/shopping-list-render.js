@@ -1,9 +1,12 @@
-import { shoppingList } from "./shopping-list-functions.js";
-export const shoppingListElement = document.querySelector('.shopping-list-is-filled');
+import { shoppingList } from './shopping-list-functions.js';
+export const shoppingListElement = document.querySelector(
+  '.shopping-list-is-filled'
+);
 
 export function renderShoppingListBook(shoppingList) {
-        const booksToAdd = shoppingList.map((book) => {
-        return `<li class="shopping-list-book-item">
+  const booksToAdd = shoppingList
+    .map(book => {
+      return `<li class="shopping-list-book-item">
                         <div class="shopping-list-card">
             
                                 <img class="shopping-list-book-cover" src="${book.book_image}" alt="cover">   
@@ -46,38 +49,37 @@ export function renderShoppingListBook(shoppingList) {
                                     
                                 </div>
                             </div>
-                            </li>`}).join("");
-        return booksToAdd;
-        };      
-    
+                            </li>`;
+    })
+    .join('');
+  return booksToAdd;
+}
 
 export function renderEmptyShoppingList() {
-    let code = ` <div class="shopping-list-is-empty">
+  let code = ` <div class="shopping-list-is-empty">
     <p class="shopping-list-text">This page is empty, add some books and proceed to order.</p>
     <picture>
         <source srcset="
-                      ./images/Book-picture-tab-min.png    1x,
-                      ./images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
+                      /src/images/Book-picture-tab-min.png    1x,
+                     /src/images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
         <source srcset="
-                      ./images/Book-picture-mob-min.png    1x,
-                      ./images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
+                      /src/images/Book-picture-mob-min.png    1x,
+                     /src/images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
         <img class="shopping-list-image" src="./images/Book-picture-tab-min.png" alt="Stack of books">
     </picture>
 </div>`;
 
-shoppingListElement.innerHTML = code;   
+  shoppingListElement.innerHTML = code;
 }
 
 export function renderFilledShoppingList() {
-    return shoppingListElement.innerHTML = renderShoppingListBook(shoppingList);   
+  return (shoppingListElement.innerHTML = renderShoppingListBook(shoppingList));
 }
 
 export function renderShoppingList() {
-    if (shoppingList.length !== 0) {
-        renderFilledShoppingList();
-    }else{
-        renderEmptyShoppingList();
-    }
+  if (shoppingList.length !== 0) {
+    renderFilledShoppingList();
+  } else {
+    renderEmptyShoppingList();
+  }
 }
-
-
