@@ -60,12 +60,12 @@ export function renderEmptyShoppingList() {
     <p class="shopping-list-text">This page is empty, add some books and proceed to order.</p>
     <picture>
         <source srcset="
-                      /src/images/Book-picture-tab-min.png    1x,
-                     /src/images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
+                      ../images/Book-picture-tab-min.png    1x,
+                     ../images/Book-picture-tab-2x-min.png 2x" media="(min-width:768px)" />
         <source srcset="
-                      /src/images/Book-picture-mob-min.png    1x,
-                     /src/images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
-        <img class="shopping-list-image" src="images/Book-picture-tab-min.png" alt="Stack of books">
+                      ../images/Book-picture-mob-min.png    1x,
+                     ../images/Book-picture-mob-2x-min.png 2x" media="(min-width:320px)" />
+        <img class="shopping-list-image" src="../images/Book-picture-tab-min.png" alt="Stack of books">
     </picture>
 </div>`;
 
