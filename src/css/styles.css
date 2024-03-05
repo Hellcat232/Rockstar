@@ -35,6 +35,7 @@
   --categories-scroll-bar: #e0e0e0;
   --categories-item: rgba(17, 17, 17, 0.6);
   --categories-item-hover: #4f2ee8;
+  --shopping-list-text: rgba(0, 0, 0, 0.6);
   color-scheme: light;
 }
 
@@ -47,5 +48,6 @@
   --categories-scroll-bar: rgba(17, 17, 17, 0.6);
   --categories-item: rgba(255, 255, 255, 0.6);
   --categories-item-hover: #eac645;
+  --shopping-list-text: #fff;
   color-scheme: dark;
 }
