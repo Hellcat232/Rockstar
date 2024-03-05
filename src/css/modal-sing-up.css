@@ -1,0 +1,113 @@
+.modal {
+  /* display: none;  */
+  /* position: fixed; */
+  z-index: 1;
+  left: 0;
+  top: 0;
+  border: 2px solid #111111; /* змінено колір рамки */
+  width: 579px;
+  height: 516px;
+  border-radius: 18px;
+  overflow: auto;
+  background-color: #f6f6f6;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 25px;
+  margin-top: 27px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.input {
+  width: 499px;
+  height: 64px;
+  padding: 20px, 173px, 20px, 40px;
+  border-radius: 40px;
+  border: 2px;
+  gap: 10px;
+  border: 2px solid #111111;
+}
+
+.input-content {
+  width: 499px;
+  height: 248px;
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.input::placeholder {
+  color: #111111;
+}
+
+.modal-content {
+  margin-left: 40px;
+  margin-top: 80px;
+}
+
+.modal-content input {
+  width: calc(100% - 40px);
+  margin-bottom: 28px;
+  /* padding: 10px; */
+  padding-left: 40px;
+
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+.modal-content button {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  /* text-align: left; */
+
+  width: 499px;
+  height: 64px;
+  padding: 20px, 173px, 20px, 173px;
+  border-radius: 40px;
+  gap: 10px;
+  width: calc(100% - 40px);
+  background-color: #111111;
+
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* .modal-content p {
+    text-align: center;
+  } */
+
+.sign-up {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  display: flex;
+  flex-direction: row-reverse;
+  /* justify-content: center; */
+  margin-right: 213px;
+  margin-top: 20px;
+  color: #11111180;
+}
+
+.sign-up-span {
+  color: #4f2ee8;
+  margin-right: 20px;
+}
