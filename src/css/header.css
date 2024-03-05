@@ -7,11 +7,8 @@
   margin-bottom: 104px;
 }
 .header-container {
-  /* min-width: 375px; */
-
   position: fixed;
   top: 0;
-  /* left: 0; */
   width: 100%;
   font-family: 'DM Sans', sans-serif;
   display: flex;
@@ -88,14 +85,9 @@
   opacity: 0;
 }
 .header-modal-menu {
-  /* max-height: 748px; */
-  /* max-width: 375px; */
-
   font-family: 'DM Sans', sans-serif;
   position: fixed;
   top: 0;
-  /* left: 0; */
-  /* width: 100vw; */
   height: 100%;
   width: 100%;
   background-color: #4f2ee8;
@@ -112,7 +104,6 @@
 }
 
 .header-modal-wrap {
-  /* position: relative; */
   max-height: 748px;
 }
 .image-group {
