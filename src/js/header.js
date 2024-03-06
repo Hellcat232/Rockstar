@@ -5,7 +5,7 @@ export function headerBtnFuction() {
   refs.headerContainer.style.position = 'fixed';
 
   const check =
-    refs.burgerSvg.getAttribute('href') ==
+    refs.burgerSvg.getAttribute('href') ===
     '/img/header/symbol-defs.svg#icon-burger';
   console.log(refs.burgerSvg.getAttribute('href'));
   if (check) {
