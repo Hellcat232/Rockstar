@@ -15,7 +15,6 @@ export function headerBtnFuction() {
     );
     refs.headerIcon.setAttribute('width', '18');
     refs.headerIcon.setAttribute('height', '18');
-    refs.headerMenu.style.padding = '5px';
   } else {
     refs.burgerSvg.setAttribute(
       'href',
