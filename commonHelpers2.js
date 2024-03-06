@@ -1,4 +1,4 @@
-import{c as o,a as l}from"./assets/check-page-bf3a2c1e.js";const t=document.querySelector(".shopping-list-container");function p(i){return'<ul class="shopping-list-is-filled">'+i.map(s=>`<li class="shopping-list-book-item">
+import{c as o,a as l}from"./assets/check-page-bd239c37.js";const t=document.querySelector(".shopping-list-container");function p(i){return'<ul class="shopping-list-is-filled">'+i.map(s=>`<li class="shopping-list-book-item">
                         <div class="shopping-list-card">
             
                                 <img class="shopping-list-book-cover" src="${s.book_image}" alt="cover">   
