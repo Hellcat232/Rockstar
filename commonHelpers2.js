@@ -1,7 +1,7 @@
 import{c as o,a as l}from"./assets/check-page-a3c351b8.js";const t=document.querySelector(".shopping-list-container");function p(i){return'<ul class="shopping-list-is-filled">'+i.map(s=>`<li class="shopping-list-book-item">
                         <div class="shopping-list-card">
             
-                                <img class="shopping-list-book-cover" src="${s.book_image}" alt="cover">   
+                                <img class="shopping-list-book-cover" src="${s.book_image}" alt="cover" loading="lazy">   
                         
                                 <div class="shopping-list-card-wrap">
                                     <div class="shopping-list-card-top-line">
