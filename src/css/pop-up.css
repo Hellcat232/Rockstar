@@ -1,11 +1,14 @@
 .modal {
   border: 2px solid var(--main-color);
   border-radius: 18px;
-  width: 335px;
-  max-height: 100vh;
+  width: 95%;
+  max-width: 335px;
+  height: 95%;
+  max-height: 762px;
   overflow: auto;
   background-color: var(--header-main-background);
   padding-bottom: 40px;
+  margin: auto;
 }
 
 .pop-up-card-wrap {
@@ -58,6 +61,7 @@
 
 .basicLightbox {
   background: rgba(17, 17, 17, 0.4);
+  height: 100%;
 }
 
 .pop-up-book-cover {
