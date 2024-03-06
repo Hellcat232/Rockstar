@@ -2,7 +2,8 @@
   border: 2px solid var(--main-color);
   border-radius: 18px;
   width: 335px;
-  height: 100%;
+  max-height: 100vh;
+  overflow: auto;
   background-color: var(--header-main-background);
   padding-bottom: 40px;
 }
