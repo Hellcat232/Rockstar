@@ -60,7 +60,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 80px;
   gap: 14px;
   
 }
@@ -237,7 +237,7 @@ ul {
 
   .shopping-list-is-empty {
     width: 349px;
-    padding-top: 140px;
+    padding-top: 100px;
     gap: 20px;
   }
 
@@ -262,9 +262,7 @@ ul {
     width: 28px;
     height: 27px;
   }
-  .shopping-list-is-empty {
-    margin-left: 170px;
-  }
+ 
 }
 
 @media screen and (min-width: 1440px) {
@@ -294,9 +292,6 @@ ul {
     padding: 24px;
   }
 
-  .shopping-list-is-empty {
-    margin: 100px 0 0 315px;
-  }
 }
 
 .modal {
