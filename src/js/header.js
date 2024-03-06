@@ -11,7 +11,6 @@ export function headerBtnFuction() {
     refs.burgerSvg.setAttribute('href', './img/symbol-defs.svg#icon-close');
     refs.headerIcon.setAttribute('width', '18');
     refs.headerIcon.setAttribute('height', '18');
-    refs.headerMenu.style.padding = '5px';
   } else {
     refs.burgerSvg.setAttribute('href', './img/symbol-defs.svg#icon-burger');
     refs.headerIcon.setAttribute('width', '28');
