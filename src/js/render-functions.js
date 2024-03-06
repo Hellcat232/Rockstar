@@ -123,7 +123,7 @@ export function booksByCatTemplate(data) {
           ({ author, list_name, book_image, title, _id }) => `
           <li class="hardcover-item" id="${_id}">
           <div class="hardcover-books-content">
-          <img class="hardcover-img" src="${book_image}" alt="card">
+          <img class="hardcover-img" src="${book_image}" alt="card" loading="lazy">
           <p class="hardcover-books-overlay-text">quick view</p>
           </div>
             

@@ -9,7 +9,7 @@ export function renderShoppingListBook(shoppingList) {
       return `<li class="shopping-list-book-item">
                         <div class="shopping-list-card">
             
-                                <img class="shopping-list-book-cover" src="${book.book_image}" alt="cover">   
+                                <img class="shopping-list-book-cover" src="${book.book_image}" alt="cover" loading="lazy">   
                         
                                 <div class="shopping-list-card-wrap">
                                     <div class="shopping-list-card-top-line">
