@@ -1,0 +1,65 @@
+<!-- add visually-hidden -->
+<div class="modal-form-backdrop">
+  <div class="modal-backdrop">
+    <button type="button" class="modal-backdrop-btn">
+      <svg class="modal-backdrop-btn-icon" width="8" height="8">
+        <use href="../img/modal-form/modal-sing-up.svg#icon-Close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form">
+      <div class="modal-form-field">
+        <label for="user-name" class="modal-form-label">Name</label>
+        <div class="form-input-wrap">
+          <input
+            type="text"
+            name="user-name"
+            class="modal-form-input"
+            id="user-name"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="modal-form-field">
+        <label for="user-email" class="modal-form-label">Email</label>
+        <div class="form-input-wrap">
+          <input
+            type="email"
+            name="user-email"
+            class="modal-form-input"
+            id="user-email"
+            required
+          />
+          <svg class="modal-form-icon" width="18" height="24">
+            <use href="../img/modal-form/modal-sing-up.svg#icon-Email"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="modal-form-field">
+        <label for="user-password" class="modal-form-label">Password</label>
+        <div class="modal-form-input-wrap">
+          <input
+            type="password"
+            name="user-password"
+            class="modal-form-input"
+            id="user-password"
+            minlength="8"
+            required
+          />
+          <svg class="modal-form-icon" width="18" height="24">
+            <use href="../img/modal-form/modal-sing-up.svg#icon-Password"></use>
+          </svg>
+        </div>
+      </div>
+
+      <button class="modal-form-main-btn" type="submit">Sign up</button>
+    </form>
+
+    <div class="modal-sing-up">
+      <a class="sing-up-link" href=""></a>
+      <a class="sing-up-link" href=""></a>
+    </div>
+  </div>
+</div>
