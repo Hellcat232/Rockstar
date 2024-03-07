@@ -154,6 +154,10 @@
   color: #b4afaf;
 
   margin-bottom: 8px;
+
+  /* text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; */
 }
 
 .best-books-wrap:not(:first-child) {
@@ -189,11 +193,11 @@
 }
 
 /* ==================== MOBILE ===================== */
-@media screen and (min-width: 375px) {
+/* @media screen and (min-width: 375px) {
   .best-books-wrap:not(:first-child) {
     display: none;
   }
-}
+} */
 
 /* ==================== TABLET ===================== */
 @media screen and (min-width: 768px) {
@@ -201,7 +205,9 @@
     width: 218px;
     height: 316px;
   }
-
+  .best-books-wrap {
+    max-width: 218px;
+  }
   .best-books-wrap:nth-child(2),
   .best-books-wrap:nth-child(3) {
     display: flex;
@@ -229,15 +235,17 @@
     width: 180px;
     height: 256px;
   }
-
+  .best-books-wrap {
+    max-width: 180px;
+  }
   .best-books-wrap:nth-child(4),
   .best-books-wrap:nth-child(5) {
     display: flex;
   }
 
-  .best-books-content {
+  /* .best-books-content {
     max-width: 180px;
-  }
+  } */
   .btn-see-more-wrap {
     width: 996px;
   }

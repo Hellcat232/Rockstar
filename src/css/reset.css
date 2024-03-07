@@ -37,6 +37,10 @@ img {
 body {
 }
 
+/* section {
+  display: flex;
+} */
+
 .main-wrapper {
   display: flex;
   flex-direction: column;
