@@ -4,7 +4,7 @@
 }
 
 .hardcover-list {
-    min-width: 375px;
+    max-width: 335px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -112,7 +112,7 @@
     }
 
     .hardcover-list {
-        min-width: 768px;
+        max-width: 704px;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 25px;
@@ -141,12 +141,12 @@
 @media screen and (min-width: 1440px) {
 
 .hardcover-wrap {
-    min-width: 1098px;
+    min-width: 996px;
     margin: 0 auto;
     }
 
 .hardcover-list {
-    min-width: 1098px;
+    max-width: 996px;
     gap: 24px;
     }
 .hardcover-item{

@@ -57,6 +57,7 @@ body {
 
 .global-books-block {
   display: block;
+  max-width: 335px;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,6 +79,11 @@ body {
   .main-wrapper .best-books-title {
     margin-top: 0;
   }
+
+    .global-books-block {
+      display: block;
+      max-width: 704px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -93,4 +99,8 @@ body {
     display: flex;
     gap: 86px;
   }
+            .global-books-block {
+              display: block;
+              max-width: 996px;
+            }
 }
