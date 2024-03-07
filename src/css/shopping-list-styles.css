@@ -253,6 +253,16 @@ ul {
     height: 165px;
   }
 
+  .shopping-list-book-title {
+    overflow: auto;
+    width: auto;
+  }
+
+  .shopping-list-book-category {
+    overflow: auto;
+    width: auto;
+  }
+
   .shopping-list-buy-link-amazon {
     width: 48px;
     height: 15px;
