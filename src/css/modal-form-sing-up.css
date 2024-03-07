@@ -1,28 +1,207 @@
-.modal-form-backdrop {
+/* ============== BASIC STYLE ===================== */
+.backdrop {
+  /* position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  top: 0;
+  left: 0;
+  background-color: #4f2ee8; */
 }
-.modal-backdrop {
+
+.modal-form-sing-up {
+  position: relative;
+  border: 2px solid #111;
+  border-radius: 18px;
+  width: 335px;
+  height: 384px;
+  background-color: #f6f6f6;
+  padding: 40px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* example */
+  margin-top: 85px;
 }
-.modal-backdrop-btn {
+
+.modal-form-btn {
+  position: absolute;
+  top: 19px;
+  right: 19px;
+  stroke-width: 3px;
+  stroke: #111;
 }
-.modal-backdrop-btn-icon {
+.modal-form-btn-icon {
+  stroke: #111;
 }
 .modal-form {
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .modal-form-field {
+  position: relative;
 }
 .modal-form-label {
+  margin-bottom: 24px;
+  cursor: pointer;
 }
-.form-input-wrap {
+
+.modal-form-input::placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.13;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #111;
 }
+
 .modal-form-input {
+  display: block;
+  border: 2px solid #111;
+  border-radius: 40px;
+  padding: 16px 24px;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
 }
+
 .modal-form-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  fill: none;
+  stroke: #111;
 }
-.modal-form-input-wrap {
-}
+
 .modal-form-main-btn {
+  border-radius: 40px;
+  padding: 16px 110px;
+  width: 100%;
+  height: 50px;
+  background-color: #111;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #f3f3f3;
+  margin-bottom: 14px;
+  cursor: pointer;
 }
-.modal-sing-up {
+
+.sing-up-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  margin-bottom: 40px;
 }
-.sing-up-link {
+
+.sing-up-link-up {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4f2ee8;
+  cursor: pointer;
+}
+
+.sing-up-link-in {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-decoration-skip-ink: none;
+  color: rgba(17, 17, 17, 0.5);
+  cursor: pointer;
+}
+
+/* ==================== MOBILE ===================== */
+@media screen and (min-width: 375px) {
+}
+
+/* ==================== TABLET ===================== */
+@media screen and (min-width: 768px) {
+  .modal-form-sing-up {
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-left: 40px;
+    min-width: 579px;
+    min-height: 516px;
+  }
+
+  .modal-form {
+    min-width: 499px;
+    gap: 28px;
+  }
+
+  .modal-form-btn {
+    top: 31px;
+    right: 31px;
+  }
+
+  .modal-form-btn-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .modal-form-input {
+    padding: 20px 40px;
+    min-width: 499px;
+    height: 64px;
+  }
+
+  .modal-form-label {
+    top: 20px;
+    left: 40px;
+  }
+
+  .modal-form-input::placeholder {
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+
+  .modal-form-icon {
+    top: 20px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-form-main-btn {
+    padding: 20px 210px;
+    min-width: 499px;
+    height: 64px;
+  }
+}
+
+/* ==================== DESKTOP 1440px ===================== */
+@media screen and (min-width: 1440px) {
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
