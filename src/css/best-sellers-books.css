@@ -73,6 +73,13 @@
 
   background-color: var(--main-background);
   cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-see-more:hover,
+.btn-see-more:focus {
+  color: #ffff;
+  background-color: #4f2ee8;
 }
 
 .best-books-content {
