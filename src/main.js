@@ -5,7 +5,7 @@ import './js/header';
 import './js/color-toggle';
 import './js/support-ukraine';
 import './js/check-page';
-import './js/modal-form-sing-up';
+// import './js/modal-form-sing-up';
 
 // console.log('main');
 onPageLoad();
