@@ -24,7 +24,7 @@ ul {
 }
 
 .shopping-list-and-support-ukraine {
-  max-width: 375px;
+  width: 375px;
   padding: 40px 20px;
   margin: 0 auto;
 }
@@ -232,7 +232,7 @@ ul {
 @media screen and (min-width: 768px) {
   .shopping-list-and-support-ukraine {
     padding: 40px 32px;
-    max-width: 768px;
+    width: 768px;
   }
 
   .shopping-list-is-empty {
@@ -269,7 +269,7 @@ ul {
   .shopping-list-and-support-ukraine {
     display: flex;
     padding: 40px 24px;
-    max-width: 1440px;
+    width: 1440px;
     gap: 40px;
     justify-content: start;
   }

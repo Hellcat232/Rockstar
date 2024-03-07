@@ -62,7 +62,7 @@ function scrollSmoothly(element, to) {
 
   animateScroll(0);
 }
-//==============================================================
+//===============================================================
 const images = document.querySelectorAll('.charity-image');
 
 images.forEach(image => {

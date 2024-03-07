@@ -5,22 +5,14 @@ export function headerBtnFuction() {
   refs.headerContainer.style.position = 'fixed';
 
   const check =
-    refs.burgerSvg.getAttribute('href') ==
-    './img/header/symbol-defs.svg#icon-burger';
+    refs.burgerSvg.getAttribute('href') == './img/symbol-defs.svg#icon-burger';
   console.log(refs.burgerSvg.getAttribute('href'));
   if (check) {
-    refs.burgerSvg.setAttribute(
-      'href',
-      './img/header/symbol-defs.svg#icon-close'
-    );
+    refs.burgerSvg.setAttribute('href', './img/symbol-defs.svg#icon-close');
     refs.headerIcon.setAttribute('width', '18');
     refs.headerIcon.setAttribute('height', '18');
-    refs.headerMenu.style.padding = '5px';
   } else {
-    refs.burgerSvg.setAttribute(
-      'href',
-      './img/header/symbol-defs.svg#icon-burger'
-    );
+    refs.burgerSvg.setAttribute('href', './img/symbol-defs.svg#icon-burger');
     refs.headerIcon.setAttribute('width', '28');
     refs.headerIcon.setAttribute('height', '28');
   }

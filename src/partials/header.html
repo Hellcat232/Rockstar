@@ -2,7 +2,7 @@
   <div class="header-container">
     <a href="./index.html" class="header-logo-link">
       <svg class="header-logo-icon" width="24" height="24">
-        <use href="./img/header/symbol-defs.svg#icon-logo"></use>
+        <use href="./img/symbol-defs.svg#icon-logo"></use>
       </svg>
       <p class="header-boofshelf">Bookshelf</p>
     </a>
@@ -16,7 +16,7 @@
             >Shopping list</a
           >
           <svg class="header-bucket-icon" width="20" height="20">
-            <use href="./img/header/symbol-defs.svg#icon-shopping-bucket"></use>
+            <use href="./img/symbol-defs.svg#icon-shopping-bucket"></use>
           </svg>
         </li>
       </ul>
@@ -27,18 +27,13 @@
       <button type="button" class="header-sign-up-button">
         Sign up
         <svg class="header-sign-up-icon" width="20" height="20">
-          <use
-            href="./img/header/symbol-defs.svg#icon-arrow-narrow-right"
-          ></use>
+          <use href="./img/symbol-defs.svg#icon-arrow-narrow-right"></use>
         </svg>
       </button>
     </div>
     <button type="button" class="header-burger-btn">
       <svg class="header-burger-icon" width="28" height="28">
-        <use
-          id="burger-svg"
-          href="./img/header/symbol-defs.svg#icon-burger"
-        ></use>
+        <use id="burger-svg" href="./img/symbol-defs.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
@@ -54,7 +49,7 @@
             >Shopping list</a
           >
           <svg class="header-modal-menu-icon" width="20" height="20">
-            <use href="./img/header/symbol-defs.svg#icon-shopping-bucket"></use>
+            <use href="./img/symbol-defs.svg#icon-shopping-bucket"></use>
           </svg>
         </li>
       </ul>
@@ -62,8 +57,13 @@
     <div class="header-modal-wrap">
       <img
         class="image-group"
-        src="img/header/header-bacground-menu.png"
+        srcset="
+          img/header-bacground-menu.png    1x,
+          img/header-background-img-2x.png 2x
+        "
+        src="img/header-bacground-menu.png"
         alt="header-bacground-menu"
+        loading="lazy"
       />
     </div>
   </div>
