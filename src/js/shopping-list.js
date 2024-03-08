@@ -16,7 +16,6 @@ document
   .querySelectorAll('.shopping-list-item-remove-button')
   .forEach(button => {
     button.addEventListener('click', e => {
-      console.log(button.dataset.id);
       removeFromShoppingList(button.dataset.id);
       button.closest('li.shopping-list-book-item').remove();
       if (shoppingList.length === 0) {

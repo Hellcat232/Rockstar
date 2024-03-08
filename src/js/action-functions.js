@@ -71,16 +71,13 @@ async function onCategoriesClick(e) {
 
   try {
     const booksByCat = await booksByCategory(catLink(e));
-    console.log(catLink(e));
 
     if (catLink(e) === 'All categories') {
-      //   console.log('from onCategoriesClick');
       onPageLoad();
     }
 
     booksByCatRender(booksByCat);
     addCategoryTitle(catLink(e));
-    console.log(catLink(e));
     clickAddClass(e);
     refs.loader.classList.add('hidden');
     if (window.innerWidth < 1440)
